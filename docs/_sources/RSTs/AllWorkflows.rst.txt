@@ -1,0 +1,99 @@
+##########
+SD ComfyUI
+##########
+
+******************
+Current Objectives
+******************
+
+=============
+First Efforts
+=============
+
+Initially, characters such as Charlotte were developed in MidJourney. Paid for a subscription for same. Subsequently discover LeonardoAI... Victoria evolved in Leonardo.
+
+Discovered Stable Diffusion.
+
+Purchased the NVidia 3070 (8gig VRAM) card. Downloaded and (via Anaconda) installed Automatic1111 web-UI.
+
+========
+In A1111
+========
+
+The main objectives:
+
+    * 1-to create as realistic (photo-real) characters as possible
+    * 2-create *consistent* characters (back to MidJourney for this)
+    * 3-have multiple characters in a scene
+    * 4-have those multiple characters be unique (different from each other)
+    * 5-have those multiple characters be reproduceable
+
+Was able to achieve 1, 2, 3 and 4. Installed but did not invoke roop. Discovered ComfyUI, and migrated all activities to ComfyUI
+
+==========
+In ComfyUI
+==========
+
+The main objectives:
+
+    * 1-to create as realistic (photo-real) characters as possible   [DONE]
+    * 2-create *consistent* characters [DONE using roop]
+    * 3-have multiple characters in a scene [DONE]
+    * 4-have those multiple characters be unique and reproduceable [DONE dual roop]
+    * 5-have those multiple characters interact
+    * 6-create and clothe the characters differently
+    * 7-develop poses / LoRA / LyCORIS etc
+
+
+.. raw:: html
+   
+   <hr style="height:16px;border-width:0;color:black;background-color:black">
+
+
+
+
+
+
+
+
+
+========
+SD Links
+========
+
+`For Tavern <https://www.chub.ai/characters>`_
+
+`Civit-AI : Poses <https://civitai.com/?tag=poses>`_
+
+`OpenPose <https://github.com/CMU-Perceptual-Computing-Lab/openpose>`_
+
+`GPT4All <https://github.com/nomic-ai/gpt4all>`_
+
+`SD Tute <https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/>`_
+
+`SD Guide <https://stable-diffusion-art.com/prompt-guide/>`_
+
+`SD 1.5 Download - needs 16gig card <https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745>`_
+
+`SD 1.5 Download-HuggingFace <https://huggingface.co/runwayml/stable-diffusion-v1-5>`_
+
+`SD 1.5 Hardware <https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true>`_
+
+`NSFW Gen <https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/>`_
+
+`Downloading from HuggingFace <https://huggingface.co/docs/hub/models-downloading>`_
+
+`More on downloading <https://huggingface.co/docs/huggingface_hub/guides/download>`_
+
+`HuggingFace Hub <https://github.com/huggingface/huggingface_hub>`_
+
+`PlanetSuzy SD Guide <http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html>`_
+
+
+
+
+
+
+
+
+

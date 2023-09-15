@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SD Civit LoRA &mdash; SDComfyUI v0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="canonical" href="docs/RSTs/SDCivitLoRAs.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="SD Civit Checkpoints" href="SampleImages.html" />
+    <link href="../_static/css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            SDComfyUI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="AllWorkflows.html">SD ComfyUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SampleImages.html">SD Civit Checkpoints</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SD Civit LoRA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#note-to-self">Note to Self</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lora-clothing">LoRA - Clothing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dress-victorian">Dress - Victorian</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#renders">Renders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#final-render">Final render</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-aesthetic-victorian">Dress - Aesthetic Victorian</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-rose">Dress - Rose</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-cream">Dress - Cream</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-lace">Dress - Lace</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-evening">Dress - Evening</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-cute-maid">Dress - Cute Maid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-maid">Dress - Maid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-victorian-maid">Dress - Victorian Maid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-pencil">Dress - Pencil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-blue-pencil">Dress - Blue Pencil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-blue-hime-basque">Dress - Blue Hime Basque</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-european-vintage">Dress - European Vintage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-bavarian-dirndl">Dress - Bavarian Dirndl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-business-suit">Dress - Business Suit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dress-teacher">Dress - Teacher</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#jeans-high-waisted">Jeans - High-waisted</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jeans-and-sweater">Jeans - and Sweater</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#jeans-skinnypants">Jeans - SkinnyPants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#leggings-better">Leggings - Better</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Renders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#blouse-proper-attire-chic-tops">Blouse - Proper Attire-Chic Tops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#skirt-dark">Skirt - Dark</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sweater-oversized-hoodie">Sweater - Oversized/Hoodie</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#clothing-via-prompt-only">Clothing via Prompt Only</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jeans-mohair-jumper">Jeans - Mohair Jumper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#stable-diffusion-links">Stable Diffusion Links</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SDComfyUI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SD Civit LoRA</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/RSTs/SDCivitLoRAs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sd-civit-lora">
+<h1>SD Civit LoRA<a class="headerlink" href="#sd-civit-lora" title="Permalink to this heading"></a></h1>
+<section id="note-to-self">
+<h2>Note to Self<a class="headerlink" href="#note-to-self" title="Permalink to this heading"></a></h2>
+<p><strong>Note</strong>: <em>this information was current in August, 2023. At the rate of development in AI imagining, it’ll be obsolete in weeks, in all likelihood. SDXL had just come out, which was going to be a major game-changer</em>.</p>
+</section>
+<section id="lora-clothing">
+<h2>LoRA - Clothing<a class="headerlink" href="#lora-clothing" title="Permalink to this heading"></a></h2>
+<section id="dress-victorian">
+<h3>Dress - Victorian<a class="headerlink" href="#dress-victorian" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Vp/victVelvet-Library.png"><img alt="Victorian Dress by n15g" src="https://www.tightbytes.com/art/images/Vp/victVelvet-Library.png" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>victorian dress</strong> - other dress-adjacent triggers: <strong>lace</strong>, <strong>lace overlay</strong>, <strong>ruffles</strong>, <strong>brooch</strong>, <strong>bustle</strong>, <strong>bodice</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-dressVict.png">Victorian Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: -2</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/134806/victorian-dress">Victorian Dress</a> by n15g - (<em>following</em>).</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Notes:</dt><dd><ul class="simple">
+<li><p>“/images/AI/Comfy/Mabel-c-Robyn-Library.png”</p></li>
+<li><p>Okay, so maybe there’s a bit of an Edwardian and Baroque influence in there as well, but we’re not striving for historical accuracy here… just lots of pretty lace.</p></li>
+<li><p>Main tag is <strong>victorian dress</strong>. Other dress-adjacent tags like <strong>lace</strong>, <strong>lace overlay</strong>, <strong>ruffles</strong>, <strong>brooch</strong>, <strong>bustle</strong>, <strong>bodice</strong>, and so on and so forth… enjoy.</p></li>
+</ul>
+</dd>
+<dt>My notes:</dt><dd><ul class="simple">
+<li><p><strong>23.08.29</strong> - Set as last of 3 LoRA (add_detail, epiCRealismHelper, VictorianDress). Strength_model: 700, / strength_clip: 500.</p></li>
+<li><p>Prompt: full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, dark green velour Victorian dresses, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), music study,</p></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<section id="renders">
+<h4>Renders<a class="headerlink" href="#renders" title="Permalink to this heading"></a></h4>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<img alt="HRA_hyperrealism art" src="https://www.tightbytes.com/art/images/Vp/victVelvet-roseGrdn.png" />
+</div>
+<div class="text-columnlq docutils container">
+<p>Facial and hand distortions are directly linked to the optimal render dimensions, set in the ‘Empty Latent Image’ node. Optimal default dimensions will be safetensor-specific.</p>
+<dl class="simple">
+<dt>Settings:</dt><dd><ul class="simple">
+<li><p>epiCRealism_NaturalSinRC1VAE: 512 * 768</p></li>
+<li><p>LoRA add_detail: .476 * .524</p></li>
+<li><p>Hand and facial distortion appear to be improving: they’re significantly less. Dress detail enhanced by setting CLIP-skip to -2 in ComfyUI.</p></li>
+</ul>
+</dd>
+<dt>Prompts:</dt><dd><ul class="simple">
+<li><p>full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, dark green velour Victorian dresses, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), a rose garden, cloudy evening,</p></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+</section>
+<section id="final-render">
+<h4>Final render<a class="headerlink" href="#final-render" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Vp/victVelvet-Classic.jpg"><img alt="https://www.tightbytes.com/art/images/Vp/victVelvet-Classic.jpg" src="https://www.tightbytes.com/art/images/Vp/victVelvet-Classic.jpg" style="width: 400px;" /></a>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>So far, this has been a consistent clothing item, with overall predictability, except for skirt length, which can vary, unfortunately. Would prefer not to have a ‘can-can’ length appear. Might write to the developer on this.</p></li>
+<li><p>Colours are muted. Materials are inconsistent when two characters wear the same dress.</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="dress-aesthetic-victorian">
+<h3>Dress - Aesthetic Victorian<a class="headerlink" href="#dress-aesthetic-victorian" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/fee-AesVDress.jpg"><img alt="Aesthetic Victorian Dress" src="https://www.tightbytes.com/art/images/Cvt/fee-AesVDress.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>victorian</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-dressAesth.png">Aesthetic Victorian Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: -2</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/108958/y5victorian-aesthetic-outfit">Aesthetic Victorian Dress</a> by Y5targazer.</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Notes:</dt><dd><ul class="simple">
+<li><p>I will showcase this model publicly for the purpose of academic research and discussion, hoping to explore working methods together with everyone.</p></li>
+<li><p>I strongly recommend against uploading any NSFW content generated by this model.</p></li>
+<li><p>You are warmly welcomed to communicate with me here on how to improve the working methods and make the model more realistic.</p></li>
+<li><p>If you have any suggestions, such as choosing different base models, using more images for training, increasing training steps, or adjusting training size to achieve a more realistic overall effect, please feel free to comment below.</p></li>
+<li><p>Generally, I do not support the generation of adult content using this model.</p></li>
+<li><p>When using this model, please ensure compliance with local laws and regulations and avoid infringing upon others’ rights to reputation, privacy, or likeness.</p></li>
+<li><p>If this Lora has infringed upon your rights, please contact me, and I will take it down for processing.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>Significant face distortion with this dress. However, I’m also trying out the Ultimate SD Upscale node, which is giving me significantly better resolution. Even the details seem clearer. Note: <em>I was struggling with ComfyUI workflow when I wrote that comment</em>.</p></li>
+<li><p>[23.09.11] - Retested: this dress is producing reliably consistent lovely renders. The dress appears in a variety of styles and layout of lace. Colour is no more or less consistent than other dresses of similar style.</p></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+<section id="id1">
+<h4>Renders<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h4>
+<blockquote>
+<div><p>[23.09.11]</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Vp/AesthVict01.png"><img alt="https://www.tightbytes.com/art/images/Vp/AesthVict01.png" src="https://www.tightbytes.com/art/images/Vp/AesthVict01.png" style="width: 400px;" /></a>
+</div></blockquote>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="dress-rose">
+<h3>Dress - Rose<a class="headerlink" href="#dress-rose" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Vp/roseDress-fail.jpg"><img alt="Rose Dress" src="https://www.tightbytes.com/art/images/Vp/roseDress-fail.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>rose</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-dressRose.png">Rose Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/89091/rose-dress">Rose Dress</a> by Hades06.</p></li>
+</ul>
+<p>The artist offers no comments at all. Trigger word is <strong>rose</strong>.</p>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>I’m trialing the Ultimate SD Upscale node, inserted before the roop sequences. Not sure if that matters. The faces appear cleaner and more distinct. Limbs leave a lot to be desired (upscaler cfg = .500).</p></li>
+<li><p>The dresses themselves render sharp and clean, excellent detail.</p></li>
+<li><p>Prompts make less of an impact than settings</p></li>
+<li><p>Green dresses: full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, dark green velour Victorian dresses, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), a rose garden, cloudy evening,</p></li>
+<li><p>Ivory and coloured dresses: full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, Victorian, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), a rose garden, cloudy evening,</p></li>
+<li><p>Each of the following images show a progression of node setting changes</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p>The change from having Ultimate SD Upscale node last to directly after the KSampler and before the roop sequences made all the difference. It appears that the Ultimate SD Upscale cfg needs to match that of the KSampler (7.000).</p>
+<section id="id2">
+<h4>Renders<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Vp/roseDress-impr.jpg"><img alt="https://www.tightbytes.com/art/images/Vp/roseDress-impr.jpg" src="https://www.tightbytes.com/art/images/Vp/roseDress-impr.jpg" style="width: 400px;" /></a>
+<p>The arm and hand distortions on Mabel and Robyn appear to be less, if not exactly resolved. Denoise = .422, steps = 45.</p>
+<p>Saving this workflow.</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Vp/roseDress-win.jpg"><img alt="https://www.tightbytes.com/art/images/Vp/roseDress-win.jpg" src="https://www.tightbytes.com/art/images/Vp/roseDress-win.jpg" style="width: 400px;" /></a>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="dress-cream">
+<h3>Dress - Cream<a class="headerlink" href="#dress-cream" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/creamDress.png"><img alt="Cream Dress" src="https://www.tightbytes.com/art/images/Md/creamDress.png" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>Cream dress_oV</strong> - <strong>A long-sleeved V-neck women’s suit</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-crmDress.png">Cream Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/70039/cream-dresssafetensors">Cream Dress</a> by sunward8888566</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>This is a cream white long-sleeved V-neck women’s suit</p></li>
+<li><p>Prompt: Cream dress_oV, Young Russian female model in A long-sleeved V-neck women’s suit, skirt posing in front of the beach, gentle and elegant oriental temperament, looking thin, full body portrait, sunny day, photography-quality lighting effects, real scenes, &lt;lora:Cream dress_oV_2023 :1&gt;</p></li>
+<li><p>negative: Backlight, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2).(normal quality:2), lowres, normal quality,((monochrome)), ((grayscale))，skin spots, acnes, skin blemishes, age spot,(outdoor:l.6), manboobs, backlight,(ugly:1.331)，(duplicate:1.331),(morbid:1.21)，(mutilated:1.21),(tranny:1.331), mutated hands, (poorly drawn hands:1.331),blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331).more than 2 nipples:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051).(too many fingers:1.61051), (unclear eyes:1.331), bad hands, missing fingers,extra digit,(futa:1.1), bad body, NG_DeepNegative_V1_75T,pubic hair, glans, missing foots ，((Clothes are wrinkled, dirty, uneven, unironed))</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>Excellent apparel, fits perfectly to any size model</p></li>
+<li><p>[Q]: is this Russian chic?</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-lace">
+<h3>Dress - Lace<a class="headerlink" href="#dress-lace" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/tu-lacedress.jpg"><img alt="Lace Dress" src="https://www.tightbytes.com/art/images/Cvt/tu-lacedress.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>lace dress3</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-laceDress.png">Lace Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/126047/lace-dress-s3">Lace Dress</a> by tutuhuatuhua.</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>I’m just an amateur SD enthusiast, and I spend a lot of time every day finding material, matting, making, testing, and finally publishing. It took too much of my energy.</p></li>
+<li><p>If you want to support me, please go to my shop and support me. There’s my unreleased LORA in there that I think is good. Thank you for your love!! If you need special order, you can also contact Q88465996</p></li>
+</ul>
+</dd>
+<dt>Prompts:</dt><dd><ul class="simple">
+<li><p>(best quality), [masterpiece], ((beautiful:0.75) cute girl:0.75), (EOS R8,50mm, F1.2, 8K, RAW photo:1.2), Professional, ultra-fine painting, (blue hair:1.4), standing, outdoors, (front:1.3), cloud, sky, seaside background, &lt;lora:add_detail:0.6&gt; &lt;lora:lace dress3:0.75&gt; lace dress3</p></li>
+<li><p>neg: badhandv4, EasyNegative, [ng_deepnegative_v1_75t], rev2-badprompt, verybadimagenegative_v1.3, negative_hand-neg, bad-picture-chill-75v, (animal ears:1.5),</p></li>
+<li><p>seed: 3666666805</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+<section id="id3">
+<h4>Renders<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h4>
+<p>by YuriTanaka:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/yuriTanaka2.jpg"><img alt="https://www.tightbytes.com/art/images/Cvt/yuriTanaka2.jpg" src="https://www.tightbytes.com/art/images/Cvt/yuriTanaka2.jpg" style="width: 400px;" /></a>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="dress-evening">
+<h3>Dress - Evening<a class="headerlink" href="#dress-evening" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/tu-evdress.jpg"><img alt="Evening Dress S1" src="https://www.tightbytes.com/art/images/Cvt/tu-evdress.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>blue skirt</strong> - other: <strong>shirt</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-eveDress.png">Evening Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/112606/evening-dress-s1">tu- Evening Dress</a> by tutuhuatuhua.</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Notes:</dt><dd><ul class="simple">
+<li><p>This is a new series, and it feels like it has an endless hole to fill. But I still want to make something a little less sexy. Everyone takes what he needs.</p></li>
+<li><p>If your model doesn’t reproduce LORA well enough, try my example, checkpoint Detail Tweaker LoRA.</p></li>
+<li><p>I’m just an amateur SD enthusiast, and I spend a lot of time every day finding material, matting, making, testing, and finally publishing.</p></li>
+<li><p>It took too much of my energy</p></li>
+<li><p>If you want to support me, you can buy me a drink of KO-FI, or go to my window and support me.</p></li>
+<li><p>There’s my unreleased LORA in there that I think is good. Thank you for your love!!</p></li>
+<li><p>If you need special order, you can also contact Q88465996。</p></li>
+<li><p>Special thanks to the seven friends who supported me in the window. Your support gives me the motivation to carry on.</p></li>
+<li><p>Prompt: (best quality),[masterpiece],((beautiful:0.75) cute girl:0.75),[clear and clean] pixiv (illustration),short hair,knees up,necklace,jewelry,looking at viewer,close-up,standing,night sky,street, city viewer,neon trim, &lt;lora:add_detail:0.8&gt;, &lt;lora:evening dress S1:0.75&gt; blue skirt,</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>Underwhelmed, but I only tried it for a short while</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-cute-maid">
+<h3>Dress - Cute Maid<a class="headerlink" href="#dress-cute-maid" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/n15g-cuteMaid.jpg"><img alt="Cute Maid Dress" src="https://www.tightbytes.com/art/images/Cvt/n15g-cuteMaid.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>maid</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-cuteMaid.png">Cute Maid Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: -2</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/133377/cute-maid-dress">Cute Maid Dress</a> by n15g.</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>Okaerinasaimase, goshujin-sama!</p></li>
+<li><p>Cute maid dresses with a short poofy skirt, ruffled apron and puffy sleeves.</p></li>
+<li><p>Trained on the main tag maid. You can use clothing tags like blue dress, white apron and bow to influence the outfit.</p></li>
+<li></li>
+<li><p>RubberDuckie’s prompt: (RAW 8k photo) of (RSEEmma:1.1),&lt;lora:RSERomantic_RSESofiko_RSEEmma-v1:0.1&gt;, ((best quality)), ((masterpiece)), (realistic, photo-realistic:1.37), DSLR photo, DLSR, cowboy shot, smile, looking at viewer, (wearing bondage_outfit), (highly detailed skin:1.2), midday, bright lighting, parted bangs, (black hair), very long hair, long hair, smile, beautiful girl modeling in the kitchen, perfect eyes, long eyelashes, large breasts, cleavage, maid, black dress, white apron, bow, &lt;lora:cute_maid-1.0:0.8&gt;</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p>neg: ng_deepnegative_v1_75t, (bad-hands-5:1.05), (low quality, worst quality, lowres:1.1), text, patreon, (watermark:1.5), (eyes:1.3), panty, easynegative, (logo:1.3), text, sd1-failed-oekaki, (verybadimagenegative_v1.3:0.9), cat ears, elf ears, bad-picture-chill-75v, zentai, bodysuit, (watermark:1.7), cat ears, muscular, muscles, mask, squatting, badhandsv5-neg, blue skin, tattoo, watermark, (zip, zipper:1.5), (nipples:1.5), choker, necklace, cushion, (logo, watermark:1.6), dog ears, cat ears, child, loli</p>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-maid">
+<h3>Dress - Maid<a class="headerlink" href="#dress-maid" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/pa-maidDress.jpg"><img alt="Panda Maid Dress" src="https://www.tightbytes.com/art/images/Cvt/pa-maidDress.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>Maid_Dress</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-pandaMaid.png">Panda Maid Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/31756/maid-dress-lora">Maid Dress</a> by nicerpanda.</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>This is a LORA for Maid Dresses</p></li>
+<li><p>I used 30 Pictures for training</p></li>
+<li><p>I would recommend LORA weight 0.6-0.8 for</p></li>
+<li><p>Trained with NAI</p></li>
+<li><p>If you enjoy this LORA, I genuinely love seeing your creations with it</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p>Prompts: (masterpiece), sidelighting, finely detailed beautiful eyes:1.2), Maid_Dress, inside, photo-realistic, realistic, RAW photo, masterpiece, best quality, highres, illustration, (topless:1.5), (nsfw:1.5), (arms behind back:1.5), (absurdres nipple:1.4), 1girl, &lt;lora:GGAS_Maid_Dress:0.3&gt;, (black and white, beautiful design, extremely detailed, Maid_Dress:1.5), (Maid clothes:1.4), &lt;lora:GodPussy1 v3:0.5&gt;, front pussy, delicate and pretty, perfect face, beautiful detailed eyes, fair skin, real human skin, pore, (huge_breasts), (cleavage), narrow waist,((skinny legs)), (long hair:1.2), (blonde hair:1.2), &lt;lora:jpIDOL_v10:0.2&gt;,&lt;lora:LoveOnLovely_lolStyleV10:0.2&gt;, &lt;lora:koreanDollLikeness_v15:0.2&gt;,&lt;lora:cuteGirlMix4_v10:0.1&gt;, &lt;lora:chilloutmixss_xss10:0.1&gt;,&lt;lora:taiwanDollLikeness_v10:0.1&gt;, &lt;lora:JapaneseDollLikeness_v15:0.1&gt;,</p>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>There doesn’t appear to be a photo-real use case for this</p></li>
+<li><p>Have not yet tried this item [23.09.03]</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-victorian-maid">
+<h3>Dress - Victorian Maid<a class="headerlink" href="#dress-victorian-maid" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/n15g-wkMaid.jpg"><img alt="Victorian Maid Dress" src="https://www.tightbytes.com/art/images/Cvt/n15g-wkMaid.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>maid</strong> - other triggers: <strong>bow</strong>, <strong>brooch</strong>, <strong>long dress</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-victMaid.png">Victorian Maid Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/133660/victorian-maid-dress">Victorian Maid Dress</a> by n15g.</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>Welcome home m’Lord~</p></li>
+<li><p>Unlike <a class="reference external" href="https://civitai.com/models/133377/cute-maid-dress">my cute maid dress</a>, a Victorian maid outfit is far more about utility than flare.</p></li>
+<li><p>Long, functional aprons feature prominently on this style, but it is not entirely bereft of appeal with puffy sleeves and beautiful brooches and bows common.</p></li>
+<li><p>Main tag is <strong>maid</strong>, with other useful tags being <strong>bow</strong>, <strong>brooch</strong>, <strong>long dress</strong>, etc.</p></li>
+</ul>
+</dd>
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>There doesn’t appear to be a photo-real use case for this.</p></li>
+<li><p>All renders on CivitAI are manga style, no photorealism.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p>Prompts: (realistic:1.3), finely detailed, quality, rembrandt lighting, (masterpiece:1.2), (photorealistic:1.2), (best quality), (detailed skin:1.3), (intricate details), dramatic, ray tracing, 1girl, french girl, 21 years old, detailed skin texture, (blush:0.5), (goosebumps:0.5), subsurface scattering, smiling, medium breasts, high ponytail, bangs, hair between eyes, blonde hair, (maid:1.1), bow, brooch, long dress, frills, apron, silver platter, fancy teapot, teacup, cake, holding platter, cowboy shot, (aristocrat mansion, lavish, resplendent, luxurious, rich, decorations, living room), &lt;lora:victorian_maid-1.0:0.8&gt;</p>
+<p>&lt;lora:add_brightness:0.5&gt;&lt;lora:add_detail:0.5&gt;detailed, intricate, 1 woman, gigantic breast, embarrassed ,blush, forehead, black hair, glasses, maid, &lt;lora:head_slider_v2:-1&gt;&lt;lora:victorian_maid-1.0:0.8&gt; cowboy shot,</p>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-pencil">
+<h3>Dress - Pencil<a class="headerlink" href="#dress-pencil" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/edg-pnclDress.jpg"><img alt="Pencil Dress" src="https://www.tightbytes.com/art/images/Cvt/edg-pnclDress.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>pencil_dress</strong> - other: <strong>black and white checkered pencil_dress</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-pnclDress.png">Pencil Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/18215?modelVersionId=45899">Pencil Dress</a> by edg</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>Today, EDG’s Haute Couture brings you a staple of everyday and office fashion: pencil dresses. It’s time to dress sharply and get ready to impress with a pencil dress. Download and get your pencil dress.</p></li>
+<li><p>Advice: <em>check for secondary trigger words in the prompts</em>.</p></li>
+<li><p>Prompt: Masterpiece, absurdres, award winning photo, extremely detailed, amazing, fine detail, extremely detailed eyes and face, by lee jeffries, nikon d850, film stock, photograph, 4 kodak, portra 400, camera, f1.6 lens, rich colors, hyper-realistic, lifelike texture, dramatic lighting, unrealengine, trending on artstation, cinestill, 800 tungsten, beautiful woman, slim, tiny waist, pencil_dress, a woman wearing a (pencil_dress, a woman wearing a black and white checkered pencil_dress, holding a purse, buttons, v shaped cleavage:1.125), &lt;lora:Pencil_Dressesv1.2:1&gt;</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>Appears to fit figure well, if a bit clingy</p></li>
+<li><p>Have not yet tried the additional prompts [23.09.03]</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-blue-pencil">
+<h3>Dress - Blue Pencil<a class="headerlink" href="#dress-blue-pencil" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/sw-PnclDress.jpg"><img alt="Blue Pencil Dress" src="https://www.tightbytes.com/art/images/Cvt/sw-PnclDress.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>Blue Pencil Dress_V</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-bPnclDress.png">Blue Pencil Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/86125/blue-pencil-dress">Blue Pencil Dress</a> by sunward8888566</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>A long-sleeved V-neck women’s suit，Blue Pencil Dress</p></li>
+<li><p>Prompt: Young Russian female model posing in front of beach, (Blue Pencil Dress_V:1.1), A long-sleeved V-neck women’s suit, full body portrait, sunny, photography grade lighting effects, real scene, &lt;lora:Blue Pencil Dress V_20230608133850-000003:1&gt;</p></li>
+</ul>
+</dd>
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>Have not yet tried this item [23.09.03]</p></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<section id="id4">
+<h4>Renders<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h4>
+<p>…</p>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="dress-blue-hime-basque">
+<h3>Dress - Blue Hime Basque<a class="headerlink" href="#dress-blue-hime-basque" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/yu-blueHime.jpg"><img alt="Blue Hime Dress" src="https://www.tightbytes.com/art/images/Cvt/yu-blueHime.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>Blue Hime Basque</strong> - <strong>frilled dress</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-blueHime.png">Blue Hime: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/98765/blue-hime-basque">Blue Hime</a> by tutuhuatuhua</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Notes:</dt><dd><ul class="simple">
+<li><p>tag：Blue Hime Basque, frilled dress</p></li>
+<li><p>If you like my model, please comment, download, click on the red heart. * If the downloads and hearts are too low, the new model does not want to continue to be made. Stock models may not be issued anymore.</p></li>
+</ul>
+</dd>
+<dt>Example Prompt by YL:</dt><dd><ul class="simple">
+<li><p>(photo-realistic, ultra realistic 8k CG:1.2), perfect artwork, delicate pattern, (best quality, intricate detail, extremely intricate:1.2), 70mm telephoto lens, ——————————- (ulzzang6500V), (idol),(detailed clothes features), Exquisite Makeup, the pose, (1girl,solo:1.2), woman, girly, bright eyes, (detailed eyes), (wet skin,nsfw:1.1), (very long hair, Floating hair, Flamboyant hair, wind,gale, hair accessories:1.4), ——————————- (silk Ribbon in front:1.3), earrings, filigree, detached sleeves, wide sleeves, (see through clothes, translucent clothes, armlet:1.2), (revealing clothes), jewelry, (cleavage, bare shoulder, strapless, Simple Choker, tube dress, no bra:1.1), ——————————- (horizon, longView, distant, Leaves and plant in front:1.2), simple background, ——————————- (pov legs, Blue Hime Basque, frilled dress:1.3), [full body], &lt;lora:Blue Hime Basque_20230627170534:1:fz1&gt;</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<section id="id5">
+<h4>Renders<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h4>
+<p>by YL:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/yl-blueHime.jpg"><img alt="https://www.tightbytes.com/art/images/Cvt/yl-blueHime.jpg" src="https://www.tightbytes.com/art/images/Cvt/yl-blueHime.jpg" style="width: 400px;" /></a>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="dress-european-vintage">
+<h3>Dress - European Vintage<a class="headerlink" href="#dress-european-vintage" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/edg-eurVintag.jpg"><img alt="European Vintage" src="https://www.tightbytes.com/art/images/Cvt/edg-eurVintag.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>wearing edgEV_vintage dress</strong> - <strong>edgEV</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-euroVint.png">European Vintage: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/103597/european-vintage-by-edg">European Vintage</a> by edg</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>European Vintage - by EDG</p></li>
+<li><p>With this model I hope to allow you to design vintage European dresses, classy and not too sexy.</p></li>
+<li><p>Show me what you can do down there in the review section!</p></li>
+</ul>
+</dd>
+<dt>Sample Prompt (<em>note LoRA settings</em>):</dt><dd><ul class="simple">
+<li><p>4K, Masterpiece, highres, absurdres, edgEV, a woman in a park ,wearing edgEV_vintage dress, &lt;lora:edgEuropean_Vintage:0.75&gt;</p></li>
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>More Prompts (<em>note LoRA settings</em>):</dt><dd><ul class="simple">
+<li><p>solo, 1girl, 4K, Masterpiece, highres, absurdres, edgEV, a woman in a blue dress leaning against a wall, wearing edgEV_vintage dress, &lt;lora:edgEuropean_Vintage:0.8&gt;</p></li>
+<li><p>professional photo of edgEV, 1girl, long hair, blonde hair, twintails, wearing edgEV_vintage dress, BREAK aqua eyes, louvre, pregnant, detailed skin, detailed eyes, finely detailed hair, looking at viewer, abstract background, volumetric light, highrez, masterpiece, best quality,&lt;lora:edgEuropean_Vintage:0.78:MIDD&gt;</p></li>
+</ul>
+</dd>
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>All gallery images point to primarily illustration use cases, no realism</p></li>
+<li><p>Render tests are NOT SFW</p></li>
+<li><p>edg offers a <a class="reference external" href="https://www.canva.com/design/DAFcn1l_ulE/view">LoRA tutorial</a></p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-bavarian-dirndl">
+<h3>Dress - Bavarian Dirndl<a class="headerlink" href="#dress-bavarian-dirndl" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/edg-bavDirndl.jpg"><img alt="Bavarian Dirndl" src="https://www.tightbytes.com/art/images/Cvt/edg-bavDirndl.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>dirndl</strong> - <strong>traditional bavarian dress</strong>, <strong>wearing a dirndl</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-bavDirndl.png">Bavarian Dirndl: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/53825/bavarian-dirndl">Bavarian Dirndl</a> by edg</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>Bavarian Dirndl</p></li>
+<li><p>Die Deutschen sind dafür bekannt, dass sie sehr gut Englisch sprechen, daher würde ich mir normalerweise nicht die Mühe machen, eine Übersetzung anzufertigen.</p></li>
+<li><p>Aber dies ist etwas Besonderes.</p></li>
+<li><p>Dirndlkleider sind in der ganzen Welt bekannt und repräsentieren die deutsche, genauer gesagt die bayerische Traditionskultur. Ich wünsche Ihnen, dass Sie diese LoRA nutzen und viel Spaß damit haben!</p></li>
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>Prompt:</dt><dd><ul class="simple">
+<li><p>Masterpiece, absurdres, fine detail, HDR, highly detailed face and eyes, photorealistic, &lt;lora:dirndl:0.75&gt;, dirndl, a woman in traditional bavarian dress poses for a picture, german woman, wearing a dirndl</p></li>
+<li><p>Masterpiece, absurdres, fine detail, DOF, atmosperic lighting, highly detailed face and eyes, photorealistic, &lt;lora:drindl:0.75&gt;, drindl, a woman in traditional bavarian dress standing in pub, german woman, freckels, medium breasts, cleavage, ginger, plaits, wearing drindl, holding beer, smiling</p></li>
+</ul>
+</dd>
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>All gallery images point to primarily illustration use cases, no realism</p></li>
+<li><p>Render tests are NOT SFW</p></li>
+<li><p>edg offers a <a class="reference external" href="https://www.canva.com/design/DAFcn1l_ulE/view">LoRA tutorial</a></p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-business-suit">
+<h3>Dress - Business Suit<a class="headerlink" href="#dress-business-suit" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/aix-busiSuit.jpg"><img alt="Business Suit" src="https://www.tightbytes.com/art/images/Cvt/aix-busiSuit.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: (<em>no keywords</em>) Possible tags: <strong>suit</strong> - <strong>black trousers</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-busiSuit.png">Business Suit: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/125089/suitol-aix">Business Suit</a> by AIXXX</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p><em>This model was created to facilitate formal suits needed for formal occasions, if you have created any good images using this model that bring you convenience, please consider sharing them by leaving a comment. Thank you very much!</em></p></li>
+<li><p>The main colors of the suit are black and white.</p></li>
+<li><p>This model is suitable for most business scenarios, I believe that the standard suit can help you.</p></li>
+<li><p>It can be a separate white/black shirt, or a separate black suit, or it can be a combination of different outfits.</p></li>
+<li><p>This model is recommended to match the Majic realistic series, and the effect is better with the good film wind lora.</p></li>
+<li><p>You can use keywords to control some scene changes, such as a solid color background for professional photography, or other scene uses.</p></li>
+<li><p>Recommended parameter setting: iteration steps 25-35, amplification algorithm: 4x-UltraSharp, redrawing range 0.1-0.3 (more than picture effect decline), it is recommended to open ADetailer, Majic model is not recommended to open face repair.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p>Artist’s Note (cont):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Because the whole network has not yet seen a similar formal professional clothing Lora, so specially produced and shared to everyone, I hope to bring convenience to you, the model still needs to be upgraded, like friends please leave a like, share your work!</p></li>
+</ul>
+</div></blockquote>
+<p>Prompt: (realistic:1.5),(masterpiece, Extremely detailed CG unity 8k wallpaper, best quality, highres:1.2), (ultra_detailed, UHD:1.2), (pixiv:1.3), distinct, detailed face, a girl, &lt;lora:suit-AIX:0.6&gt;, black trousers, solid background, suit,</p>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p><em>Left a comment on CivitAI page</em>: Truly a lovely suit, very elegant. Unfortunately, it affects my roop - changes the face. Other outfits don’t appear to have this problem. Is there a CLIP-skip setting to invoke or some other setting I need to use? BTW, I’m in ComfyUI, not A1111.</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="dress-teacher">
+<h3>Dress - Teacher<a class="headerlink" href="#dress-teacher" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/teachTart1.png"><img alt="Teacher Dress" src="https://www.tightbytes.com/art/images/Md/teachTart1.png" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>skirt suit, garter straps, glasses, underwear, panties, lace-trimmed bra</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-dressTeach.png">Teacher Dress: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/55099/teacher-clothes">Teacher Dress</a> by romiolast</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Notes:</dt><dd><ul class="simple">
+<li><p>Significantly improve the effect, I am personally very satisfied, the applicability is much stronger</p></li>
+<li><p>Reduce the problem of overfitting, use in combination with other characters lora, weighting 0.6-0.9</p></li>
+<li><p>Optimize the 2.5D/3D model, recommend using Rev animated</p></li>
+<li><p>This is a Lora made at the request of a friend. I hope they will be satisfied with it.</p></li>
+<li><p>Usage: Most anime-style models can be used, while 3D models may need some adjustments. Recommended weight is between 0.6 and 0.9.</p></li>
+<li><p><strong>Garter straps</strong> can be replaced with <strong>pantyhose</strong>.</p></li>
+<li><p>If combining with other character LoRAs, weight may need to be adjusted to 0.4-0.7.</p></li>
+<li><p>If necessary, you can add “(head out of frame:2)” to the negative prompt.</p></li>
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>23.09.05 &#64; 0620: can’t say I’m impressed. Distorts my girl’s hands (CLIP-Skip has nil effect)</p></li>
+<li><p>When it works, it’s fairly tarty, so not a fan.</p></li>
+</ul>
+</dd>
+</dl>
+<section id="id7">
+<h4>Renders<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h4>
+<p>23.09.05 &#64; 0625 (<em>It gets worse</em>)</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/teachTart2.png"><img alt="https://www.tightbytes.com/art/images/Md/teachTart2.png" src="https://www.tightbytes.com/art/images/Md/teachTart2.png" style="width: 400px;" /></a>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="jeans-high-waisted">
+<h3>Jeans - High-waisted<a class="headerlink" href="#jeans-high-waisted" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/jeansHiwst.png"><img alt="High-waisted Jeans" src="https://www.tightbytes.com/art/images/Md/jeansHiwst.png" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>jeans</strong> - other triggers: <strong>torn jeans</strong>, <strong>torn pants</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-jeansHiwst.png">High-waisted Jeans: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/123147?modelVersionId=134199">High-waisted Jeans</a> by psoft.</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>LoRA trained to generate high-waist jeans (Levi’s style).</p></li>
+<li><p>Please rate and leave a like if you enjoyed it! And be sure to follow to check out the upcoming models.</p></li>
+<li><p>Trigger: <strong>jeans</strong></p></li>
+<li><p>Optional tag: <strong>torn jeans</strong> or <strong>torn pants</strong></p></li>
+<li><p>Occasionally, the lora may influence slightly towards a realistic style since I used a ton of photos for training. If that happens, just add realistic to the negative prompt, or slightly reduce the lora’s weight.</p></li>
+</ul>
+</dd>
+<dt>Additional info:</dt><dd><p>I make these models for fun and for the challenge and release them for free for everyone to enjoy, for non-commercial use (see license). The one thing I ask of you is to provide rating and feedback! That helps me understand where I can improve and helps me stay motivated to produce more content! I accept suggestions or requests here or on Civitai discord server.</p>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>very realistic jeans</p></li>
+<li><p>favourited, and gave positive feedback to psoft</p></li>
+</ul>
+</dd>
+<dt>Prompts:</dt><dd><ul class="simple">
+<li><p>(Photorealistic:1.3), (mature sexy blonde:1.5), (huge ass:1.5), (tan skin:1.2),(sweat on skin:1.4), (wasp waist:1.5), (gigantic breasts:1.5), &lt;lora:baggy_jeans_v0.9:1&gt;, (ripped denim jeans:1.5), (simple (transparent:1.2) linen top:1.4), (rear view), (standing in a wheat field at sunset), &lt;lora:add_detail:0.3&gt;, (full body view), (long high ponytail:1.5), (large silver hoop earrings), (jeans), (masterpiece), (highres), 4k, 8k, huge filesize, best quality, extremely detailed, finely detail, intricate detail, ultra-detailed</p></li>
+<li><p>neg - (asian:1.3), (japanese:1.3), (chinese:1.3), bra, &lt;bad-artist:0.8&gt;, &lt;bad-artist-anime:0.8&gt;, &lt;bad-picture-chill-75v:0.8&gt;, &lt;bad_prompt:0.8&gt;, &lt;bad_prompt_version2:0.8&gt;, &lt;bad_quality:0.8&gt;, &lt;hypernet:negative_hand-neg:1&gt;, &lt;hypernet:NegfeetV2:1&gt;, &lt;lora:easynegative:1&gt;, verybadimagenegative_v1.3, Lowres, Blurry, (Worst quality:2), (Bad quality:2), (Low quality:2), (Normal quality), (duplicate:1.331), Abnormal anatomy, Abnormal eye proportion, Abnormal feet, Abnormal fingers, Abnormal hands, Abnormal legs, (Bad anatomy:1.2), Bad hands, Bad picture chill, Bad prompt, Bad prompt version2, Cropped, Deformed, Disconnected head, Disconnected limbs, Disappearing arms, Disappearing calf, Disappearing legs, Disappearing thigh, Extra limb, Extra limbs, Fused fingers, Fused hand, Huge calf, Long neck, Malformed hands, Manboobs, Missing arms, Missing fingers, Missing hand, Missing limb, More than 2 nipples, Morbid, Mutation, Mutated hands and fingers, Mutilated, Poor anatomy, Poorly drawn, (Poorly drawn face:1.3), (Poorly drawn hands:1.3), Text, Ugly, Watermark</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="jeans-and-sweater">
+<h3>Jeans - and Sweater<a class="headerlink" href="#jeans-and-sweater" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/swtrJeans.png"><img alt="Sweater and Jeans" src="https://www.tightbytes.com/art/images/Md/swtrJeans.png" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>ddsweater</strong> - <strong>ddjeans</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-jeansSwtr.png">Sweater and Jeans: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>, but -2 appears to help with roop)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/61978/dd-sweater-and-jeans-outfit">Sweater and Jeans</a> by aDDont</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>I made this Lora for my game, and don’t mind sharing it. Well, suppose you want to create a couple of scenes with your character wearing the exact same clothes in different poses and sets. This Lora can help you out.</p></li>
+<li><p>Most of the time it will create a white sweater, blue jeans and high heels (if visible). Can make variations of that - topless, bra, only sweater on, etc.</p></li>
+<li><p>Tags: ddsweater, ddjeans</p></li>
+<li><p>Additional tags and properties: if you want a topless variant put ‘ddsweater’ in the negative and add ‘topless’ to the prompt. If you want only the sweater variation do vice versa (bottomless and ddjeans in neg).</p></li>
+<li><p>Color of the sweater and jeans could be changed, but I suggest using cutoff extension to not let SD mix colors. Flexible enough to be used with other Loras. Enjoy.</p></li>
+<li><p>Prompt: posing, ddjeans, ddsweater, evil smile, 1girl, annoyed, irritated, waiting, city, &lt;lora:DDsj_1.2:0.75&gt;,  &lt;lora:Viv(d2):0.75&gt;</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt><strong>23.09.04</strong>:</dt><dd><ul class="simple">
+<li><p>I did five (5) renders: jeans never appeared. I finally added “wearing jeans” to the prompt. They appeared, finally, but would disappear again for no reason.</p></li>
+<li><p>Initial renders distorted my “roop girl’s” face so, just as an idea, I added a <strong>CLIP-Skip</strong> of -2, which fixed the problem. Hands were still distorted.</p></li>
+<li><p>Several renders later, the hand distortion grew worse. Could be the openPose file causing it, though.</p></li>
+<li><p>I like the sweater style: real clothing is always nicer and more versatile than tarty stuff. Have to just through a few hoops to get it to work, though.</p></li>
+<li><p>&#64;2150, did a render with “wearing jeans, wearing an oversized sweater” which is actually yielding better images. I’m disinclined to use this LoRA very much.</p></li>
+</ul>
+</dd>
+</dl>
+<section id="id8">
+<h4>Renders<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h4>
+<p>23.09.04 &#64; 2202</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/overszSwtr.png"><img alt="https://www.tightbytes.com/art/images/Md/overszSwtr.png" src="https://www.tightbytes.com/art/images/Md/overszSwtr.png" style="width: 400px;" /></a>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="jeans-skinnypants">
+<h3>Jeans - SkinnyPants<a class="headerlink" href="#jeans-skinnypants" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/mpi-sknyJean.jpg"><img alt="Skinny Jeans" src="https://www.tightbytes.com/art/images/Cvt/mpi-sknyJean.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>skinnyjeans</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-jeansSkny.png">Skinny Jeans: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/76522/skinnypants">Skinny Jeans</a> by mpi4com547</p></li>
+</ul>
+<p>Artist’s Note: (<em>no notes by artist on Civitai</em>)</p>
+<dl class="simple">
+<dt>Prompts:</dt><dd><ul class="simple">
+<li><p>masterpiece, best quality, highly detailed, cinematic lighting, ray tracing, available light, film composition, CG, game cg, blunt bangs, extremely detailed eyes and face, perfect face, shiny skin, big eyes, Look at the audience, beautifly, very long hair, UHD, 8k, &lt;lora:Euro-AmericanDollLikeness_V20:0.3&gt;, light grey hair, (game cg),pink eyeshadow, &lt;lora:ChilloutMixssV1:0.4&gt;, &lt;lora:luckzs-maid:0.6&gt;, crew neck, scoop neck, corset,medium breasts,slimification, oval face,collarbone, star necklace,pink flower,&lt;lora:10_nzkgood:0.6&gt;,skinnyjeans,1girl,medium breasts, long hair, bangs, straight hair, shiny skin, tank top, full body,</p></li>
+<li><p>masterpiece,best quality,highly detailed,cinematic lighting,ray tracing,available light,film composition,CG,game cg, blunt bangs,extremely detailed eyes and face,prefect face,shiny skin,big eyes,Look at the audience,beautifly, very long hair, UHD,8k,&lt;lora:Euro-AmericanDollLikeness_V20:0.2&gt;, light grey hair, (game cg),pink eyeshadow, &lt;lora:ChilloutMixssV1:0.3&gt;, &lt;lora:luckzs-maid:0.4&gt;, crew neck, scoop neck, corset,medium breasts,slimification, oval face,collarbone, star necklace,pink flower,&lt;lora:10_nzkgood:0.3&gt;,(skinnyjeans:1),1girl,medium breasts, long hair, bangs, straight hair, shiny skin, tank top, full body, outdoors,  &lt;lora:100_jsk:0.2&gt;, &lt;lora:10_xnzk:0.2&gt;,niuzaiku,xnzk,watery eyes, big eyes,</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="leggings-better">
+<h3>Leggings - Better<a class="headerlink" href="#leggings-better" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/edg-btrleg.jpg"><img alt="Better Leggings" src="https://www.tightbytes.com/art/images/Cvt/edg-btrleg.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>better_leggings</strong> - other: <strong>wearing better_leggings</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-btrLegging.png">Better Leggings: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/54052?modelVersionId=63222">Better Leggings</a> by edg</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>Better Leggings</p></li>
+<li><p>Why stick for normal leggings when they can be better?</p></li>
+</ul>
+</dd>
+<dt>Prompt:</dt><dd><ul class="simple">
+<li><p>Masterpiece, absurdres,HDR, &lt;lora:better_leggings:0.8&gt;, better_leggins, perfect butt shape, big round butt, a woman in blue leggings and white sneakers, woman wearing better_leggings &lt;lora:BetterLeggins:0.7&gt;</p></li>
+<li><p>Masterpiece, absurdres, HDR, &lt;lora:better_leggings:0.75&gt;, smiling, excited, better_leggins, perfect butt shape, big round butt, a woman in pink leggings, woman wearing better_leggings, cowboy shot</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>There doesn’t appear to be a photo-real use case for this</p></li>
+<li><p>Have not yet tried this item [23.09.03]</p></li>
+<li><p>Looks to be manga-focused</p></li>
+</ul>
+</dd>
+<dt><strong>23.09.04</strong></dt><dd><ul class="simple">
+<li><p>LoraLoader set at: str_model - 0.7, str_clip - 0.5. Appears to push prompt-based “oversized sweater” up out of the way. Made (sweater) first in prompt: sweater is now over the leggings (instead of oddly pulled up) but my girl’s face has changed: however, that was transient. Next render: the leggings disappeared.</p></li>
+</ul>
+</dd>
+</dl>
+<section id="id9">
+<h4>Renders<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h4>
+<p>23.09.04 &#64; 2320</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/btrLeggings.png"><img alt="https://www.tightbytes.com/art/images/Md/btrLeggings.png" src="https://www.tightbytes.com/art/images/Md/btrLeggings.png" style="width: 400px;" /></a>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="blouse-proper-attire-chic-tops">
+<h3>Blouse - Proper Attire-Chic Tops<a class="headerlink" href="#blouse-proper-attire-chic-tops" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/edg-ChicTops.jpg"><img alt="Chic Top" src="https://www.tightbytes.com/art/images/Cvt/edg-ChicTops.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>wearing edgCT</strong> - other: <strong>chic top</strong>, <strong>blouse</strong>, <strong>edgCT</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-chicTops.png">Chic Top: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/123155/proper-attire-or-chic-tops-by-edg">Chic Top</a> by edg</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Note:</dt><dd><ul class="simple">
+<li><p>If you’d like to support me and do more: <a class="reference external" href="https://ko-fi.com/edgonkofi">https://ko-fi.com/edgonkofi</a> - commissions open!</p></li>
+<li><p>If you’re looking for a <a class="reference external" href="https://www.canva.com/design/DAFcn1l_ulE/view">LoRA Making Tutorial</a></p></li>
+<li><p>Proper Attire | Chic Tops - by EDG</p></li>
+<li><p>Let’s enjoy beautiful SFW clothing.</p></li>
+<li><p>Triggers: <strong>wearing edgCT</strong>, <strong>chic top</strong>, <strong>blouse</strong>, <strong>edgCT</strong></p></li>
+</ul>
+</dd>
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>All gallery images point to primarily manga use cases, no realism</p></li>
+<li><p>Render tests are NOT SFW</p></li>
+<li><p>The above LoRA tutorial has interesting points</p></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p>Prompt: ((Masterpiece, best quality)),edgQuality,smirk,smug, bob cut, edgCT, a woman in a blouse, puffy sleeves,wearing edgCT,chic top ,ribbon,((corset)) &lt;lora: edgChicTops1:0.75&gt;</p>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="skirt-dark">
+<h3>Skirt - Dark<a class="headerlink" href="#skirt-dark" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/tu-darkSkirt.jpg"><img alt="Dark Skirt" src="https://www.tightbytes.com/art/images/Cvt/tu-darkSkirt.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>skirt</strong> - <strong>plaid necktie</strong> - <strong>belt</strong> - <strong>plaid skirt</strong> - <strong>black shirt</strong> - <strong>bowtie</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-darkSkirt.png">Dark Skirt: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/106336/dark-jk-skirt">Dark Skirt</a> by tutuhuatuhua</p></li>
+</ul>
+<p>Artist’s Note: (<em>nothing of consequence, mostly in Chinese?</em>)</p>
+<dl class="simple">
+<dt>Prompts:</dt><dd><ul class="simple">
+<li><p>masterpiece, best quality, (detailed face, perfect face, perfect eyes, realistic eyes, perfect fingers), (clear face), fantasy girl, long hair, jewelry, earrings, looking at viewer, intricate, high detail, sharp focus, dramatic, beautiful girl, knees up, hotel room, standing, &lt;lora:add_detail:0.9&gt;, &lt;lora:Dark jk skirt_20230709163946:0.8&gt;, belt, plaid skirt, (black shirt:1.2), bowtie, school uniform, pantyhose,</p></li>
+<li><p>a portrait photo of (heliodor20230526_1632-4000:0.60) heliodor20230526 &lt;lora:heliodor20230526_2200-000020:0.60&gt; 14y wearing a wearing a moss green &lt;lora:Dark jk skirt_20230709163946:1&gt; collar shirt, plaid necktie, plaid pleated skirt, in a street in Hallstatt Austria. docks, shore, mountains in background. (off center:1.1), (deep shadow, night, dusk, dimly lit, (beautiful lighting:1.2), (rim light:0.75)), &lt;lora:epi_noiseoffset2:1.2&gt;, (vintage film, 35mm, bokeh, muted colors:0.8), RAW photo, 8k uhd, high quality, highly detailed skin, Portra 400 &lt;lora:add_detail:0.33&gt; &lt;lyco:hallstatt_20230713_0122-000010:0.7&gt;</p></li>
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<dl class="simple">
+<dt>My Notes:</dt><dd><ul class="simple">
+<li><p>All gallery images point to non-realism use cases</p></li>
+<li><p>Render tests done</p></li>
+<li><p>tutuhuatuhua has a shop</p></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+<section id="sweater-oversized-hoodie">
+<h3>Sweater - Oversized/Hoodie<a class="headerlink" href="#sweater-oversized-hoodie" title="Permalink to this heading"></a></h3>
+<div class="two-column-containerlq docutils container">
+<div class="image-columnlq docutils container">
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cvt/an-ovrsSwtr.jpg"><img alt="Sweater Hoodie" src="https://www.tightbytes.com/art/images/Cvt/an-ovrsSwtr.jpg" style="width: 580px;" /></a>
+</div>
+<div class="text-columnlq docutils container">
+<ul class="simple">
+<li><p><strong>Trigger</strong>: <strong>oversized_sweater</strong> - <strong>oversized_hoodie</strong> - <strong>back view</strong></p></li>
+<li><p><a class="reference external" href="https://www.tightbytes.com/art/images/Csp/lo-ovrsSwtr.png">Sweater Hoodie: Specs</a></p></li>
+<li><p><strong>CLIP SKIP</strong>: (<em>not indicated</em>)</p></li>
+<li><p><a class="reference external" href="https://civitai.com/models/52885/oversized-sweaterhoodie">Sweater Hoodie</a> by antonio_riolo2610</p></li>
+</ul>
+<dl class="simple">
+<dt>Artist’s Notes:</dt><dd><ul class="simple">
+<li><p>Training settings: 36 images, 20 steps, 13 epochs, you find many epochs (with test images using plot xy script) on my Patreon while supporting me.</p></li>
+<li><p>Make sure you are aware on the usage instructions of LORA</p></li>
+<li><p>Sampler: DPM++ SDE Karras (Recommended for best quality, you may try other samplers)</p></li>
+<li><p>CFG Scale : 5 to 9</p></li>
+<li><p>LORA weight for txt2img: reccomended 0.2-0.7 (i used 0.5 in my images).</p></li>
+<li><p>Keys: oversized_hoodie, oversized_sweater</p></li>
+<li><p>This LoRA is very easy to use, usually works with any color, just repeat the keyword with the color, like “oversized_sweater, red oversized_sweater”</p></li>
+<li><p>In my images i gave a weight of 1.3 to the keyword oversized_sweater or hoodie, and i placed the keyword at the beginning of the prompt.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<p>Most of the images of the training are with hoddie/sweater with naked legs, but some of them have boots or stocking, so if you want them you might try to add it to your prompt. Checkpoint used to generate the images: Chillout. Enjoy!</p>
+<dl class="simple">
+<dt>Prompt:</dt><dd><ul class="simple">
+<li><p>medium shot, natural light, oversized_sweater, eating, ramen, chopsticks, (medium_breasts:0.8), (large_breasts:0.3), (freckles:0.7), face, nose, cute, (young woman:1.2), (anna kendrick:0.95) (hailee steinfeld:0.3) (emma watson:0.4), ethnicity (canadian:1.1) (european:1.1) (asian:-1.55), hair (blonde:0.8) (brunette:1.2), looking away, slight smile, breasts, (nipples:0.7), (implied nude:0.4), &lt;lora:oversized_sweater:0.2&gt;,  &lt;lora:ramen_v4:0.5&gt;</p></li>
+</ul>
+</dd>
+<dt>My Notes:</dt><dd><ul class="simple">
+<li></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+<hr style="height:8px;border-width:0;color:blue;background-color:blue"></section>
+</section>
+<section id="clothing-via-prompt-only">
+<h2>Clothing via Prompt Only<a class="headerlink" href="#clothing-via-prompt-only" title="Permalink to this heading"></a></h2>
+<p>I’ve had significant success with Prompt-based clothing <em>in single-individual renders</em>.</p>
+<section id="jeans-mohair-jumper">
+<h3>Jeans - Mohair Jumper<a class="headerlink" href="#jeans-mohair-jumper" title="Permalink to this heading"></a></h3>
+<p>23.09.05 &#64; 0730</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/Mohair01.png"><img alt="https://www.tightbytes.com/art/images/Md/Mohair01.png" src="https://www.tightbytes.com/art/images/Md/Mohair01.png" style="width: 350px;" /></a>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/Mohair02.png"><img alt="https://www.tightbytes.com/art/images/Md/Mohair02.png" src="https://www.tightbytes.com/art/images/Md/Mohair02.png" style="width: 350px;" /></a>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/Mohair03.png"><img alt="https://www.tightbytes.com/art/images/Md/Mohair03.png" src="https://www.tightbytes.com/art/images/Md/Mohair03.png" style="width: 350px;" /></a>
+<ul class="simple">
+<li><p>These images contain embedded .json for ComfyUI.</p></li>
+<li><p>It <em>seems</em> SD tries to match shoes to jumper, which is pretty amazing.</p></li>
+<li><p>Prompt specifies: <strong>skinny jeans</strong> and <strong>off the shoulder mohair sweater</strong>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Md/Mohair04.png"><img alt="https://www.tightbytes.com/art/images/Md/Mohair04.png" src="https://www.tightbytes.com/art/images/Md/Mohair04.png" style="width: 350px;" /></a>
+<ul class="simple">
+<li><p>Prompt: full body shot, masterpiece, beautiful Nordic woman with a round bottom, (round ass), wide behind, dark hair in bun, (wearing an mohair cowl neck sweater), wearing skinny jeans, necklace, (mascara, eye-shadow, lipstick), sitting in a cafe in Paris, outside, cloudy afternoon,</p></li>
+</ul>
+<hr style="height:16px;border-width:0;color:black;background-color:black"></section>
+</section>
+<section id="stable-diffusion-links">
+<h2>Stable Diffusion Links<a class="headerlink" href="#stable-diffusion-links" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://www.chub.ai/characters">For Tavern</a></p>
+<p><a class="reference external" href="https://civitai.com/?tag=poses">Civit-AI : Poses</a></p>
+<p><a class="reference external" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></p>
+<p><a class="reference external" href="https://github.com/nomic-ai/gpt4all">GPT4All</a></p>
+<p><a class="reference external" href="https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/">SD Tute</a></p>
+<p><a class="reference external" href="https://stable-diffusion-art.com/prompt-guide/">SD Guide</a></p>
+<p><a class="reference external" href="https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745">SD 1.5 Download - needs 16gig card</a></p>
+<p><a class="reference external" href="https://huggingface.co/runwayml/stable-diffusion-v1-5">SD 1.5 Download-HuggingFace</a></p>
+<p><a class="reference external" href="https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true">SD 1.5 Hardware</a></p>
+<p><a class="reference external" href="https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/">NSFW Gen</a></p>
+<p><a class="reference external" href="https://huggingface.co/docs/hub/models-downloading">Downloading from HuggingFace</a></p>
+<p><a class="reference external" href="https://huggingface.co/docs/huggingface_hub/guides/download">More on downloading</a></p>
+<p><a class="reference external" href="https://github.com/huggingface/huggingface_hub">HuggingFace Hub</a></p>
+<p><a class="reference external" href="http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html">PlanetSuzy SD Guide</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SampleImages.html" class="btn btn-neutral float-left" title="SD Civit Checkpoints" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Robyn.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
