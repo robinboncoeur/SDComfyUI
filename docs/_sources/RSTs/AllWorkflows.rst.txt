@@ -6,6 +6,9 @@ About SD-ComfyUI
 Foreword
 ********
 
+.. image:: https://www.tightbytes.com/art/images/Cui/23/LesAmies03.png
+    :width: 400px
+    
 These pages are all about sharing what I've sort-of picked up using ComfyUI and Stable Diffusion.
 
 I have rather gravitated towards ComfyUI as my Stable Diffusion interface because of its flexibility through the use of nodes. These pages reflect my current uderstanding and use of this interface. I still have much to learn and explore in this rapidly expanding world of AI-based graphics. Hope my meanderings prove useful to someone.
