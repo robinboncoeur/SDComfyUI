@@ -1,6 +1,16 @@
-##########
-SD ComfyUI
-##########
+################
+About SD-ComfyUI
+################
+
+********
+Foreword
+********
+
+These pages are all about sharing what I've sort-of picked up using ComfyUI and Stable Diffusion.
+
+I have rather gravitated towards ComfyUI as my Stable Diffusion interface because of its flexibility through the use of nodes. These pages reflect my current uderstanding and use of this interface. I still have much to learn and explore in this rapidly expanding world of AI-based graphics. Hope my meanderings prove useful to someone.
+
+
 
 ******************
 Current Objectives
@@ -28,7 +38,9 @@ The main objectives:
     * 4-have those multiple characters be unique (different from each other)
     * 5-have those multiple characters be reproduceable
 
-Was able to achieve 1, 2, 3 and 4. Installed but did not invoke roop. Discovered ComfyUI, and migrated all activities to ComfyUI
+Was able to achieve 1, 2, 3 and 4. Installed but did not invoke roop. Discovered ComfyUI, and migrated all activities to ComfyUI.
+
+As of September, 2023, have cancelled all subscriptions to Leonardo and MidJourney.
 
 ==========
 In ComfyUI
@@ -43,6 +55,14 @@ The main objectives:
     * 5-have those multiple characters interact
     * 6-create and clothe the characters differently
     * 7-develop poses / LoRA / LyCORIS etc
+
+
+
+=====================
+Consistent Characters
+=====================
+
+The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were 'created' in MidJourney and LeonardoAI. I've since gone to using `This Person Does Not Exist <https://this-person-does-not-exist.com/en>`_ as the faces are a lot less airbrushed and produce far more realistic-looking individuals (using roop). There is only one (heavily doctored) real person *base* for all the images on these pages. 
 
 
 .. raw:: html
