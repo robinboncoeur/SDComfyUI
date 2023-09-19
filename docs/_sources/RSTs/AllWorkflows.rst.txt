@@ -55,9 +55,10 @@ The main objectives:
     * 2-create *consistent* characters [DONE using roop]
     * 3-have multiple characters in a scene [DONE]
     * 4-have those multiple characters be unique and reproduceable [DONE dual roop]
-    * 5-have those multiple characters interact
-    * 6-create and clothe the characters differently
-    * 7-develop poses / LoRA / LyCORIS etc
+    * 5-characters will be anatomically correct (minimal deformities)
+    * 6-have those multiple characters interact
+    * 7-create and clothe the characters differently
+    * 8-develop poses / LoRA / LyCORIS etc
 
 
 
@@ -67,6 +68,9 @@ Consistent Characters
 
 The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were 'created' in MidJourney and LeonardoAI. I've since gone to using `This Person Does Not Exist <https://this-person-does-not-exist.com/en>`_ as the faces are a lot less airbrushed and produce far more realistic-looking individuals (using roop). There is only one (heavily doctored) real person *base* for all the images on these pages. 
 
+More on how roop can be affected by prompts and other settings in a bit.
+
+
 
 .. raw:: html
    
@@ -74,7 +78,19 @@ The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd l
 
 
 
+**********
+Key Videos
+**********
 
+ComfyUI - Live Stream! Let's make some amazing art with Stable Diffusion
+
+with **Scott Detweiler**
+
+.. raw:: html
+   
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/sN64rIuarlQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <hr style="height:4px;border-width:0;color:gray;background-color:gray">
 
 
 
@@ -113,6 +129,228 @@ SD Links
 `PlanetSuzy SD Guide <http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html>`_
 
 
+
+
+*************************************
+Reminders [to Myself] of Sphinx Stuff
+*************************************
+
+=============
+Inline images
+=============
+
+For externally-stored images (most will be stored on Tightbytes, for my pages)::
+
+	* .. image:: http://www.tightbytes.com/Music/CReinecke/CReinecke1890.jpg
+
+and for those stored with the data files::
+
+	* .. image:: ../images/blAltRtClick01.png
+
+
+
+======================
+Embedded YouTube Video
+======================
+
+This code::
+
+   .. raw:: html
+   
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/123xxxXXXyZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+
+Should have 11 characters::
+
+	3LbsmS5TJXA
+	123xxxXXXyZ
+
+Key to note is the difference in the link in the raw html syntax vs the actual youtube link::
+
+	https://www.youtube.com/embed/123xxxXXXyZ
+	https://www.youtube.com/watch?v=9USTddwNoXU
+
+Basically, "embed/" instead of "watch?v=".
+
+
+
+==============
+Embedded Audio
+==============
+
+This code::
+
+	.. raw:: html
+
+		<audio controls="controls">
+		  <source src="http://tightbytes.com/music/Sketches/Sketch11.mp3" type="audio/wav">
+		  Your browser does not support the <code>audio</code> element. 
+		</audio>
+
+...produces:
+
+.. raw:: html
+
+    <audio controls="controls">
+      <source src="http://tightbytes.com/music/Sketches/Sketch11.mp3" type="audio/wav">
+      Your browser does not support the <code>audio</code> element. 
+    </audio>
+
+.. raw:: html
+   
+   <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+
+
+
+==========================
+Embedded Non-youtube Video
+==========================
+
+This code::
+
+	.. raw:: html
+
+	   <iframe width="560" height="315" src="https://tightbytes.com/videos/projects/garden/Aj-SHTrench.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	   
+	   |
+	   
+
+...produces:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://tightbytes.com/videos/projects/garden/Aj-SHTrench.mp4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+   |
+
+
+(Note to self: took out  [  autoplay; ] )
+
+.. raw:: html
+   
+   <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+
+
+
+==================
+Creating Dotpoints
+==================
+
+Once you've decided:
+
+  * Select A.
+
+  * Select B. 
+
+  * To identify C.
+
+  * Finally, click on D.
+
+
+Note: *setting things to italics like this makes more impact - these have yielded reasonable results. You will almost certainly find better settings, which is the whole point of sharing this*.
+
+
+
+================
+Links Management
+================
+
+Here's a typical example of embedding a link: Blender-for-Mac users, please refer to the `Mac user help <http://blender.stackexchange.com/questions/6173/where-does-console-output-go>`_ page.
+
+
+
+
+==========================
+Horizontal Separator Lines
+==========================
+
+The code is this (minus the '*')::
+
+	* .. raw:: html
+   
+   <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+
+...which produces the following grey horizonal bar to help separate sctions (like the one below).
+
+.. raw:: html
+   
+   <hr style="height:4px;border-width:0;color:gray;background-color:gray">
+
+
+
+
+============
+Sphinx Links
+============
+
+https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+
+https://docutils.sourceforge.io/docs/ref/rst/directives.html#images
+
+https://docutils.sourceforge.io/docs/ref/rst/directives.html#container
+
+https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents
+
+https://docutils.sourceforge.io/docs/ref/doctree.html#classes
+
+
+
+************
+HTML and CSS
+************
+
+Grid for two simple layouts
+
+https://www.youtube.com/watch?v=r1IitKbJRFE
+
+Slide Show
+
+https://www.youtube.com/watch?v=WJERnXiFFug
+
+https://ishadeed.com/article/conditional-css-has-nth-last-child/?utm_source=convertkit&utm_medium=email&utm_campaign=Why+people+use+CSS+frameworks%20-%2010872019
+
+AstroDocs
+
+https://docs.astro.build/en/editor-setup/
+
+***************
+Other Help Tips
+***************
+
+===========================
+Changing Settings in Chrome
+===========================
+
+These tips pertain to Chrome for Mac: doesn't matter much which version of the Mac operating system, as far as I can tell. Open the Chrome browser:
+
+.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-4.png
+
+Mine is already open which is why I've got a white dot to the left of it. A key link on your Chrome browser is the one to your settings page. This is in the upper right-hand corner of the browser:
+
+.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-5.png
+
+When you click on this, you get the following menu, from which you select 'Settings':
+
+.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-6.png
+
+However, to turn off 'dark mode' in Chrome, you actually go to a new search page:
+
+.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-1.png
+
+At the bottom right-hand corner is another settings link:
+
+.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-2.png
+
+If you click on the 'Dark theme: On' menu item, it will turn Dark Theme: Off.
+
+.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-3.png
+
+Hope this helps.
+
+.. raw:: html
+   
+   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
 
 
