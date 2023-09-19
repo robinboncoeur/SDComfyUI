@@ -9,7 +9,7 @@ SD and ComfyUI
    :caption: Contents:
 
    
-   RSTs/AllWorkflows.rst
+   RSTs/About.rst
    RSTs/SampleImages.rst
    RSTs/SDCivitLoRAs.rst
 
