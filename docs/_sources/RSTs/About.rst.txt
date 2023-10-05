@@ -6,7 +6,7 @@ About SD-ComfyUI
 Foreword
 ********
 
-.. image:: https://www.tightbytes.com/art/images/Cui/23/LesAmies03.png
+.. image:: https://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png
     :width: 400px
     
 These pages are all about sharing what I've sort-of picked up using ComfyUI and Stable Diffusion.
@@ -51,10 +51,10 @@ In ComfyUI
 
 The main objectives:
 
-    * 1-to create as realistic (photo-real) characters as possible   [DONE]
-    * 2-create *consistent* characters [DONE using roop]
-    * 3-have multiple characters in a scene [DONE]
-    * 4-have those multiple characters be unique and reproduceable [DONE dual roop]
+    * 1-to create as realistic (photo-real) characters as possible **[DONE]**
+    * 2-create *consistent* characters **[DONE using roop]**
+    * 3-have multiple characters in a scene **[DONE]**
+    * 4-have those multiple characters be unique and reproduceable **[DONE dual roop]**
     * 5-characters will be anatomically correct (minimal deformities)
     * 6-have those multiple characters interact
     * 7-create and clothe the characters differently
@@ -69,6 +69,28 @@ Consistent Characters
 The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were 'created' in MidJourney and LeonardoAI. I've since gone to using `This Person Does Not Exist <https://this-person-does-not-exist.com/en>`_ as the faces are a lot less airbrushed and produce far more realistic-looking individuals (using roop). There is only one (heavily doctored) real person *base* for all the images on these pages. 
 
 More on how roop can be affected by prompts and other settings in a bit.
+
+
+
+=============================
+23.09.25 Nodes and Objectives
+=============================
+
+---------------------
+Character Interaction
+---------------------
+
+Objective: getting consistent interaction is a bit of a thorny one. I currently can have characters holding hands and 'embrace' but in SD1.5, more involved displays of affection tend to distort the face.
+
+
+---------
+Node Work
+---------
+
+From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of. Using the Efficiency Pack really cleared up a bunch of messy noodles.
+
+
+
 
 
 
