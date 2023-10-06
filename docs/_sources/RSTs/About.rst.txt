@@ -7,7 +7,7 @@ Foreword
 ********
 
 .. image:: https://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png
-    :width: 400px
+    :width: 600px
     
 These pages are all about sharing what I've sort-of picked up using ComfyUI and Stable Diffusion.
 
@@ -22,6 +22,9 @@ Current Objectives
 =============
 First Efforts
 =============
+
+.. image:: https://www.tightbytes.com/art/images/Cui/23/Charlotte.png
+    :width: 600px
 
 Initially, characters such as Charlotte were developed in MidJourney. Paid for a subscription for same. Subsequently discover LeonardoAI... Victoria evolved in Leonardo.
 
@@ -43,6 +46,9 @@ The main objectives:
 
 Was able to achieve 1, 2, 3 and 4. Installed but did not invoke roop. Discovered ComfyUI, and migrated all activities to ComfyUI.
 
+.. image:: https://www.tightbytes.com/art/images/Cui/23/Staci-CafeB1.png
+    :width: 600px
+
 As of September, 2023, have cancelled all subscriptions to Leonardo and MidJourney.
 
 ==========
@@ -56,21 +62,31 @@ The main objectives:
     * 3-have multiple characters in a scene **[DONE]**
     * 4-have those multiple characters be unique and reproduceable **[DONE dual roop]**
     * 5-characters will be anatomically correct (minimal deformities)
-    * 6-have those multiple characters interact
-    * 7-create and clothe the characters differently
+    * 6-have those multiple characters interact (more than just staring blankly)
+    * 7-clothe the characters differently
     * 8-develop poses / LoRA / LyCORIS etc
-
-
 
 =====================
 Consistent Characters
 =====================
 
-The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were 'created' in MidJourney and LeonardoAI. I've since gone to using `This Person Does Not Exist <https://this-person-does-not-exist.com/en>`_ as the faces are a lot less airbrushed and produce far more realistic-looking individuals (using roop). There is only one (heavily doctored) real person *base* for all the images on these pages. 
+.. image:: https://www.tightbytes.com/art/images/Cui/23/Charlotte-Robyn-Library.png
+    :width: 400px
+
+The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were 'created' in MidJourney and later LeonardoAI. I've since gone to using `This Person Does Not Exist <https://thispersondoesnotexist.com>`_ as the faces are a lot less airbrushed and produce far more realistic-looking individuals (using roop). There is only one (heavily doctored) real person *base* for all the images on these pages. 
 
 More on how roop can be affected by prompts and other settings in a bit.
 
+Here we are in October 2023 and the objectives haven't changed much. What's done is achieved - and consistently so - but the hand deformities frustratingly persist:
 
+.. image:: https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png
+    :width: 400px
+
+Note the hands (rendered 06.Oct.23) - Priority-One is sorting this. 
+
+
+KMart Order placed!
+#380613561
 
 =============================
 23.09.25 Nodes and Objectives
@@ -80,7 +96,7 @@ More on how roop can be affected by prompts and other settings in a bit.
 Character Interaction
 ---------------------
 
-Objective: getting consistent interaction is a bit of a thorny one. I currently can have characters holding hands and 'embrace' but in SD1.5, more involved displays of affection tend to distort the face.
+Objective: getting consistent interaction is a bit of a thorny one. I currently can have characters holding hands and 'embrace' but in SD1.5, a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Added 04.10.23: *appears to be a* **roop** *thing*).
 
 
 ---------
