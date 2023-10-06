@@ -120,18 +120,18 @@ From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of
 Key Videos
 **********
 
-ComfyUI - Live Stream! Let's make some amazing art with Stable Diffusion
+ComfyUI - How to use IPAdapter models by the Developer: Matt
 
-with **Scott Detweiler**
+with **Latent Vision**
 
 .. raw:: html
    
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/sN64rIuarlQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
    <hr style="height:4px;border-width:0;color:gray;background-color:gray">
 
 
-
+https://www.youtube.com/watch?v=
 
 
 ========
