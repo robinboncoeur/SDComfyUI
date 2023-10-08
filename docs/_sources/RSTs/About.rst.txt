@@ -15,27 +15,32 @@ I have rather gravitated towards ComfyUI as my Stable Diffusion interface becaus
 
 
 
-******************
-Current Objectives
-******************
+**********
+Background
+**********
 
 =============
 First Efforts
 =============
 
 .. image:: https://www.tightbytes.com/art/images/Cui/23/Charlotte.png
-    :width: 600px
+    :width: 400px
 
-Initially, characters such as Charlotte were developed in MidJourney. Paid for a subscription for same. Subsequently discover LeonardoAI... Victoria evolved in Leonardo.
+Quick history:
 
-Discovered Stable Diffusion.
-
-Purchased the NVidia 3070 (8gig VRAM) card. Downloaded and (via Anaconda) installed Automatic1111 web-UI.
+    * MidJourney... very quickly created characters such as Charlotte. It was so satisfying that I paid for a subscription. However, the characters all began to look very similar.
+    * LeonardoAI... Subsequently, this produced a significantly broader variety of individual faces. The key character 'Victoria' evolved in Leonardo.
+    * Discovered Stable Diffusion and Automatic1111, which opened the door to limitless image/character creation (including NSFW). For this, however, I needed a more powerful graphics card.
+    * Purchased the NVidia 3070 (8gig VRAM) card. Note: this card had *only* 8gig of VRAM, where the 3060 had 12, which would have made a better choice.
+    * Downloaded and (via Anaconda) installed Automatic1111 web-UI.
 
 ========
 In A1111
 ========
 
+.. image:: https://www.tightbytes.com/art/images/Cui/23/Staci-CafeB1.png
+    :width: 600px
+    
 The main objectives:
 
     * 1-to create as realistic (photo-real) characters as possible
@@ -44,18 +49,23 @@ The main objectives:
     * 4-have those multiple characters be unique (different from each other)
     * 5-have those multiple characters be reproduceable
 
-Was able to achieve 1, 2, 3 and 4. Installed but did not invoke roop. Discovered ComfyUI, and migrated all activities to ComfyUI.
+Was able to achieve 1, 2, 3 and 4. Installed but did not invoke roop - did all Faceswapping in MidJourney.
 
-.. image:: https://www.tightbytes.com/art/images/Cui/23/Staci-CafeB1.png
-    :width: 600px
+Discovered ComfyUI, and migrated all activities to ComfyUI.
 
-As of September, 2023, have cancelled all subscriptions to Leonardo and MidJourney.
 
-==========
-In ComfyUI
-==========
 
-The main objectives:
+****************************
+Node-based Interface ComfyUI
+****************************
+
+===================
+Objective Breakdown
+===================
+
+I installed ComfyUI in the recommended Python3.10.6 environment which eliminated many obscure Python error messages no one seemed to have an answer to. I reinstalled A1111 the same way: bog-standard Python3.10.6 venv. All models are currently saved in the A1111 folder. As of September, 2023, have cancelled all subscriptions to Leonardo and MidJourney: roop is very straightforward and easy to accomplish in ComfyUI.
+
+The main objectives, current as of 7th Oct, 2023, are:
 
     * 1-to create as realistic (photo-real) characters as possible **[DONE]**
     * 2-create *consistent* characters **[DONE using roop]**
@@ -66,44 +76,96 @@ The main objectives:
     * 7-clothe the characters differently
     * 8-develop poses / LoRA / LyCORIS etc
 
-=====================
-Consistent Characters
-=====================
+
+-------------------------
+2 - Consistent Characters
+-------------------------
 
 .. image:: https://www.tightbytes.com/art/images/Cui/23/Charlotte-Robyn-Library.png
     :width: 400px
 
-The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were 'created' in MidJourney and later LeonardoAI. I've since gone to using `This Person Does Not Exist <https://thispersondoesnotexist.com>`_ as the faces are a lot less airbrushed and produce far more realistic-looking individuals (using roop). There is only one (heavily doctored) real person *base* for all the images on these pages. 
+The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were 'created' in MidJourney and later LeonardoAI, satisfying the 'photoreal' requirement easily. I've since gone to using `This Person Does Not Exist <https://thispersondoesnotexist.com>`_ for reference faces as the features are a lot less airbrushed and produce far more realistic-looking individuals using roop. There is  one carefully GIMPed real person reference image for a persona in some of my images. 
 
-More on how roop can be affected by prompts and other settings in a bit.
 
-Here we are in October 2023 and the objectives haven't changed much. What's done is achieved - and consistently so - but the hand deformities frustratingly persist:
+-----------------------
+3 - Multiple Characters
+-----------------------
+
+The length and detail of the prompt very much affects how consistently I can get two characters to appear. Too much emphasis on a detail results in one person to appear instead of two, regardless of whether I enclose the phrase '2 women' in parentheses. Removing detail fixes the problem.
+
+
+------------------------------------
+4 - Unique, reproduceable characters
+------------------------------------
+
+Generally speaking, the same conditions that result in only one figure appearing where two were asked for account for roop working consistently. I've had Comfy assigned my first face to a tertiary individual in the image (very much a background figure) and so the first character receives the second face and none is assigned to the second charcter at all:
+
+.. image:: https://www.tightbytes.com/art/images/Cui/23/Cui-3rdChar.png
+    :width: 400px
+
+In this image, the first face was given to the obscure person on the couch on the left of the picture, the second figure - in the far-too-short skirt - was given the second face by roop, and the third figure was whatever Comfy / SD had in mind. Note: this brings up another interesting challenge... appropriate attire. Unfortunately, prompting has little effect on the length of skirts or the decollette of the neckline.
+
+So, whilst I do feel this objective has been accomplished, getting consistent results very much depends on shorter, concise prompts. Details may need to come from LoRAs or - newer tech for artists this October - IP Adapters.
+
+
+------------------------------
+5 - Minimal, or no Deformities
+------------------------------
+
+While for the most part, facial distortion appears to have been resolved - with the exception of when the faces are in close proximity to each other - hand deformities unfortunately, frustratingly persist:
 
 .. image:: https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png
     :width: 400px
 
-Note the hands (rendered 06.Oct.23) - Priority-One is sorting this. 
+Note the hands (rendered 06.Oct.23) - this is currently my main objective: to consistently render non-deformed limbs, or at least be able to fix deformities via inpainting or something like that.
+
+And yet, in the preceding image, the hands are fine.
 
 
-KMart Order placed!
-#380613561
+-------------------------
+6 - Character Interaction
+-------------------------
 
-=============================
-23.09.25 Nodes and Objectives
-=============================
-
----------------------
-Character Interaction
----------------------
-
-Objective: getting consistent interaction is a bit of a thorny one. I currently can have characters holding hands and 'embrace' but in SD1.5, a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Added 04.10.23: *appears to be a* **roop** *thing*).
+So far (Oct 2023) no real solution has presented itself. Indeed, getting on charcter to show one expression and the other, something else eludes me. I can get 'selfie'-style shots galore, and, a la rigeur, two individuals 'discussing' while each sort of looks off into the distance, ostensibly contemplative, but achieving that is inconsistent and really, how much need is there for that? Getting consistent interaction remains a thorny problem. I currently can have characters holding hands and 'embrace' but (at least in SD1.5), a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Observed 04.Oct.23: *appears to be a* **roop** *thing*).
 
 
----------
-Node Work
----------
+.. raw:: html
 
-From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of. Using the Efficiency Pack really cleared up a bunch of messy noodles.
+   <hr style="height:8px;border-width:0;color:black;background-color:black">
+
+
+
+=======================
+Nodes affect Objectives
+=======================
+
+**23.10.08**
+
+I am discovering that, almost as much if not more, prompts - and specifically the injudicious, casual use of keyworks in a prompt, will lead to undesireable outcomes in the final image. For example: I had the phrase "lace-up boots" in a prompt. this resulted in short skirts and lace-topped stockings. Removing this brought the skirt hemline down to more desireable levels and a far better image.
+
+In a good prompt, less is more. Too many words in the negative prompt does absolutely nothing to improve the image and can adversely affect the outcome.
+
+Challenges I have yet to resolve:
+
+    * Camera distance from my subject
+    * What the subject is looking at is consistent to the prompt
+ 
+
+----------------------------
+Node Sets - October Workflow 
+----------------------------
+
+From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of. I *think*. Open to new ideas, particularly if they work:
+
+.. image:: https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png
+    :width: 600px
+
+
+
+
+The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and a latent:
+
+
 
 
 
@@ -111,36 +173,42 @@ From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of
 
 
 .. raw:: html
-   
-   <hr style="height:16px;border-width:0;color:black;background-color:black">
-
-
-
-**********
-Key Videos
-**********
-
-ComfyUI - How to use IPAdapter models by the Developer: Matt
-
-with **Latent Vision**
-
-.. raw:: html
-   
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
    <hr style="height:4px;border-width:0;color:gray;background-color:gray">
 
 
-https://www.youtube.com/watch?v=
+
+=======================
+ComfyUI Tips and Tricks
+=======================
+
+The "Unofficial" `Sub-Reddit ComfyUI <https://www.reddit.com/r/comfyui/new/>`_ has proven an amazing resource, more than anywhere else, to be honest. Hope to collect some of the "Tips and Tricks" I pick up here.
+ 
+-------------------
+Inserting Node-sets
+-------------------
+
+To insert node sets into a workflow:
+
+    * **save** the node set to insert by highlighing the nodes, and [RtClick] -> 'Save Selected as Template'
+    * In the target workflow, [RtClick] -> 'Node Templates' (select the node set)
+ 
+ Caveat: if enclosed in a grouping box, the box is not saved into the template.
 
 
-========
-SD Links
-========
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:gray;background-color:black">
+
+
+
+======================
+Stable Diffusion Links
+======================
 
 `For Tavern <https://www.chub.ai/characters>`_
 
-`Civit-AI : Poses <https://civitai.com/?tag=poses>`_
+`Civit-AI <https://civitai.com/>`_
 
 `OpenPose <https://github.com/CMU-Perceptual-Computing-Lab/openpose>`_
 
@@ -167,6 +235,27 @@ SD Links
 `PlanetSuzy SD Guide <http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html>`_
 
 
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:black;background-color:black">
+
+
+**********
+Key Videos
+**********
+
+ComfyUI - How to use IPAdapter models by the Developer: Matt
+
+with **Latent Vision**
+
+.. raw:: html
+   
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+.. raw:: html
+   
+   <hr style="height:16px;border-width:0;color:black;background-color:black">
 
 
 *************************************
@@ -351,44 +440,6 @@ https://ishadeed.com/article/conditional-css-has-nth-last-child/?utm_source=conv
 AstroDocs
 
 https://docs.astro.build/en/editor-setup/
-
-***************
-Other Help Tips
-***************
-
-===========================
-Changing Settings in Chrome
-===========================
-
-These tips pertain to Chrome for Mac: doesn't matter much which version of the Mac operating system, as far as I can tell. Open the Chrome browser:
-
-.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-4.png
-
-Mine is already open which is why I've got a white dot to the left of it. A key link on your Chrome browser is the one to your settings page. This is in the upper right-hand corner of the browser:
-
-.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-5.png
-
-When you click on this, you get the following menu, from which you select 'Settings':
-
-.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-6.png
-
-However, to turn off 'dark mode' in Chrome, you actually go to a new search page:
-
-.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-1.png
-
-At the bottom right-hand corner is another settings link:
-
-.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-2.png
-
-If you click on the 'Dark theme: On' menu item, it will turn Dark Theme: Off.
-
-.. image:: http://www.tightbytes.com/images/projects/conundrums/Cm_Chrome-3.png
-
-Hope this helps.
-
-.. raw:: html
-   
-   <hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
 
 
