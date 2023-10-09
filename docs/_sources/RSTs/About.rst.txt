@@ -163,7 +163,7 @@ From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of
 
 
 
-The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and a latent:
+The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and an empty latent image.
 
 
 
@@ -188,7 +188,7 @@ The "Unofficial" `Sub-Reddit ComfyUI <https://www.reddit.com/r/comfyui/new/>`_ h
 Inserting Node-sets
 -------------------
 
-To insert node sets into a workflow:
+To insert a node-set into a workflow:
 
     * **save** the node set to insert by highlighing the nodes, and [RtClick] -> 'Save Selected as Template'
     * In the target workflow, [RtClick] -> 'Node Templates' (select the node set)
@@ -240,9 +240,11 @@ Stable Diffusion Links
    <hr style="height:8px;border-width:0;color:black;background-color:black">
 
 
-**********
-Key Videos
-**********
+
+
+************************
+Media - Social and Other
+************************
 
 ComfyUI - How to use IPAdapter models by the Developer: Matt
 
@@ -255,7 +257,45 @@ with **Latent Vision**
 
 .. raw:: html
    
+   <hr style="height:4px;border-width:0;color:black;background-color:gray">
+
+
+
+==========================
+Posts on SubReddit ComfyUI
+==========================
+
+**23.10.07**
+
+Note: *removed this post as it was not as good as those by EndangeredAI*
+
+Different artists, different solutions. You're starting this learning process correctly: simple workflows is the way to go. I'm also finding that the simpler the prompts - positive and negative - the more consistent the output.
+
+I'm be happy to share my workflow (via json-embedded pngs):
+
+    https://tightbytes.com/art/images/Cui/23/ComfyUI_35.png
+    https://tightbytes.com/art/images/Cui/23/ComfyUI_40.png
+
+The workflow in both images is identical: it manages two individuals - well, women... haven't worked out how to mix it up with multiple figures yet - in a variety of settings and the faces remain the same. In order to have a play with the workflow, you will need to install:
+    * Efficiency Nodes
+    * Ultimate SD Upscale
+    * ComfyUI roop
+    * Checkpoint: epiCRealismSin with add_detail and epiCRealismHelper LoRAs, but those are just my preference - any SD1.5 models will do
+    * RgThree's nodes, and probably some other stuff too - CivitAI is a great place to "shop"!  :-)
+
+All of these - and heaps more - can all be installed via 'Manager'. You will need that, of course.
+
+For faces, you can always generate and save a face in Comfy, but I've found that thispersondoesnotexist generates high-detail faces that work quite well with roop. Your mileage may vary, of course.
+
+
+.. raw:: html
+   
    <hr style="height:16px;border-width:0;color:black;background-color:black">
+
+
+
+
+
 
 
 *************************************

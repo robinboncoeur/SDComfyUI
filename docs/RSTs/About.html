@@ -77,7 +77,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#stable-diffusion-links">Stable Diffusion Links</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#key-videos">Key Videos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#media-social-and-other">Media - Social and Other</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#posts-on-subreddit-comfyui">Posts on SubReddit ComfyUI</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#reminders-to-myself-of-sphinx-stuff">Reminders [to Myself] of Sphinx Stuff</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#inline-images">Inline images</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#embedded-youtube-video">Embedded YouTube Video</a></li>
@@ -223,7 +226,7 @@
 <h4>Node Sets - October Workflow<a class="headerlink" href="#node-sets-october-workflow" title="Permalink to this heading"></a></h4>
 <p>From Automatic1111, I really missed ‘HiRez-Fix’. Well, got that working, sort-of. I <em>think</em>. Open to new ideas, particularly if they work:</p>
 <a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png" src="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png" style="width: 600px;" /></a>
-<p>The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and a latent:</p>
+<p>The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and an empty latent image.</p>
 <hr style="height:4px;border-width:0;color:gray;background-color:gray"></section>
 </section>
 <section id="comfyui-tips-and-tricks">
@@ -231,7 +234,7 @@
 <p>The “Unofficial” <a class="reference external" href="https://www.reddit.com/r/comfyui/new/">Sub-Reddit ComfyUI</a> has proven an amazing resource, more than anywhere else, to be honest. Hope to collect some of the “Tips and Tricks” I pick up here.</p>
 <section id="inserting-node-sets">
 <h4>Inserting Node-sets<a class="headerlink" href="#inserting-node-sets" title="Permalink to this heading"></a></h4>
-<p>To insert node sets into a workflow:</p>
+<p>To insert a node-set into a workflow:</p>
 <blockquote>
 <div><blockquote>
 <div><ul class="simple">
@@ -261,11 +264,34 @@
 <p><a class="reference external" href="http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html">PlanetSuzy SD Guide</a></p>
 <hr style="height:8px;border-width:0;color:black;background-color:black"></section>
 </section>
-<section id="key-videos">
-<h2>Key Videos<a class="headerlink" href="#key-videos" title="Permalink to this heading"></a></h2>
+<section id="media-social-and-other">
+<h2>Media - Social and Other<a class="headerlink" href="#media-social-and-other" title="Permalink to this heading"></a></h2>
 <p>ComfyUI - How to use IPAdapter models by the Developer: Matt</p>
 <p>with <strong>Latent Vision</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr style="height:16px;border-width:0;color:black;background-color:black"></section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr style="height:4px;border-width:0;color:black;background-color:gray"><section id="posts-on-subreddit-comfyui">
+<h3>Posts on SubReddit ComfyUI<a class="headerlink" href="#posts-on-subreddit-comfyui" title="Permalink to this heading"></a></h3>
+<p><strong>23.10.07</strong></p>
+<p>Note: <em>removed this post as it was not as good as those by EndangeredAI</em></p>
+<p>Different artists, different solutions. You’re starting this learning process correctly: simple workflows is the way to go. I’m also finding that the simpler the prompts - positive and negative - the more consistent the output.</p>
+<p>I’m be happy to share my workflow (via json-embedded pngs):</p>
+<blockquote>
+<div><p><a class="reference external" href="https://tightbytes.com/art/images/Cui/23/ComfyUI_35.png">https://tightbytes.com/art/images/Cui/23/ComfyUI_35.png</a>
+<a class="reference external" href="https://tightbytes.com/art/images/Cui/23/ComfyUI_40.png">https://tightbytes.com/art/images/Cui/23/ComfyUI_40.png</a></p>
+</div></blockquote>
+<dl class="simple">
+<dt>The workflow in both images is identical: it manages two individuals - well, women… haven’t worked out how to mix it up with multiple figures yet - in a variety of settings and the faces remain the same. In order to have a play with the workflow, you will need to install:</dt><dd><ul class="simple">
+<li><p>Efficiency Nodes</p></li>
+<li><p>Ultimate SD Upscale</p></li>
+<li><p>ComfyUI roop</p></li>
+<li><p>Checkpoint: epiCRealismSin with add_detail and epiCRealismHelper LoRAs, but those are just my preference - any SD1.5 models will do</p></li>
+<li><p>RgThree’s nodes, and probably some other stuff too - CivitAI is a great place to “shop”!  :-)</p></li>
+</ul>
+</dd>
+</dl>
+<p>All of these - and heaps more - can all be installed via ‘Manager’. You will need that, of course.</p>
+<p>For faces, you can always generate and save a face in Comfy, but I’ve found that thispersondoesnotexist generates high-detail faces that work quite well with roop. Your mileage may vary, of course.</p>
+<hr style="height:16px;border-width:0;color:black;background-color:black"></section>
+</section>
 <section id="reminders-to-myself-of-sphinx-stuff">
 <h2>Reminders [to Myself] of Sphinx Stuff<a class="headerlink" href="#reminders-to-myself-of-sphinx-stuff" title="Permalink to this heading"></a></h2>
 <section id="inline-images">
