@@ -3,11 +3,31 @@ SD Civit LoRA
 #############
 
 
-************
-Note to Self
-************
+**************
+Notes on LoRAs
+**************
 
-**Note**: *this information was current in August, 2023. At the rate of development in AI imagining, it'll be obsolete in weeks, in all likelihood. SDXL had just come out, which was going to be a major game-changer*.
+**Aug, 2023**
+
+*This information was current in August, 2023. At the rate of development in AI imagining, it'll be obsolete in weeks, in all likelihood. SDXL had just come out, which was going to be a major game-changer*.
+
+**Oct, 2023**
+
+The whole concept of LoRAs has been set in question (in ComfyUI, at least) with the development of IPAdapter, and its smarter cousin: `IPAdapter-Plus  <https://github.com/cubiq/ComfyUI_IPAdapter_plus>`_. Instead of developing LoRAs to fill a specific need, requiring a fairly beefy GPU with lots of VRAM, **IPAdapter+** can now be cosidered a 'few-image LoRA'.
+
+Initial tests of this technology look quite promising. Here's the base node-set - just need to attach Sampler of choice, VAEDecode and SaveImage:
+
+.. image:: https://www.tightbytes.com/art/images/Cui/23/231014-IPAdapter1.png
+    :width: 800px
+    :alt: IPAdapter Base node-set
+
+...and here's the output using roop:
+
+.. image:: https://www.tightbytes.com/art/images/Cui/23/IPAdapter-Roop01.png
+    :width: 800px
+    :alt: IPAdapter & Roop
+
+Unfortunately, the fact that the woman on the image left appears to be looking at the woman with the marroon top is accidental and not reproduceable.
 
 
 

@@ -49,10 +49,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="AllWorkflows.html">About SD-ComfyUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="About.html">About SD-ComfyUI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SampleImages.html">Sample Images</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">SD Civit LoRA</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#note-to-self">Note to Self</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notes-on-loras">Notes on LoRAs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lora-clothing">LoRA - Clothing</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#dress-victorian">Dress - Victorian</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#renders">Renders</a></li>
@@ -142,9 +142,17 @@
              
   <section id="sd-civit-lora">
 <h1>SD Civit LoRA<a class="headerlink" href="#sd-civit-lora" title="Permalink to this heading"></a></h1>
-<section id="note-to-self">
-<h2>Note to Self<a class="headerlink" href="#note-to-self" title="Permalink to this heading"></a></h2>
-<p><strong>Note</strong>: <em>this information was current in August, 2023. At the rate of development in AI imagining, it’ll be obsolete in weeks, in all likelihood. SDXL had just come out, which was going to be a major game-changer</em>.</p>
+<section id="notes-on-loras">
+<h2>Notes on LoRAs<a class="headerlink" href="#notes-on-loras" title="Permalink to this heading"></a></h2>
+<p><strong>Aug, 2023</strong></p>
+<p><em>This information was current in August, 2023. At the rate of development in AI imagining, it’ll be obsolete in weeks, in all likelihood. SDXL had just come out, which was going to be a major game-changer</em>.</p>
+<p><strong>Oct, 2023</strong></p>
+<p>The whole concept of LoRAs has been set in question (in ComfyUI, at least) with the development of IPAdapter, and its smarter cousin: <a class="reference external" href="https://github.com/cubiq/ComfyUI_IPAdapter_plus">IPAdapter-Plus</a>. Instead of developing LoRAs to fill a specific need, requiring a fairly beefy GPU with lots of VRAM, <strong>IPAdapter+</strong> can now be cosidered a ‘few-image LoRA’.</p>
+<p>Initial tests of this technology look quite promising. Here’s the base node-set - just need to attach Sampler of choice, VAEDecode and SaveImage:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/231014-IPAdapter1.png"><img alt="IPAdapter Base node-set" src="https://www.tightbytes.com/art/images/Cui/23/231014-IPAdapter1.png" style="width: 800px;" /></a>
+<p>…and here’s the output using roop:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/IPAdapter-Roop01.png"><img alt="IPAdapter &amp; Roop" src="https://www.tightbytes.com/art/images/Cui/23/IPAdapter-Roop01.png" style="width: 800px;" /></a>
+<p>Unfortunately, the fact that the woman on the image left appears to be looking at the woman with the marroon top is accidental and not reproduceable.</p>
 </section>
 <section id="lora-clothing">
 <h2>LoRA - Clothing<a class="headerlink" href="#lora-clothing" title="Permalink to this heading"></a></h2>

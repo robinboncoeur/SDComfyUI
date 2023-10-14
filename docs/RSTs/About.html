@@ -66,19 +66,23 @@
 <li class="toctree-l4"><a class="reference internal" href="#character-interaction">6 - Character Interaction</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#nodes-affect-objectives">Nodes affect Objectives</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#node-sets-october-workflow">Node Sets - October Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#node-sets-october-workflow">Node Sets - October Workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nodes-affect-objectives">Nodes affect Objectives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hires-fix">HiRes Fix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ip-adapter">IP Adapter</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#comfyui-tips-and-tricks">ComfyUI Tips and Tricks</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#inserting-node-sets">Inserting Node-sets</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#stable-diffusion-links">Stable Diffusion Links</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#media-social-and-other">Media - Social and Other</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-ipadapter">The IPAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comfyui-nodes-what-they-do">ComfyUI Nodes: What they Do</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#posts-on-subreddit-comfyui">Posts on SubReddit ComfyUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stable-diffusion-links">Stable Diffusion Links</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#reminders-to-myself-of-sphinx-stuff">Reminders [to Myself] of Sphinx Stuff</a><ul>
@@ -127,7 +131,7 @@
 <h1>About SD-ComfyUI<a class="headerlink" href="#about-sd-comfyui" title="Permalink to this heading"></a></h1>
 <section id="foreword">
 <h2>Foreword<a class="headerlink" href="#foreword" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png" src="https://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="http://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png"><img alt="http://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png" src="http://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png" style="width: 600px;" /></a>
 <p>These pages are all about sharing what I’ve sort-of picked up using ComfyUI and Stable Diffusion.</p>
 <p>I have rather gravitated towards ComfyUI as my Stable Diffusion interface because of its flexibility through the use of nodes. These pages reflect my current uderstanding and use of this interface. I still have much to learn and explore in this rapidly expanding world of AI-based graphics. Hope my meanderings prove useful to someone.</p>
 </section>
@@ -204,14 +208,18 @@
 <a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png" src="https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png" style="width: 400px;" /></a>
 <p>Note the hands (rendered 06.Oct.23) - this is currently my main objective: to consistently render non-deformed limbs, or at least be able to fix deformities via inpainting or something like that.</p>
 <p>And yet, in the preceding image, the hands are fine.</p>
+<p><strong>Update: 23.10.08</strong></p>
+<p>The original developer of <a class="reference external" href="https://github.com/ltdrdata/ComfyUI-Manager">ComfyUI’s Manager</a>, ltdrdata, has released a video proposing an <em>automatic</em> fix to hand deformations. The key node-set to manage all this is contained in his Impact Pack.</p>
 </section>
 <section id="character-interaction">
 <h4>6 - Character Interaction<a class="headerlink" href="#character-interaction" title="Permalink to this heading"></a></h4>
-<p>So far (Oct 2023) no real solution has presented itself. Indeed, getting on charcter to show one expression and the other, something else eludes me. I can get ‘selfie’-style shots galore, and, a la rigeur, two individuals ‘discussing’ while each sort of looks off into the distance, ostensibly contemplative, but achieving that is inconsistent and really, how much need is there for that? Getting consistent interaction remains a thorny problem. I currently can have characters holding hands and ‘embrace’ but (at least in SD1.5), a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Observed 04.Oct.23: <em>appears to be a</em> <strong>roop</strong> <em>thing</em>).</p>
+<p>So far (Oct 2023) no real solution has presented itself. Indeed, getting one character to show one expression and the other, something else eludes me. Even getting the characters to look at anything specific is “too-hard basket” stuff at the moment. I can get ‘selfie’-style shots galore, and, a la rigeur, two individuals ‘discussing’ while each sort of looks off into the distance, ostensibly contemplative, but even achieving <strong>that</strong> is inconsistent and really, how much need is there for that sort of pose? Getting consistent interaction remains a thorny problem. I currently can have characters holding hands and ‘embrace’ but (at least in SD1.5), a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Observed 04.Oct.23: <em>appears to be a</em> <strong>roop</strong> <em>thing</em>).</p>
 <hr style="height:8px;border-width:0;color:black;background-color:black"></section>
 </section>
+<section id="node-sets-october-workflow">
+<h3>Node Sets - October Workflow<a class="headerlink" href="#node-sets-october-workflow" title="Permalink to this heading"></a></h3>
 <section id="nodes-affect-objectives">
-<h3>Nodes affect Objectives<a class="headerlink" href="#nodes-affect-objectives" title="Permalink to this heading"></a></h3>
+<h4>Nodes affect Objectives<a class="headerlink" href="#nodes-affect-objectives" title="Permalink to this heading"></a></h4>
 <p><strong>23.10.08</strong></p>
 <p>I am discovering that, almost as much if not more, prompts - and specifically the injudicious, casual use of keyworks in a prompt, will lead to undesireable outcomes in the final image. For example: I had the phrase “lace-up boots” in a prompt. this resulted in short skirts and lace-topped stockings. Removing this brought the skirt hemline down to more desireable levels and a far better image.</p>
 <p>In a good prompt, less is more. Too many words in the negative prompt does absolutely nothing to improve the image and can adversely affect the outcome.</p>
@@ -222,11 +230,21 @@
 <li><p>What the subject is looking at is consistent to the prompt</p></li>
 </ul>
 </div></blockquote>
-<section id="node-sets-october-workflow">
-<h4>Node Sets - October Workflow<a class="headerlink" href="#node-sets-october-workflow" title="Permalink to this heading"></a></h4>
+</section>
+<section id="hires-fix">
+<h4>HiRes Fix<a class="headerlink" href="#hires-fix" title="Permalink to this heading"></a></h4>
+<p><strong>23.10.07</strong></p>
 <p>From Automatic1111, I really missed ‘HiRez-Fix’. Well, got that working, sort-of. I <em>think</em>. Open to new ideas, particularly if they work:</p>
 <a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png" src="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png" style="width: 600px;" /></a>
+<p><strong>23.10.09</strong></p>
+<p>Thanks to <strong>EndangeredAI</strong> and his excellent videos (linked below), I’ve had cause to revise the Sampling section of my workflow. Mind you: what was suggested wasn’t for HiResFix per se, and it was SDXL-based, so I might look at it again</p>
+<p><strong>Nodal Noodles</strong></p>
 <p>The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and an empty latent image.</p>
+</section>
+<section id="ip-adapter">
+<h4>IP Adapter<a class="headerlink" href="#ip-adapter" title="Permalink to this heading"></a></h4>
+<p><strong>23.10.13</strong></p>
+<p>At this juncture, I’m able to render two characters - in this case, women - with consistent faces. Despite the hand fix “module”, perhaps because of the proximity of the characters hands can still turn out a bit messy. I’m cycling through the checkpoints to see if one of them does a better job at this. At the moment (1000h) the <strong>Swizz8-BakedVAE-FP16-Pruned</strong> checkpoint appeared initially to produce the best results. However, with subsequent renders limbs were missing and the figures put themselves in impossible poses.</p>
 <hr style="height:4px;border-width:0;color:gray;background-color:gray"></section>
 </section>
 <section id="comfyui-tips-and-tricks">
@@ -243,32 +261,24 @@
 </ul>
 </div></blockquote>
 <p>Caveat: if enclosed in a grouping box, the box is not saved into the template.</p>
+<p>Note: templates are stored in the browser’s cache. Until recently, there was no GUI-based approach to removing unwanted templates: that has changed.</p>
 </div></blockquote>
 <hr style="height:8px;border-width:0;color:gray;background-color:black"></section>
 </section>
-<section id="stable-diffusion-links">
-<h3>Stable Diffusion Links<a class="headerlink" href="#stable-diffusion-links" title="Permalink to this heading"></a></h3>
-<p><a class="reference external" href="https://www.chub.ai/characters">For Tavern</a></p>
-<p><a class="reference external" href="https://civitai.com/">Civit-AI</a></p>
-<p><a class="reference external" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></p>
-<p><a class="reference external" href="https://github.com/nomic-ai/gpt4all">GPT4All</a></p>
-<p><a class="reference external" href="https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/">SD Tute</a></p>
-<p><a class="reference external" href="https://stable-diffusion-art.com/prompt-guide/">SD Guide</a></p>
-<p><a class="reference external" href="https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745">SD 1.5 Download - needs 16gig card</a></p>
-<p><a class="reference external" href="https://huggingface.co/runwayml/stable-diffusion-v1-5">SD 1.5 Download-HuggingFace</a></p>
-<p><a class="reference external" href="https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true">SD 1.5 Hardware</a></p>
-<p><a class="reference external" href="https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/">NSFW Gen</a></p>
-<p><a class="reference external" href="https://huggingface.co/docs/hub/models-downloading">Downloading from HuggingFace</a></p>
-<p><a class="reference external" href="https://huggingface.co/docs/huggingface_hub/guides/download">More on downloading</a></p>
-<p><a class="reference external" href="https://github.com/huggingface/huggingface_hub">HuggingFace Hub</a></p>
-<p><a class="reference external" href="http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html">PlanetSuzy SD Guide</a></p>
-<hr style="height:8px;border-width:0;color:black;background-color:black"></section>
 </section>
 <section id="media-social-and-other">
 <h2>Media - Social and Other<a class="headerlink" href="#media-social-and-other" title="Permalink to this heading"></a></h2>
-<p>ComfyUI - How to use IPAdapter models by the Developer: Matt</p>
+<section id="the-ipadapter">
+<h3>The IPAdapter<a class="headerlink" href="#the-ipadapter" title="Permalink to this heading"></a></h3>
+<p>How to use the models, by the Developer: Matt</p>
 <p>with <strong>Latent Vision</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr style="height:4px;border-width:0;color:black;background-color:gray"><section id="posts-on-subreddit-comfyui">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+<section id="comfyui-nodes-what-they-do">
+<h3>ComfyUI Nodes: What they Do<a class="headerlink" href="#comfyui-nodes-what-they-do" title="Permalink to this heading"></a></h3>
+<p>Complete Comfy UI SDXL 1.0 Guide Part 1 - Beginner to Pro Series</p>
+<p>with <strong>Endangered AI</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/39k5e5_kfJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr style="height:8px;border-width:0;color:black;background-color:gray"></section>
+<section id="posts-on-subreddit-comfyui">
 <h3>Posts on SubReddit ComfyUI<a class="headerlink" href="#posts-on-subreddit-comfyui" title="Permalink to this heading"></a></h3>
 <p><strong>23.10.07</strong></p>
 <p>Note: <em>removed this post as it was not as good as those by EndangeredAI</em></p>
@@ -290,6 +300,23 @@
 </dl>
 <p>All of these - and heaps more - can all be installed via ‘Manager’. You will need that, of course.</p>
 <p>For faces, you can always generate and save a face in Comfy, but I’ve found that thispersondoesnotexist generates high-detail faces that work quite well with roop. Your mileage may vary, of course.</p>
+</section>
+<section id="stable-diffusion-links">
+<h3>Stable Diffusion Links<a class="headerlink" href="#stable-diffusion-links" title="Permalink to this heading"></a></h3>
+<p><a class="reference external" href="https://www.chub.ai/characters">For Tavern</a></p>
+<p><a class="reference external" href="https://civitai.com/">Civit-AI</a></p>
+<p><a class="reference external" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></p>
+<p><a class="reference external" href="https://github.com/nomic-ai/gpt4all">GPT4All</a></p>
+<p><a class="reference external" href="https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/">SD Tute</a></p>
+<p><a class="reference external" href="https://stable-diffusion-art.com/prompt-guide/">SD Guide</a></p>
+<p><a class="reference external" href="https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745">SD 1.5 Download - needs 16gig card</a></p>
+<p><a class="reference external" href="https://huggingface.co/runwayml/stable-diffusion-v1-5">SD 1.5 Download-HuggingFace</a></p>
+<p><a class="reference external" href="https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true">SD 1.5 Hardware</a></p>
+<p><a class="reference external" href="https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/">NSFW Gen</a></p>
+<p><a class="reference external" href="https://huggingface.co/docs/hub/models-downloading">Downloading from HuggingFace</a></p>
+<p><a class="reference external" href="https://huggingface.co/docs/huggingface_hub/guides/download">More on downloading</a></p>
+<p><a class="reference external" href="https://github.com/huggingface/huggingface_hub">HuggingFace Hub</a></p>
+<p><a class="reference external" href="http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html">PlanetSuzy SD Guide</a></p>
 <hr style="height:16px;border-width:0;color:black;background-color:black"></section>
 </section>
 <section id="reminders-to-myself-of-sphinx-stuff">

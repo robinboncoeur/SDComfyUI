@@ -6,7 +6,7 @@ About SD-ComfyUI
 Foreword
 ********
 
-.. image:: https://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png
+.. image:: http://www.tightbytes.com/art/images/Cui/23/LesAmies08a.png
     :width: 600px
     
 These pages are all about sharing what I've sort-of picked up using ComfyUI and Stable Diffusion.
@@ -121,12 +121,16 @@ Note the hands (rendered 06.Oct.23) - this is currently my main objective: to co
 
 And yet, in the preceding image, the hands are fine.
 
+**Update: 23.10.08**
+
+The original developer of `ComfyUI's Manager <https://github.com/ltdrdata/ComfyUI-Manager>`_, ltdrdata, has released a video proposing an *automatic* fix to hand deformations. The key node-set to manage all this is contained in his Impact Pack.
+
 
 -------------------------
 6 - Character Interaction
 -------------------------
 
-So far (Oct 2023) no real solution has presented itself. Indeed, getting on charcter to show one expression and the other, something else eludes me. I can get 'selfie'-style shots galore, and, a la rigeur, two individuals 'discussing' while each sort of looks off into the distance, ostensibly contemplative, but achieving that is inconsistent and really, how much need is there for that? Getting consistent interaction remains a thorny problem. I currently can have characters holding hands and 'embrace' but (at least in SD1.5), a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Observed 04.Oct.23: *appears to be a* **roop** *thing*).
+So far (Oct 2023) no real solution has presented itself. Indeed, getting one character to show one expression and the other, something else eludes me. Even getting the characters to look at anything specific is "too-hard basket" stuff at the moment. I can get 'selfie'-style shots galore, and, a la rigeur, two individuals 'discussing' while each sort of looks off into the distance, ostensibly contemplative, but even achieving **that** is inconsistent and really, how much need is there for that sort of pose? Getting consistent interaction remains a thorny problem. I currently can have characters holding hands and 'embrace' but (at least in SD1.5), a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Observed 04.Oct.23: *appears to be a* **roop** *thing*).
 
 
 .. raw:: html
@@ -135,9 +139,13 @@ So far (Oct 2023) no real solution has presented itself. Indeed, getting on char
 
 
 
-=======================
+============================
+Node Sets - October Workflow
+============================
+
+-----------------------
 Nodes affect Objectives
-=======================
+-----------------------
 
 **23.10.08**
 
@@ -151,9 +159,11 @@ Challenges I have yet to resolve:
     * What the subject is looking at is consistent to the prompt
  
 
-----------------------------
-Node Sets - October Workflow 
-----------------------------
+---------
+HiRes Fix
+---------
+
+**23.10.07**
 
 From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of. I *think*. Open to new ideas, particularly if they work:
 
@@ -161,12 +171,22 @@ From Automatic1111, I really missed 'HiRez-Fix'. Well, got that working, sort-of
     :width: 600px
 
 
+**23.10.09**
 
+Thanks to **EndangeredAI** and his excellent videos (linked below), I've had cause to revise the Sampling section of my workflow. Mind you: what was suggested wasn't for HiResFix per se, and it was SDXL-based, so I might look at it again
+
+**Nodal Noodles**
 
 The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and an empty latent image.
 
 
+----------
+IP Adapter
+----------
 
+**23.10.13**
+
+At this juncture, I'm able to render two characters - in this case, women - with consistent faces. Despite the hand fix "module", perhaps because of the proximity of the characters hands can still turn out a bit messy. I'm cycling through the checkpoints to see if one of them does a better job at this. At the moment (1000h) the **Swizz8-BakedVAE-FP16-Pruned** checkpoint appeared initially to produce the best results. However, with subsequent renders limbs were missing and the figures put themselves in impossible poses. 
 
 
 
@@ -194,11 +214,78 @@ To insert a node-set into a workflow:
     * In the target workflow, [RtClick] -> 'Node Templates' (select the node set)
  
  Caveat: if enclosed in a grouping box, the box is not saved into the template.
+ 
+ Note: templates are stored in the browser's cache. Until recently, there was no GUI-based approach to removing unwanted templates: that has changed.
 
 
 .. raw:: html
    
    <hr style="height:8px;border-width:0;color:gray;background-color:black">
+
+
+
+
+************************
+Media - Social and Other
+************************
+
+=============
+The IPAdapter
+=============
+
+How to use the models, by the Developer: Matt
+
+with **Latent Vision**
+
+.. raw:: html
+   
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+===========================
+ComfyUI Nodes: What they Do
+===========================
+
+Complete Comfy UI SDXL 1.0 Guide Part 1 - Beginner to Pro Series
+
+with **Endangered AI**
+
+.. raw:: html
+   
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/39k5e5_kfJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:black;background-color:gray">
+
+
+
+==========================
+Posts on SubReddit ComfyUI
+==========================
+
+**23.10.07**
+
+Note: *removed this post as it was not as good as those by EndangeredAI*
+
+Different artists, different solutions. You're starting this learning process correctly: simple workflows is the way to go. I'm also finding that the simpler the prompts - positive and negative - the more consistent the output.
+
+I'm be happy to share my workflow (via json-embedded pngs):
+
+    https://tightbytes.com/art/images/Cui/23/ComfyUI_35.png
+    https://tightbytes.com/art/images/Cui/23/ComfyUI_40.png
+
+The workflow in both images is identical: it manages two individuals - well, women... haven't worked out how to mix it up with multiple figures yet - in a variety of settings and the faces remain the same. In order to have a play with the workflow, you will need to install:
+    * Efficiency Nodes
+    * Ultimate SD Upscale
+    * ComfyUI roop
+    * Checkpoint: epiCRealismSin with add_detail and epiCRealismHelper LoRAs, but those are just my preference - any SD1.5 models will do
+    * RgThree's nodes, and probably some other stuff too - CivitAI is a great place to "shop"!  :-)
+
+All of these - and heaps more - can all be installed via 'Manager'. You will need that, of course.
+
+For faces, you can always generate and save a face in Comfy, but I've found that thispersondoesnotexist generates high-detail faces that work quite well with roop. Your mileage may vary, of course.
 
 
 
@@ -235,57 +322,6 @@ Stable Diffusion Links
 `PlanetSuzy SD Guide <http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html>`_
 
 
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:black;background-color:black">
-
-
-
-
-************************
-Media - Social and Other
-************************
-
-ComfyUI - How to use IPAdapter models by the Developer: Matt
-
-with **Latent Vision**
-
-.. raw:: html
-   
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-.. raw:: html
-   
-   <hr style="height:4px;border-width:0;color:black;background-color:gray">
-
-
-
-==========================
-Posts on SubReddit ComfyUI
-==========================
-
-**23.10.07**
-
-Note: *removed this post as it was not as good as those by EndangeredAI*
-
-Different artists, different solutions. You're starting this learning process correctly: simple workflows is the way to go. I'm also finding that the simpler the prompts - positive and negative - the more consistent the output.
-
-I'm be happy to share my workflow (via json-embedded pngs):
-
-    https://tightbytes.com/art/images/Cui/23/ComfyUI_35.png
-    https://tightbytes.com/art/images/Cui/23/ComfyUI_40.png
-
-The workflow in both images is identical: it manages two individuals - well, women... haven't worked out how to mix it up with multiple figures yet - in a variety of settings and the faces remain the same. In order to have a play with the workflow, you will need to install:
-    * Efficiency Nodes
-    * Ultimate SD Upscale
-    * ComfyUI roop
-    * Checkpoint: epiCRealismSin with add_detail and epiCRealismHelper LoRAs, but those are just my preference - any SD1.5 models will do
-    * RgThree's nodes, and probably some other stuff too - CivitAI is a great place to "shop"!  :-)
-
-All of these - and heaps more - can all be installed via 'Manager'. You will need that, of course.
-
-For faces, you can always generate and save a face in Comfy, but I've found that thispersondoesnotexist generates high-detail faces that work quite well with roop. Your mileage may vary, of course.
 
 
 .. raw:: html
