@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress in ComfyUI &mdash; SDComfyUI v0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="canonical" href="docs/RSTs/Progress.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sample Images" href="SampleImages.html" />
+    <link rel="prev" title="About SD-ComfyUI" href="About.html" />
+    <link href="../_static/css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: white" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            SDComfyUI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="About.html">About SD-ComfyUI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Progress in ComfyUI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#background">Background</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#first-efforts">First Efforts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#in-a1111">In A1111</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#node-based-interface-comfyui">Node-based Interface ComfyUI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#objective-breakdown">Objective Breakdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#persistent-characters">2 - Persistent Characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#multiple-characters">3 - Multiple Characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unique-reproduceable-characters">4 - Unique, reproduceable characters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#minimal-or-no-deformities">5 - Minimal, or no Deformities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#character-interaction">6 - Character Interaction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#node-sets-october-workflow">Node Sets - October Workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nodes-affect-objectives">Nodes affect Objectives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hires-fix">HiRes Fix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ip-adapter">IP Adapter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#animation-october-workflow">Animation - October Workflow</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#anim-begins">23.10.24 Anim-Begins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rooping-flowframes">23.10.27 Rooping -FlowFrames</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#comfyui-tips-and-tricks">ComfyUI Tips and Tricks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#inserting-node-sets">Inserting Node-sets</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#media-social-and-other">Media - Social and Other</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-ipadapter">The IPAdapter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comfyui-nodes-what-they-do">ComfyUI Nodes: What they Do</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#posts-on-subreddit-comfyui">Posts on SubReddit ComfyUI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#posts-on-youtube">Posts on YouTube</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SampleImages.html">Sample Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SDCivitLoRAs.html">SD Civit LoRA</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SDComfyUI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Progress in ComfyUI</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/RSTs/Progress.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="progress-in-comfyui">
+<h1>Progress in ComfyUI<a class="headerlink" href="#progress-in-comfyui" title="Permalink to this heading"></a></h1>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading"></a></h2>
+<section id="first-efforts">
+<h3>First Efforts<a class="headerlink" href="#first-efforts" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/Charlotte.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/Charlotte.png" src="https://www.tightbytes.com/art/images/Cui/23/Charlotte.png" style="width: 400px;" /></a>
+<p>Quick history:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>MidJourney… very quickly created characters such as Charlotte. It was so satisfying that I paid for a subscription. However, the characters all began to look very similar.</p></li>
+<li><p>LeonardoAI… Subsequently, this produced a significantly broader variety of individual faces. The key character ‘Victoria’ evolved in Leonardo.</p></li>
+<li><p>Discovered Stable Diffusion and Automatic1111, which opened the door to limitless image/character creation (including NSFW). For this, however, I needed a more powerful graphics card.</p></li>
+<li><p>Purchased the NVidia 3070 (8gig VRAM) card. Note: this card had <em>only</em> 8gig of VRAM, where the 3060 had 12, which would have made a better choice.</p></li>
+<li><p>Downloaded and (via Anaconda) installed Automatic1111 web-UI.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="in-a1111">
+<h3>In A1111<a class="headerlink" href="#in-a1111" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/Staci-CafeB1.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/Staci-CafeB1.png" src="https://www.tightbytes.com/art/images/Cui/23/Staci-CafeB1.png" style="width: 600px;" /></a>
+<p>The main objectives:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>1-to create as realistic (photo-real) characters as possible</p></li>
+<li><p>2-create <em>consistent</em> characters (back to MidJourney for this)</p></li>
+<li><p>3-have multiple characters in a scene</p></li>
+<li><p>4-have those multiple characters be unique (different from each other)</p></li>
+<li><p>5-have those multiple characters be reproduceable</p></li>
+</ul>
+</div></blockquote>
+<p>Was able to achieve 1, 2, 3 and 4. Installed but did not invoke roop - did all Faceswapping in MidJourney.</p>
+<p>Discovered ComfyUI, and migrated all activities to ComfyUI.</p>
+</section>
+</section>
+<section id="node-based-interface-comfyui">
+<h2>Node-based Interface ComfyUI<a class="headerlink" href="#node-based-interface-comfyui" title="Permalink to this heading"></a></h2>
+<section id="objective-breakdown">
+<h3>Objective Breakdown<a class="headerlink" href="#objective-breakdown" title="Permalink to this heading"></a></h3>
+<p>I installed ComfyUI in the recommended Python3.10.6 environment which eliminated many obscure Python error messages no one seemed to have an answer to. I reinstalled A1111 the same way: bog-standard Python3.10.6 venv. All models are currently saved in the A1111 folder. As of September, 2023, have cancelled all subscriptions to Leonardo and MidJourney: roop is very straightforward and easy to accomplish in ComfyUI.</p>
+<p>The main objectives, current as of 7th Oct, 2023, are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>1-to create as realistic (photo-real) characters as possible <strong>[DONE]</strong></p></li>
+<li><p>2-create <em>persistent</em> characters <strong>[DONE using roop]</strong></p></li>
+<li><p>3-have multiple characters in a scene <strong>[DONE]</strong></p></li>
+<li><p>4-have those multiple characters be unique and reproduceable <strong>[DONE dual roop]</strong></p></li>
+<li><p>5-characters will be anatomically correct (minimal deformities)</p></li>
+<li><p>6-have those multiple characters interact (more than just staring blankly)</p></li>
+<li><p>7-clothe the characters differently</p></li>
+<li><p>8-develop poses / LoRA / LyCORIS etc</p></li>
+</ul>
+</div></blockquote>
+<section id="persistent-characters">
+<h4>2 - Persistent Characters<a class="headerlink" href="#persistent-characters" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/Charlotte-Robyn-Library.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/Charlotte-Robyn-Library.png" src="https://www.tightbytes.com/art/images/Cui/23/Charlotte-Robyn-Library.png" style="width: 400px;" /></a>
+<p>The first characters (Charlotte, Victoria, Mabel, etc) were created for an odd little novella I was writing, one that has sort-of stalled as what I started writing seemed, with time, a bit trite and uninspired. They were ‘created’ in MidJourney and later LeonardoAI, satisfying the ‘photoreal’ requirement easily. I’ve since gone to using <a class="reference external" href="https://thispersondoesnotexist.com">This Person Does Not Exist</a> for reference faces as the features are a lot less airbrushed and produce far more realistic-looking individuals using roop. There is  one carefully GIMPed real person reference image for a persona in some of my images.</p>
+</section>
+<section id="multiple-characters">
+<h4>3 - Multiple Characters<a class="headerlink" href="#multiple-characters" title="Permalink to this heading"></a></h4>
+<p>The length and detail of the prompt very much affects how consistently I can get two characters to appear. Too much emphasis on a detail results in one person to appear instead of two, regardless of whether I enclose the phrase ‘2 women’ in parentheses. Removing detail appears to resolve that problem.</p>
+</section>
+<section id="unique-reproduceable-characters">
+<h4>4 - Unique, reproduceable characters<a class="headerlink" href="#unique-reproduceable-characters" title="Permalink to this heading"></a></h4>
+<p>Generally speaking, the same conditions that result in only one figure appearing where two were asked for account for roop working consistently. I’ve had Comfy assigned my first face to a tertiary individual in the image (very much a background figure) and so the first character receives the second face and none is assigned to the second charcter at all:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/Cui-3rdChar.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/Cui-3rdChar.png" src="https://www.tightbytes.com/art/images/Cui/23/Cui-3rdChar.png" style="width: 400px;" /></a>
+<p>In this image, the first face was given to the obscure person on the couch on the left of the picture, the second figure - in the far-too-short skirt - was given the second face by roop, and the third figure was whatever Comfy / SD had in mind. Note: this brings up another interesting challenge… appropriate attire. Unfortunately, prompting has little effect on the length of skirts or the decollette of the neckline.</p>
+<p>So, whilst I do feel this objective has been accomplished, getting consistent results very much depends on shorter, concise prompts. Details may need to come from LoRAs or - newer tech for artists this October - IP Adapters.</p>
+</section>
+<section id="minimal-or-no-deformities">
+<h4>5 - Minimal, or no Deformities<a class="headerlink" href="#minimal-or-no-deformities" title="Permalink to this heading"></a></h4>
+<p>While for the most part, facial distortion appears to have been resolved - with the exception of when the faces are in close proximity to each other - hand deformities unfortunately, frustratingly persist:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png" src="https://www.tightbytes.com/art/images/Cui/23/EnBateau01.png" style="width: 400px;" /></a>
+<p>Note the hands (rendered 06.Oct.23) - this is currently my main objective: to consistently render non-deformed limbs, or at least be able to fix deformities via inpainting or something like that.</p>
+<p>And yet, in the preceding image, the hands are fine.</p>
+<p><strong>Update: 23.10.08</strong></p>
+<p>The original developer of <a class="reference external" href="https://github.com/ltdrdata/ComfyUI-Manager">ComfyUI’s Manager</a>, ltdrdata, has released a video proposing an <em>automatic</em> fix to hand deformations. The key node-set to manage all this is contained in his Impact Pack.</p>
+</section>
+<section id="character-interaction">
+<h4>6 - Character Interaction<a class="headerlink" href="#character-interaction" title="Permalink to this heading"></a></h4>
+<p>So far (Oct 2023) no real solution has presented itself. Indeed, getting one character to show one expression and the other, something else eludes me. Even getting the characters to look at anything specific is “too-hard basket” stuff at the moment. I can get ‘selfie’-style shots galore, and, a la rigeur, two individuals ‘discussing’ while each sort of looks off into the distance, ostensibly contemplative, but even achieving <strong>that</strong> is inconsistent and really, how much need is there for that sort of pose? Getting consistent interaction remains a thorny problem. I currently can have characters holding hands and ‘embrace’ but (at least in SD1.5), a more intimate display of affection - i.e., a kiss - tends to distort the faces near the contact point. (Observed 04.Oct.23: <em>appears to be a</em> <strong>roop</strong> <em>thing</em>).</p>
+<hr style="height:8px;border-width:0;color:black;background-color:black"></section>
+</section>
+<section id="node-sets-october-workflow">
+<h3>Node Sets - October Workflow<a class="headerlink" href="#node-sets-october-workflow" title="Permalink to this heading"></a></h3>
+<section id="nodes-affect-objectives">
+<h4>Nodes affect Objectives<a class="headerlink" href="#nodes-affect-objectives" title="Permalink to this heading"></a></h4>
+<p><strong>23.10.08</strong></p>
+<p>I am discovering that, almost as much if not more, prompts - and specifically the injudicious, casual use of keyworks in a prompt, will lead to undesireable outcomes in the final image. For example: I had the phrase “lace-up boots” in a prompt. this resulted in short skirts and lace-topped stockings. Removing this brought the skirt hemline down to more desireable levels and a far better image.</p>
+<p>In a good prompt, less is more. Too many words in the negative prompt does absolutely nothing to improve the image and can adversely affect the outcome.</p>
+<p>Challenges I have yet to resolve:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Camera distance from my subject</p></li>
+<li><p>What the subject is looking at is consistent to the prompt</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="hires-fix">
+<h4>HiRes Fix<a class="headerlink" href="#hires-fix" title="Permalink to this heading"></a></h4>
+<p><strong>23.10.07</strong></p>
+<p>From Automatic1111, I really missed ‘HiRez-Fix’. Well, got that working, sort-of. I <em>think</em>. Open to new ideas, particularly if they work:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png"><img alt="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png" src="https://www.tightbytes.com/art/images/Cui/23/231007-HiResFix.png" style="width: 600px;" /></a>
+<p><strong>23.10.09</strong></p>
+<p>Thanks to <strong>EndangeredAI</strong> and his excellent videos (linked below), I’ve had cause to revise the Sampling section of my workflow. Mind you: what was suggested wasn’t for HiResFix per se, and it was SDXL-based, so I might look at it again</p>
+<p><strong>Nodal Noodles</strong></p>
+<p>The Efficiency Pack clears up a lot of noodle mess. It includes one LoRA and an empty latent image.</p>
+</section>
+<section id="ip-adapter">
+<h4>IP Adapter<a class="headerlink" href="#ip-adapter" title="Permalink to this heading"></a></h4>
+<p><strong>23.10.13</strong></p>
+<p>At this juncture, I’m able to render two characters - in this case, women - with consistent faces. Despite the hand fix “module”, perhaps because of the proximity of the characters hands can still turn out a bit messy. I’m cycling through the checkpoints to see if one of them does a better job at this. At the moment (1000h) the <strong>Swizz8-BakedVAE-FP16-Pruned</strong> checkpoint appeared initially to produce the best results. However, with subsequent renders limbs were missing and the figures put themselves in impossible poses.</p>
+<hr style="height:4px;border-width:0;color:gray;background-color:gray"></section>
+</section>
+<section id="animation-october-workflow">
+<h3>Animation - October Workflow<a class="headerlink" href="#animation-october-workflow" title="Permalink to this heading"></a></h3>
+<section id="anim-begins">
+<h4>23.10.24 Anim-Begins<a class="headerlink" href="#anim-begins" title="Permalink to this heading"></a></h4>
+<p>Animating my figures wasn’t even on the radar, for some reason I thought I’d have a go. It involved installing the <strong>AnimateDiff-Evolved</strong> node sets and a whole bunch of models. One can create GIFs or MP4s. The frame count limit is 32 unless you add the Uniform Context Options node.</p>
+</section>
+<section id="rooping-flowframes">
+<h4>23.10.27 Rooping -FlowFrames<a class="headerlink" href="#rooping-flowframes" title="Permalink to this heading"></a></h4>
+<p>For the video to actually be smooth, I bring the MP4s into a programme - only available for Windows, unfortunately - called “FlowFrames”. It does a decent job interpolating those missing frames, creating very viewable video and even a decent gif, by converting <strong>that</strong> GIF:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/Vid/Dreaming-05.gif"><img alt="https://www.tightbytes.com/art/images/Cui/23/Vid/Dreaming-05.gif" src="https://www.tightbytes.com/art/images/Cui/23/Vid/Dreaming-05.gif" style="width: 400px;" /></a>
+<p>to <em>this</em>:</p>
+<a class="reference internal image-reference" href="https://www.tightbytes.com/art/images/Cui/23/Vid/MesReves-3.gif"><img alt="https://www.tightbytes.com/art/images/Cui/23/Vid/MesReves-3.gif" src="https://www.tightbytes.com/art/images/Cui/23/Vid/MesReves-3.gif" style="width: 400px;" /></a>
+<p>The video was 4x frame-interpolated.</p>
+<iframe width="560" height="560" src="https://tightbytes.com/art/images/Cui/23/Vid/Patr014.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>The figures seem to have come to life. So far, of course, I’ve only featured one figure at a time, which may have an impact of figure accuracy. Interestingly, all anatomy issues that were produced in still image ‘renders’ have magically resolved: no extra - or missing - fingers or limbs or anything of the sort. Again, perhaps that’s due to it only being one figure.</p>
+<hr style="height:8px;border-width:0;color:gray;background-color:black"></section>
+</section>
+</section>
+<section id="comfyui-tips-and-tricks">
+<h2>ComfyUI Tips and Tricks<a class="headerlink" href="#comfyui-tips-and-tricks" title="Permalink to this heading"></a></h2>
+<p>The “Unofficial” <a class="reference external" href="https://www.reddit.com/r/comfyui/new/">Sub-Reddit ComfyUI</a> has proven an amazing resource, more than anywhere else, to be honest. Hope to collect some of the “Tips and Tricks” I pick up here.</p>
+<section id="inserting-node-sets">
+<h3>Inserting Node-sets<a class="headerlink" href="#inserting-node-sets" title="Permalink to this heading"></a></h3>
+<p>To insert a node-set into a workflow:</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><p><strong>save</strong> the node set to insert by highlighing the nodes, and [RtClick] -&gt; ‘Save Selected as Template’</p></li>
+<li><p>In the target workflow, [RtClick] -&gt; ‘Node Templates’ (select the node set)</p></li>
+</ul>
+</div></blockquote>
+<p>Caveat: if enclosed in a grouping box, the box is not saved into the template.</p>
+<p>Note: templates are stored in the browser’s cache. Until recently, there was no GUI-based approach to removing unwanted templates: that has changed.</p>
+</div></blockquote>
+<hr style="height:8px;border-width:0;color:gray;background-color:black"></section>
+</section>
+<section id="media-social-and-other">
+<h2>Media - Social and Other<a class="headerlink" href="#media-social-and-other" title="Permalink to this heading"></a></h2>
+<section id="the-ipadapter">
+<h3>The IPAdapter<a class="headerlink" href="#the-ipadapter" title="Permalink to this heading"></a></h3>
+<p>How to use the models, by the Developer: Matt</p>
+<p>with <strong>Latent Vision</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7m9ZZFU3HWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
+<section id="comfyui-nodes-what-they-do">
+<h3>ComfyUI Nodes: What they Do<a class="headerlink" href="#comfyui-nodes-what-they-do" title="Permalink to this heading"></a></h3>
+<p>Complete Comfy UI SDXL 1.0 Guide Part 1 - Beginner to Pro Series</p>
+<p>with <strong>Endangered AI</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/39k5e5_kfJ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr style="height:8px;border-width:0;color:black;background-color:gray"></section>
+<section id="posts-on-subreddit-comfyui">
+<h3>Posts on SubReddit ComfyUI<a class="headerlink" href="#posts-on-subreddit-comfyui" title="Permalink to this heading"></a></h3>
+<p><strong>23.10.07</strong></p>
+<p>Note: <em>removed this post as it was not as good as those by EndangeredAI</em></p>
+<p>Different artists, different solutions. You’re starting this learning process correctly: simple workflows is the way to go. I’m also finding that the simpler the prompts - positive and negative - the more consistent the output.</p>
+<p>I’m be happy to share my workflow (via json-embedded pngs):</p>
+<blockquote>
+<div><p><a class="reference external" href="https://tightbytes.com/art/images/Cui/23/ComfyUI_35.png">https://tightbytes.com/art/images/Cui/23/ComfyUI_35.png</a>
+<a class="reference external" href="https://tightbytes.com/art/images/Cui/23/ComfyUI_40.png">https://tightbytes.com/art/images/Cui/23/ComfyUI_40.png</a></p>
+</div></blockquote>
+<dl class="simple">
+<dt>The workflow in both images is identical: it manages two individuals - well, women… haven’t worked out how to mix it up with multiple figures yet - in a variety of settings and the faces remain the same. In order to have a play with the workflow, you will need to install:</dt><dd><ul class="simple">
+<li><p>Efficiency Nodes</p></li>
+<li><p>Ultimate SD Upscale</p></li>
+<li><p>ComfyUI roop</p></li>
+<li><p>Checkpoint: epiCRealismSin with add_detail and epiCRealismHelper LoRAs, but those are just my preference - any SD1.5 models will do</p></li>
+<li><p>RgThree’s nodes, and probably some other stuff too - CivitAI is a great place to “shop”!  :-)</p></li>
+</ul>
+</dd>
+</dl>
+<p>All of these - and heaps more - can all be installed via ‘Manager’. You will need that, of course.</p>
+<p>For faces, you can always generate and save a face in Comfy, but I’ve found that thispersondoesnotexist generates high-detail faces that work quite well with roop. Your mileage may vary, of course.</p>
+</section>
+<section id="posts-on-youtube">
+<h3>Posts on YouTube<a class="headerlink" href="#posts-on-youtube" title="Permalink to this heading"></a></h3>
+<p><strong>23.10.27</strong></p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=1fWZNECdN9Y">ComfyUI &amp; Animate Diff 📕 Guide</a> by PromptMuse.</p>
+<p>Excellent video, PromptMuse! Thank you for it.</p>
+<p>I completely agree with the hardware suggestion you made about having a 12 gig VRAM graphics card. I have this older PC (an i5 or i7) into which I put a 3070 NVidia card… poor choice, as it only has 8 gig VRAM. One of the things I wanted to achieve was interaction between figures in my little scenes. I had roop worked out and so had persistent characters, but getting the figures to do much more than selfie-smile or stare catatonically past each other wasn’t happening. To that end, I was hoping that with video2video I could finally “compel” that dialogue, perhaps even facial expressions reflecting involvement in that scene. With an 8 gig card, I have been able to achieve some things. If you are interested, I’d be happy to share my workflow, one that can achieve remarkable results with an 8 gig card:</p>
+<p><a class="reference external" href="https://www.tightbytes.com/art/images/Cui/23/Vid/Patr014.mp4">https://www.tightbytes.com/art/images/Cui/23/Vid/Patr014.mp4</a></p>
+<p>BTW, I use <a class="reference external" href="https://thispersondoesnotexist.com/">https://thispersondoesnotexist.com/</a> for original, high-quality “real-people” faces… roop likes them better than AI faces made in MidJourney or LeonardoAI. And, in order to get a smoother video, you can use FlowFrames (Windows only) to get that result.</p>
+<p>End of the day, I suppose I’ll just have to save up for the 3060 card, as it does have 12 gig, in order to do vi2vid, however. All the best with your channel. I have subscribed!</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="About.html" class="btn btn-neutral float-left" title="About SD-ComfyUI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SampleImages.html" class="btn btn-neutral float-right" title="Sample Images" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Robyn.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

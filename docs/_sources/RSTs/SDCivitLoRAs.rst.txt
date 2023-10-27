@@ -29,6 +29,12 @@ Initial tests of this technology look quite promising. Here's the base node-set 
 
 Unfortunately, the fact that the woman on the image left appears to be looking at the woman with the marroon top is accidental and not reproduceable.
 
+.. image:: https://www.tightbytes.com/art/images/Cui/23/231014-TweakIPA1.png
+    :width: 800px
+    :alt: IPAdapter & Roop
+
+
+
 
 
 ***************

@@ -10,6 +10,7 @@ SD and ComfyUI
 
    
    RSTs/About.rst
+   RSTs/Progress.rst
    RSTs/SampleImages.rst
    RSTs/SDCivitLoRAs.rst
 
