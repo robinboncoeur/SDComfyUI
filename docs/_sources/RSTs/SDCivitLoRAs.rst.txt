@@ -33,13 +33,692 @@ Unfortunately, the fact that the woman on the image left appears to be looking a
     :width: 800px
     :alt: IPAdapter & Roop
 
+.. raw:: html
+   
+   <hr style="height:20px;border-width:0;color:blue;background-color:purple">
 
 
 
 
-***************
-LoRA - Clothing
-***************
+
+
+
+
+
+
+
+
+**************
+LoRA - Dresses
+**************
+
+==========================
+Dress - Ao Dai 
+==========================
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/cd-aodai.jpg
+            :width: 580px
+            :alt: Ao Dai
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **aodai**
+        
+        * `Ao Dai: Specs <https://www.tightbytes.com/art/images/Csp/lo-aodai.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Ao Dai <https://civitai.com/models/141012/aodaisdlifechiasedammev30>`_ by chiasedamme
+
+        Artist's Notes:
+            * Model Lora aoDaiVietnameseLong_v10 is a version of a model designed for the recognition and classification of traditional long Vietnamese ao dai. This model has been developed to identify and categorize different styles of Vietnamese ao dai based on images. It can classify Vietnamese ao dai based on factors such as style, color, patterns, and other details.
+            * Model Lora aoDaiVietnameseLong_v10 has been trained on a large dataset containing thousands of images of traditional long Vietnamese ao dai from various angles and styles. Through the training process, the model has learned important characteristics of Vietnamese ao dai and has the ability to recognize different patterns and classify them into corresponding labels.
+            * With Model Lora aoDaiVietnameseLong_v10, you can utilize it in applications related to Vietnamese ao dai, such as:
+            * Ao dai classification: The model can determine the style, color, and patterns of Vietnamese ao dai based on images. This can support automated classification, sorting, and searching of ao dai in online stores or personal collections.
+            * Style suggestions: If you want to create a diverse collection of Vietnamese ao dai, the model can suggest different ao dai patterns based on an input image. This can help users explore and choose suitable ao dai styles according to their preferences and personal style.
+            * Fashion advice: Model Lora aoDaiVietnameseLong_v10 can be used in fashion advisory applications, where it can evaluate a user's ao dai image and recommend ao dai styles that complement their body shape, skin color, and personal preferences.
+            * Model Lora aoDaiVietnameseLong_v10 brings convenience in recognizing and classifying traditional long Vietnamese ao dai, contributing to the exploration and preservation of Vietnam's traditional culture in the fashion industry.
+
+
+
+
+
+
+
+==========================
+Dress - Basque (Blue Hime) 
+==========================
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/yu-blueHime.jpg
+            :width: 580px
+            :alt: Blue Hime Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **Blue Hime Basque** - **frilled dress**
+        
+        * `Blue Hime: Specs <https://www.tightbytes.com/art/images/Csp/lo-blueHime.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Blue Hime <https://civitai.com/models/98765/blue-hime-basque>`_ by tutuhuatuhua
+
+        Artist's Notes:
+            * tag：Blue Hime Basque, frilled dress
+            * If you like my model, please comment, download, click on the red heart. * If the downloads and hearts are too low, the new model does not want to continue to be made. Stock models may not be issued anymore.
+            
+        Example Prompt by YL:
+            * (photo-realistic, ultra realistic 8k CG:1.2), perfect artwork, delicate pattern, (best quality, intricate detail, extremely intricate:1.2), 70mm telephoto lens, ------------------------------- (ulzzang6500V), (idol),(detailed clothes features), Exquisite Makeup, the pose, (1girl,solo:1.2), woman, girly, bright eyes, (detailed eyes), (wet skin,nsfw:1.1), (very long hair, Floating hair, Flamboyant hair, wind,gale, hair accessories:1.4), ------------------------------- (silk Ribbon in front:1.3), earrings, filigree, detached sleeves, wide sleeves, (see through clothes, translucent clothes, armlet:1.2), (revealing clothes), jewelry, (cleavage, bare shoulder, strapless, Simple Choker, tube dress, no bra:1.1), ------------------------------- (horizon, longView, distant, Leaves and plant in front:1.2), simple background, ------------------------------- (pov legs, Blue Hime Basque, frilled dress:1.3), [full body], <lora:Blue Hime Basque_20230627170534:1:fz1>
+        
+-------
+Renders
+-------
+
+by YL:
+
+.. image:: https://www.tightbytes.com/art/images/Cvt/yl-blueHime.jpg
+    :width: 400px
+
+My Notes:
+    * 
+    * 
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+=====================
+Dress - Business Suit
+=====================
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/aix-busiSuit.jpg
+            :width: 580px
+            :alt: Business Suit
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: (*no keywords*) Possible tags: **suit** - **black trousers**
+        
+        * `Business Suit: Specs <https://www.tightbytes.com/art/images/Csp/lo-busiSuit.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Business Suit <https://civitai.com/models/125089/suitol-aix>`_ by AIXXX
+
+        Artist's Note:
+            * *This model was created to facilitate formal suits needed for formal occasions, if you have created any good images using this model that bring you convenience, please consider sharing them by leaving a comment. Thank you very much!*
+            * The main colors of the suit are black and white.
+            * This model is suitable for most business scenarios, I believe that the standard suit can help you.
+            * It can be a separate white/black shirt, or a separate black suit, or it can be a combination of different outfits.
+            * This model is recommended to match the Majic realistic series, and the effect is better with the good film wind lora.
+            * You can use keywords to control some scene changes, such as a solid color background for professional photography, or other scene uses.
+            * Recommended parameter setting: iteration steps 25-35, amplification algorithm: 4x-UltraSharp, redrawing range 0.1-0.3 (more than picture effect decline), it is recommended to open ADetailer, Majic model is not recommended to open face repair.
+            
+Artist's Note (cont):
+
+    * Because the whole network has not yet seen a similar formal professional clothing Lora, so specially produced and shared to everyone, I hope to bring convenience to you, the model still needs to be upgraded, like friends please leave a like, share your work!
+
+Prompt: (realistic:1.5),(masterpiece, Extremely detailed CG unity 8k wallpaper, best quality, highres:1.2), (ultra_detailed, UHD:1.2), (pixiv:1.3), distinct, detailed face, a girl, <lora:suit-AIX:0.6>, black trousers, solid background, suit,
+
+My Notes:
+    * *Left a comment on CivitAI page*: Truly a lovely suit, very elegant. Unfortunately, it affects my roop - changes the face. Other outfits don't appear to have this problem. Is there a CLIP-skip setting to invoke or some other setting I need to use? BTW, I'm in ComfyUI, not A1111.
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+=============
+Dress - Cream
+=============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Md/creamDress.png
+            :width: 580px
+            :alt: Cream Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **Cream dress_ov** - **A long-sleeved V-neck women's suit**
+        
+        * `Cream Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-crmDress.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Cream Dress <https://civitai.com/models/70039/cream-dresssafetensors>`_ by sunward8888566
+
+        Artist's Note:
+            * This is a cream white long-sleeved V-neck women's suit
+            * Prompt: Cream dress_ov, Young Russian female model in A long-sleeved V-neck women's suit, skirt posing in front of the beach, gentle and elegant oriental temperament, looking thin, full body portrait, sunny day, photography-quality lighting effects, real scenes, <lora:Cream dress_oV_2023 :1>
+            * negative: Backlight, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2). (normal quality:2), lowres, normal quality,((monochrome)), ((grayscale))，skin spots, acnes, skin blemishes, age spot,(outdoor:l.6), manboobs, backlight,(ugly:1.331)，(duplicate:1.331),(morbid:1.21)，(mutilated:1.21),(tranny:1.331), mutated hands, (poorly drawn hands:1.331), blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331). more than 2 nipples:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051). (too many fingers:1.61051), (unclear eyes:1.331), bad hands, missing fingers, extra digit, (futa:1.1), bad body, NG_DeepNegative_V1_75T, pubic hair, glans, missing feet，(wrinkled, dirty, uneven, unironed)
+
+My Notes:
+    * Excellent apparel, fits perfectly to any size model
+    * [Q]: is this Russian chic?
+    
+
+-------------
+Cream Renders
+-------------
+
+❤️ - this one adorns the girls consistently, and - for the most part - modestly. Thanks, SunWard.
+
+.. image:: https://www.tightbytes.com/art/images/Cui/23/Vid/loCream01.gif
+    :width: 360px
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+
+=========================
+Dress - Dirndl (Bavarian) 
+=========================
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/edg-bavDirndl.jpg
+            :width: 580px
+            :alt: Bavarian Dirndl
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **dirndl** - **traditional bavarian dress**, **wearing a dirndl**
+        
+        * `Bavarian Dirndl: Specs <https://www.tightbytes.com/art/images/Csp/lo-bavDirndl.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Bavarian Dirndl <https://civitai.com/models/53825/bavarian-dirndl>`_ by edg
+
+        Artist's Note:
+            * Bavarian Dirndl
+            * Die Deutschen sind dafür bekannt, dass sie sehr gut Englisch sprechen, daher würde ich mir normalerweise nicht die Mühe machen, eine Übersetzung anzufertigen.
+            * Aber dies ist etwas Besonderes.
+            * Dirndlkleider sind in der ganzen Welt bekannt und repräsentieren die deutsche, genauer gesagt die bayerische Traditionskultur. Ich wünsche Ihnen, dass Sie diese LoRA nutzen und viel Spaß damit haben!
+            * 
+            * 
+
+Prompt: 
+    * Masterpiece, absurdres, fine detail, HDR, highly detailed face and eyes, photorealistic, <lora:dirndl:0.75>, dirndl, a woman in traditional bavarian dress poses for a picture, german woman, wearing a dirndl
+    * Masterpiece, absurdres, fine detail, DOF, atmosperic lighting, highly detailed face and eyes, photorealistic, <lora:drindl:0.75>, drindl, a woman in traditional bavarian dress standing in pub, german woman, freckels, medium breasts, cleavage, ginger, plaits, wearing drindl, holding beer, smiling
+        
+My Notes:
+    * All gallery images point to primarily illustration use cases, no realism
+    * Render tests are NOT SFW
+    * edg offers a `LoRA tutorial <https://www.canva.com/design/DAFcn1l_ulE/view>`_
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+
+
+========================
+Dress - European Vintage
+========================
+
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/edg-eurVintag.jpg
+            :width: 580px
+            :alt: European Vintage
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **wearing edgEV_vintage dress** - **edgEV**
+        
+        * `European Vintage: Specs <https://www.tightbytes.com/art/images/Csp/lo-euroVint.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `European Vintage <https://civitai.com/models/103597/european-vintage-by-edg>`_ by edg
+
+        Artist's Note:
+            * European Vintage - by EDG
+            * With this model I hope to allow you to design vintage European dresses, classy and not too sexy.
+            * Show me what you can do down there in the review section!
+        
+        Sample Prompt (*note LoRA settings*):
+            * 4K, Masterpiece, highres, absurdres, edgEV, a woman in a park ,wearing edgEV_vintage dress, <lora:edgEuropean_Vintage:0.75>
+            * 
+            * 
+
+More Prompts (*note LoRA settings*):
+    * solo, 1girl, 4K, Masterpiece, highres, absurdres, edgEV, a woman in a blue dress leaning against a wall, wearing edgEV_vintage dress, <lora:edgEuropean_Vintage:0.8>
+    * professional photo of edgEV, 1girl, long hair, blonde hair, twintails, wearing edgEV_vintage dress, BREAK aqua eyes, louvre, pregnant, detailed skin, detailed eyes, finely detailed hair, looking at viewer, abstract background, volumetric light, highrez, masterpiece, best quality,<lora:edgEuropean_Vintage:0.78:MIDD>
+
+My Notes:
+    * All gallery images point to primarily illustration use cases, no realism
+    * Render tests are NOT SFW
+    * edg offers a `LoRA tutorial <https://www.canva.com/design/DAFcn1l_ulE/view>`_
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+===============
+Dress - Evening
+===============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/tu-evdress.jpg
+            :width: 580px
+            :alt: Evening Dress S1
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **blue skirt** - other: **shirt**
+        
+        * `Evening Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-eveDress.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `tu- Evening Dress <https://civitai.com/models/112606/evening-dress-s1>`_ by tutuhuatuhua.
+        
+        Artist's Notes:
+            * This is a new series, and it feels like it has an endless hole to fill. But I still want to make something a little less sexy. Everyone takes what he needs.
+            * If your model doesn't reproduce LORA well enough, try my example, checkpoint Detail Tweaker LoRA.
+            * I'm just an amateur SD enthusiast, and I spend a lot of time every day finding material, matting, making, testing, and finally publishing.
+            * It took too much of my energy
+            * If you want to support me, you can buy me a drink of KO-FI, or go to my window and support me.
+            * There's my unreleased LORA in there that I think is good. Thank you for your love!!
+            * If you need special order, you can also contact Q88465996。
+            * Special thanks to the seven friends who supported me in the window. Your support gives me the motivation to carry on.
+            * Prompt: (best quality),[masterpiece],((beautiful:0.75) cute girl:0.75),[clear and clean] pixiv (illustration),short hair,knees up,necklace,jewelry,looking at viewer,close-up,standing,night sky,street, city viewer,neon trim, <lora:add_detail:0.8>, <lora:evening dress S1:0.75> blue skirt,
+        
+My Notes:
+    * Underwhelmed, but I only tried it for a short while 
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+============
+Dress - Lace 
+============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/tu-lacedress.jpg
+            :width: 580px
+            :alt: Lace Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **lace dress3**
+        
+        * `Lace Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-laceDress.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Lace Dress <https://civitai.com/models/126047/lace-dress-s3>`_ by tutuhuatuhua.
+
+        Artist's Note:
+            * I'm just an amateur SD enthusiast, and I spend a lot of time every day finding material, matting, making, testing, and finally publishing. It took too much of my energy. 
+            * If you want to support me, please go to my shop and support me. There's my unreleased LORA in there that I think is good. Thank you for your love!! If you need special order, you can also contact Q88465996
+            
+        Prompts:
+            * (best quality), [masterpiece], ((beautiful:0.75) cute girl:0.75), (EOS R8,50mm, F1.2, 8K, RAW photo:1.2), Professional, ultra-fine painting, (blue hair:1.4), standing, outdoors, (front:1.3), cloud, sky, seaside background, <lora:add_detail:0.6> <lora:lace dress3:0.75> lace dress3
+            * neg: badhandv4, EasyNegative, [ng_deepnegative_v1_75t], rev2-badprompt, verybadimagenegative_v1.3, negative_hand-neg, bad-picture-chill-75v, (animal ears:1.5),
+            * seed: 3666666805
+
+My Notes:
+    * 
+    * 
+
+-------
+Renders
+-------
+
+by YuriTanaka:
+
+.. image:: https://www.tightbytes.com/art/images/Cvt/yuriTanaka2.jpg
+    :width: 400px
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+============
+Dress - Maid
+============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/pa-maidDress.jpg
+            :width: 580px
+            :alt: Panda Maid Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **Maid_Dress**
+        
+        * `Panda Maid Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-pandaMaid.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Maid Dress <https://civitai.com/models/31756/maid-dress-lora>`_ by nicerpanda.
+
+        Artist's Note:
+            * This is a LORA for Maid Dresses
+            * I used 30 Pictures for training
+            * I would recommend LORA weight 0.6-0.8 for
+            * Trained with NAI
+            * If you enjoy this LORA, I genuinely love seeing your creations with it
+
+Prompts: (masterpiece), sidelighting, finely detailed beautiful eyes:1.2), Maid_Dress, inside, photo-realistic, realistic, RAW photo, masterpiece, best quality, highres, illustration, (topless:1.5), (nsfw:1.5), (arms behind back:1.5), (absurdres nipple:1.4), 1girl, <lora:GGAS_Maid_Dress:0.3>, (black and white, beautiful design, extremely detailed, Maid_Dress:1.5), (Maid clothes:1.4), <lora:GodPussy1 v3:0.5>, front pussy, delicate and pretty, perfect face, beautiful detailed eyes, fair skin, real human skin, pore, (huge_breasts), (cleavage), narrow waist,((skinny legs)), (long hair:1.2), (blonde hair:1.2), <lora:jpIDOL_v10:0.2>,<lora:LoveOnLovely_lolStyleV10:0.2>, <lora:koreanDollLikeness_v15:0.2>,<lora:cuteGirlMix4_v10:0.1>, <lora:chilloutmixss_xss10:0.1>,<lora:taiwanDollLikeness_v10:0.1>, <lora:JapaneseDollLikeness_v15:0.1>,
+
+My Notes:
+    * There doesn't appear to be a photo-real use case for this
+    * Have not yet tried this item [23.09.03]
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+
+===================
+Dress - Maid (Cute)
+===================
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/n15g-cuteMaid.jpg
+            :width: 580px
+            :alt: Cute Maid Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **maid**
+        
+        * `Cute Maid Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-cuteMaid.png>`_
+        
+        * **CLIP SKIP**: -2
+        
+        * `Cute Maid Dress <https://civitai.com/models/133377/cute-maid-dress>`_ by n15g.
+        
+        Artist's Note:
+            * Okaerinasaimase, goshujin-sama!
+            * Cute maid dresses with a short poofy skirt, ruffled apron and puffy sleeves.
+            * Trained on the main tag maid. You can use clothing tags like blue dress, white apron and bow to influence the outfit.
+            * 
+            * RubberDuckie's prompt: (RAW 8k photo) of (RSEEmma:1.1),<lora:RSERomantic_RSESofiko_RSEEmma-v1:0.1>, ((best quality)), ((masterpiece)), (realistic, photo-realistic:1.37), DSLR photo, DLSR, cowboy shot, smile, looking at viewer, (wearing bondage_outfit), (highly detailed skin:1.2), midday, bright lighting, parted bangs, (black hair), very long hair, long hair, smile, beautiful girl modeling in the kitchen, perfect eyes, long eyelashes, large breasts, cleavage, maid, black dress, white apron, bow, <lora:cute_maid-1.0:0.8>
+
+neg: ng_deepnegative_v1_75t, (bad-hands-5:1.05), (low quality, worst quality, lowres:1.1), text, patreon, (watermark:1.5), (eyes:1.3), panty, easynegative, (logo:1.3), text, sd1-failed-oekaki, (verybadimagenegative_v1.3:0.9), cat ears, elf ears, bad-picture-chill-75v, zentai, bodysuit, (watermark:1.7), cat ears, muscular, muscles, mask, squatting, badhandsv5-neg, blue skin, tattoo, watermark, (zip, zipper:1.5), (nipples:1.5), choker, necklace, cushion, (logo, watermark:1.6), dog ears, cat ears, child, loli
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+
+
+===================
+Dress - Pencil Blue
+===================
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/sw-PnclDress.jpg
+            :width: 580px
+            :alt: Blue Pencil Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **Blue Pencil Dress_V**
+        
+        * `Blue Pencil Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-bPnclDress.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Blue Pencil Dress <https://civitai.com/models/86125/blue-pencil-dress>`_ by sunward8888566
+
+        Artist's Note:
+            * A long-sleeved V-neck women's suit
+            * Blue Pencil Dress
+            * Prompt: Young Russian female model posing in front of beach, (Blue Pencil Dress_V:1.1), A long-sleeved V-neck women's suit, full body portrait, sunny, photography grade lighting effects, real scene, <lora:Blue Pencil Dress V_20230608133850-000003:1>
+            
+        My Notes:
+            * Used in an animation [23.10.29]. Using just **blue pencil dress** without the 'v' seems to work fine. The GIF below used the following prompt: (full body shot), masterpiece, beautiful Nordic ((woman)) in the office, blonde hair in a chignon, wearing  blue pencil dress, necklace, (mascara, eye-shadow, lipstick), open lips, flowers in pots,
+            * -
+            
+I invoked the usual Negative Prompt: Asian, Japanese, Korean, Chinese, blurry, logo, watermark, signature, cropped, out of frame, worst quality, ((bad eyes, misshapen eyes)), low quality, jpeg artefacts, poorly lit, overexposed, underexposed, glitch, error, out of focus, (semi-realistic, CGI, 3D, render, sketch, cartoon, drawing, digital art, anime, manga:1.3), amateur, (poorly drawn hands, poorly drawn face:1.2), facial hair, aerial view, from above:1.3, deformed iris, deformed pupils, morbid, duplicate, mutilated, extra fingers, mutated hands, poorly drawn eyes, mutation, deformed, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, incoherent, 
+
+
+-------------------
+Blue Pencil Renders
+-------------------
+
+❤️ - Blue Pencil doesn't vary much. Nice, modest style. Thanks, SunWard.
+
+.. image:: https://www.tightbytes.com/art/images/Cui/23/Vid/loBluePencil01.gif
+    :width: 360px
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+   
+
+
+
+
+
+==============
+Dress - Pencil
+==============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/edg-pnclDress.jpg
+            :width: 580px
+            :alt: Pencil Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **pencil_dress** - other: **black and white checkered pencil_dress**
+        
+        * `Pencil Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-pnclDress.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Pencil Dress <https://civitai.com/models/18215?modelVersionId=45899>`_ by edg
+
+        Artist's Note:
+            * Today, EDG's Haute Couture brings you a staple of everyday and office fashion: pencil dresses. It's time to dress sharply and get ready to impress with a pencil dress. Download and get your pencil dress.
+            * Advice: *check for secondary trigger words in the prompts*.
+            * Prompt: Masterpiece, absurdres, award winning photo, extremely detailed, amazing, fine detail, extremely detailed eyes and face, by lee jeffries, nikon d850, film stock, photograph, 4 kodak, portra 400, camera, f1.6 lens, rich colors, hyper-realistic, lifelike texture, dramatic lighting, unrealengine, trending on artstation, cinestill, 800 tungsten, beautiful woman, slim, tiny waist, pencil_dress, a woman wearing a (pencil_dress, a woman wearing a black and white checkered pencil_dress, holding a purse, buttons, v shaped cleavage:1.125), <lora:Pencil_Dressesv1.2:1>
+
+My Notes:
+    * Appears to fit figure well, if a bit clingy
+    * Have not yet tried the additional prompts [23.09.03]
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+
+
+============
+Dress - Rose 
+============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Vp/roseDress-fail.jpg
+            :width: 580px
+            :alt: Rose Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **rose**
+        
+        * `Rose Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-dressRose.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Rose Dress <https://civitai.com/models/89091/rose-dress>`_ by Hades06.
+        
+        The artist offers no comments at all. Trigger word is **rose**.
+        
+        My Notes:
+            * I'm trialing the Ultimate SD Upscale node, inserted before the roop sequences. Not sure if that matters. The faces appear cleaner and more distinct. Limbs leave a lot to be desired (upscaler cfg = .500).
+            * The dresses themselves render sharp and clean, excellent detail.
+            * Prompts make less of an impact than settings
+            * Green dresses: full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, dark green velour Victorian dresses, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), a rose garden, cloudy evening,
+            * Ivory and coloured dresses: full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, Victorian, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), a rose garden, cloudy evening,
+            * Each of the following images show a progression of node setting changes
+
+The change from having Ultimate SD Upscale node last to directly after the KSampler and before the roop sequences made all the difference. It appears that the Ultimate SD Upscale cfg needs to match that of the KSampler (7.000). 
+
+-------
+Renders
+-------
+
+.. image:: https://www.tightbytes.com/art/images/Vp/roseDress-impr.jpg
+    :width: 400px
+
+The arm and hand distortions on Mabel and Robyn appear to be less, if not exactly resolved. Denoise = .422, steps = 45.
+
+Saving this workflow.
+
+.. image:: https://www.tightbytes.com/art/images/Vp/roseDress-win.jpg
+    :width: 400px
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+
+
+===============
+Dress - Teacher
+===============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Md/teachTart1.png
+            :width: 580px
+            :alt: Teacher Dress
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **skirt suit, garter straps, glasses, underwear, panties, lace-trimmed bra**
+        
+        * `Teacher Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-dressTeach.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Teacher Dress <https://civitai.com/models/55099/teacher-clothes>`_ by romiolast
+
+        Artist's Notes:
+            * Significantly improve the effect, I am personally very satisfied, the applicability is much stronger
+            * Reduce the problem of overfitting, use in combination with other characters lora, weighting 0.6-0.9
+            * Optimize the 2.5D/3D model, recommend using Rev animated
+            * This is a Lora made at the request of a friend. I hope they will be satisfied with it.
+            * Usage: Most anime-style models can be used, while 3D models may need some adjustments. Recommended weight is between 0.6 and 0.9.
+            * **Garter straps** can be replaced with **pantyhose**.
+            * If combining with other character LoRAs, weight may need to be adjusted to 0.4-0.7.
+            * If necessary, you can add "(head out of frame:2)" to the negative prompt.
+            * 
+            * 
+
+My Notes:
+    * 23.09.05 @ 0620: can't say I'm impressed. Distorts my girl's hands (CLIP-Skip has nil effect)
+    * When it works, it's fairly tarty, so not a fan.
+
+-------
+Renders
+-------
+
+23.09.05 @ 0625 (*It gets worse*)
+
+.. image:: https://www.tightbytes.com/art/images/Md/teachTart2.png
+    :width: 400px
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+
+
+
+
+
 
 =================
 Dress - Victorian
@@ -122,7 +801,7 @@ My Notes:
 
 
 ===========================
-Dress - Aesthetic Victorian
+Dress - Victorian Aesthetic
 ===========================
 
 .. container:: two-column-containerlq
@@ -175,287 +854,6 @@ Renders
 
 
 
-============
-Dress - Rose 
-============
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Vp/roseDress-fail.jpg
-            :width: 580px
-            :alt: Rose Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **rose**
-        
-        * `Rose Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-dressRose.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Rose Dress <https://civitai.com/models/89091/rose-dress>`_ by Hades06.
-        
-        The artist offers no comments at all. Trigger word is **rose**.
-        
-        My Notes:
-            * I'm trialing the Ultimate SD Upscale node, inserted before the roop sequences. Not sure if that matters. The faces appear cleaner and more distinct. Limbs leave a lot to be desired (upscaler cfg = .500).
-            * The dresses themselves render sharp and clean, excellent detail.
-            * Prompts make less of an impact than settings
-            * Green dresses: full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, dark green velour Victorian dresses, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), a rose garden, cloudy evening,
-            * Ivory and coloured dresses: full body shot, masterpiece, 2 beautiful Nordic buxom women, dark hair in bun, Victorian, long skirt with ruffles, bodice, lace, (mascara, eye-shadow, lipstick), a rose garden, cloudy evening,
-            * Each of the following images show a progression of node setting changes
-
-The change from having Ultimate SD Upscale node last to directly after the KSampler and before the roop sequences made all the difference. It appears that the Ultimate SD Upscale cfg needs to match that of the KSampler (7.000). 
-
--------
-Renders
--------
-
-.. image:: https://www.tightbytes.com/art/images/Vp/roseDress-impr.jpg
-    :width: 400px
-
-The arm and hand distortions on Mabel and Robyn appear to be less, if not exactly resolved. Denoise = .422, steps = 45.
-
-Saving this workflow.
-
-.. image:: https://www.tightbytes.com/art/images/Vp/roseDress-win.jpg
-    :width: 400px
-
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
-
-=============
-Dress - Cream
-=============
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Md/creamDress.png
-            :width: 580px
-            :alt: Cream Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **Cream dress_oV** - **A long-sleeved V-neck women's suit**
-        
-        * `Cream Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-crmDress.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Cream Dress <https://civitai.com/models/70039/cream-dresssafetensors>`_ by sunward8888566
-
-        Artist's Note:
-            * This is a cream white long-sleeved V-neck women's suit
-            * Prompt: Cream dress_oV, Young Russian female model in A long-sleeved V-neck women's suit, skirt posing in front of the beach, gentle and elegant oriental temperament, looking thin, full body portrait, sunny day, photography-quality lighting effects, real scenes, <lora:Cream dress_oV_2023 :1>
-            * negative: Backlight, paintings, sketches, (worst quality:2), (low quality:2), (normal quality:2).(normal quality:2), lowres, normal quality,((monochrome)), ((grayscale))，skin spots, acnes, skin blemishes, age spot,(outdoor:l.6), manboobs, backlight,(ugly:1.331)，(duplicate:1.331),(morbid:1.21)，(mutilated:1.21),(tranny:1.331), mutated hands, (poorly drawn hands:1.331),blurry, (bad anatomy:1.21), (bad proportions:1.331), extra limbs, (disfigured:1.331).more than 2 nipples:1.331), (missing arms:1.331), (extra legs:1.331), (fused fingers:1.61051).(too many fingers:1.61051), (unclear eyes:1.331), bad hands, missing fingers,extra digit,(futa:1.1), bad body, NG_DeepNegative_V1_75T,pubic hair, glans, missing foots ，((Clothes are wrinkled, dirty, uneven, unironed))
-
-My Notes:
-    * Excellent apparel, fits perfectly to any size model
-    * [Q]: is this Russian chic?
-    
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
-============
-Dress - Lace 
-============
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/tu-lacedress.jpg
-            :width: 580px
-            :alt: Lace Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **lace dress3**
-        
-        * `Lace Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-laceDress.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Lace Dress <https://civitai.com/models/126047/lace-dress-s3>`_ by tutuhuatuhua.
-
-        Artist's Note:
-            * I'm just an amateur SD enthusiast, and I spend a lot of time every day finding material, matting, making, testing, and finally publishing. It took too much of my energy. 
-            * If you want to support me, please go to my shop and support me. There's my unreleased LORA in there that I think is good. Thank you for your love!! If you need special order, you can also contact Q88465996
-            
-        Prompts:
-            * (best quality), [masterpiece], ((beautiful:0.75) cute girl:0.75), (EOS R8,50mm, F1.2, 8K, RAW photo:1.2), Professional, ultra-fine painting, (blue hair:1.4), standing, outdoors, (front:1.3), cloud, sky, seaside background, <lora:add_detail:0.6> <lora:lace dress3:0.75> lace dress3
-            * neg: badhandv4, EasyNegative, [ng_deepnegative_v1_75t], rev2-badprompt, verybadimagenegative_v1.3, negative_hand-neg, bad-picture-chill-75v, (animal ears:1.5),
-            * seed: 3666666805
-
-My Notes:
-    * 
-    * 
-
--------
-Renders
--------
-
-by YuriTanaka:
-
-.. image:: https://www.tightbytes.com/art/images/Cvt/yuriTanaka2.jpg
-    :width: 400px
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
-
-===============
-Dress - Evening
-===============
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/tu-evdress.jpg
-            :width: 580px
-            :alt: Evening Dress S1
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **blue skirt** - other: **shirt**
-        
-        * `Evening Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-eveDress.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `tu- Evening Dress <https://civitai.com/models/112606/evening-dress-s1>`_ by tutuhuatuhua.
-        
-        Artist's Notes:
-            * This is a new series, and it feels like it has an endless hole to fill. But I still want to make something a little less sexy. Everyone takes what he needs.
-            * If your model doesn't reproduce LORA well enough, try my example, checkpoint Detail Tweaker LoRA.
-            * I'm just an amateur SD enthusiast, and I spend a lot of time every day finding material, matting, making, testing, and finally publishing.
-            * It took too much of my energy
-            * If you want to support me, you can buy me a drink of KO-FI, or go to my window and support me.
-            * There's my unreleased LORA in there that I think is good. Thank you for your love!!
-            * If you need special order, you can also contact Q88465996。
-            * Special thanks to the seven friends who supported me in the window. Your support gives me the motivation to carry on.
-            * Prompt: (best quality),[masterpiece],((beautiful:0.75) cute girl:0.75),[clear and clean] pixiv (illustration),short hair,knees up,necklace,jewelry,looking at viewer,close-up,standing,night sky,street, city viewer,neon trim, <lora:add_detail:0.8>, <lora:evening dress S1:0.75> blue skirt,
-        
-My Notes:
-    * Underwhelmed, but I only tried it for a short while 
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-=================
-Dress - Cute Maid
-=================
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/n15g-cuteMaid.jpg
-            :width: 580px
-            :alt: Cute Maid Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **maid**
-        
-        * `Cute Maid Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-cuteMaid.png>`_
-        
-        * **CLIP SKIP**: -2
-        
-        * `Cute Maid Dress <https://civitai.com/models/133377/cute-maid-dress>`_ by n15g.
-        
-        Artist's Note:
-            * Okaerinasaimase, goshujin-sama!
-            * Cute maid dresses with a short poofy skirt, ruffled apron and puffy sleeves.
-            * Trained on the main tag maid. You can use clothing tags like blue dress, white apron and bow to influence the outfit.
-            * 
-            * RubberDuckie's prompt: (RAW 8k photo) of (RSEEmma:1.1),<lora:RSERomantic_RSESofiko_RSEEmma-v1:0.1>, ((best quality)), ((masterpiece)), (realistic, photo-realistic:1.37), DSLR photo, DLSR, cowboy shot, smile, looking at viewer, (wearing bondage_outfit), (highly detailed skin:1.2), midday, bright lighting, parted bangs, (black hair), very long hair, long hair, smile, beautiful girl modeling in the kitchen, perfect eyes, long eyelashes, large breasts, cleavage, maid, black dress, white apron, bow, <lora:cute_maid-1.0:0.8>
-
-neg: ng_deepnegative_v1_75t, (bad-hands-5:1.05), (low quality, worst quality, lowres:1.1), text, patreon, (watermark:1.5), (eyes:1.3), panty, easynegative, (logo:1.3), text, sd1-failed-oekaki, (verybadimagenegative_v1.3:0.9), cat ears, elf ears, bad-picture-chill-75v, zentai, bodysuit, (watermark:1.7), cat ears, muscular, muscles, mask, squatting, badhandsv5-neg, blue skin, tattoo, watermark, (zip, zipper:1.5), (nipples:1.5), choker, necklace, cushion, (logo, watermark:1.6), dog ears, cat ears, child, loli
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
-
-============
-Dress - Maid
-============
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/pa-maidDress.jpg
-            :width: 580px
-            :alt: Panda Maid Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **Maid_Dress**
-        
-        * `Panda Maid Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-pandaMaid.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Maid Dress <https://civitai.com/models/31756/maid-dress-lora>`_ by nicerpanda.
-
-        Artist's Note:
-            * This is a LORA for Maid Dresses
-            * I used 30 Pictures for training
-            * I would recommend LORA weight 0.6-0.8 for
-            * Trained with NAI
-            * If you enjoy this LORA, I genuinely love seeing your creations with it
-
-Prompts: (masterpiece), sidelighting, finely detailed beautiful eyes:1.2), Maid_Dress, inside, photo-realistic, realistic, RAW photo, masterpiece, best quality, highres, illustration, (topless:1.5), (nsfw:1.5), (arms behind back:1.5), (absurdres nipple:1.4), 1girl, <lora:GGAS_Maid_Dress:0.3>, (black and white, beautiful design, extremely detailed, Maid_Dress:1.5), (Maid clothes:1.4), <lora:GodPussy1 v3:0.5>, front pussy, delicate and pretty, perfect face, beautiful detailed eyes, fair skin, real human skin, pore, (huge_breasts), (cleavage), narrow waist,((skinny legs)), (long hair:1.2), (blonde hair:1.2), <lora:jpIDOL_v10:0.2>,<lora:LoveOnLovely_lolStyleV10:0.2>, <lora:koreanDollLikeness_v15:0.2>,<lora:cuteGirlMix4_v10:0.1>, <lora:chilloutmixss_xss10:0.1>,<lora:taiwanDollLikeness_v10:0.1>, <lora:JapaneseDollLikeness_v15:0.1>,
-
-My Notes:
-    * There doesn't appear to be a photo-real use case for this
-    * Have not yet tried this item [23.09.03]
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
 ======================
 Dress - Victorian Maid
 ======================
@@ -495,350 +893,17 @@ Prompts: (realistic:1.3), finely detailed, quality, rembrandt lighting, (masterp
 
 .. raw:: html
    
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+   <hr style="height:16px;border-width:0;color:blue;background-color:pink">
 
 
 
 
 
-==============
-Dress - Pencil
-==============
 
-.. container:: two-column-containerlq
 
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/edg-pnclDress.jpg
-            :width: 580px
-            :alt: Pencil Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **pencil_dress** - other: **black and white checkered pencil_dress**
-        
-        * `Pencil Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-pnclDress.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Pencil Dress <https://civitai.com/models/18215?modelVersionId=45899>`_ by edg
-
-        Artist's Note:
-            * Today, EDG's Haute Couture brings you a staple of everyday and office fashion: pencil dresses. It's time to dress sharply and get ready to impress with a pencil dress. Download and get your pencil dress.
-            * Advice: *check for secondary trigger words in the prompts*.
-            * Prompt: Masterpiece, absurdres, award winning photo, extremely detailed, amazing, fine detail, extremely detailed eyes and face, by lee jeffries, nikon d850, film stock, photograph, 4 kodak, portra 400, camera, f1.6 lens, rich colors, hyper-realistic, lifelike texture, dramatic lighting, unrealengine, trending on artstation, cinestill, 800 tungsten, beautiful woman, slim, tiny waist, pencil_dress, a woman wearing a (pencil_dress, a woman wearing a black and white checkered pencil_dress, holding a purse, buttons, v shaped cleavage:1.125), <lora:Pencil_Dressesv1.2:1>
-
-My Notes:
-    * Appears to fit figure well, if a bit clingy
-    * Have not yet tried the additional prompts [23.09.03]
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
-===================
-Dress - Blue Pencil
-===================
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/sw-PnclDress.jpg
-            :width: 580px
-            :alt: Blue Pencil Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **Blue Pencil Dress_V**
-        
-        * `Blue Pencil Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-bPnclDress.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Blue Pencil Dress <https://civitai.com/models/86125/blue-pencil-dress>`_ by sunward8888566
-
-        Artist's Note:
-            * A long-sleeved V-neck women's suit，Blue Pencil Dress
-            * Prompt: Young Russian female model posing in front of beach, (Blue Pencil Dress_V:1.1), A long-sleeved V-neck women's suit, full body portrait, sunny, photography grade lighting effects, real scene, <lora:Blue Pencil Dress V_20230608133850-000003:1>
-            
-        My Notes:
-            * Have not yet tried this item [23.09.03]
-            * 
-            * 
-            * 
-            * 
-
--------
-Renders
--------
-
-...
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-========================
-Dress - Blue Hime Basque
-========================
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/yu-blueHime.jpg
-            :width: 580px
-            :alt: Blue Hime Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **Blue Hime Basque** - **frilled dress**
-        
-        * `Blue Hime: Specs <https://www.tightbytes.com/art/images/Csp/lo-blueHime.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Blue Hime <https://civitai.com/models/98765/blue-hime-basque>`_ by tutuhuatuhua
-
-        Artist's Notes:
-            * tag：Blue Hime Basque, frilled dress
-            * If you like my model, please comment, download, click on the red heart. * If the downloads and hearts are too low, the new model does not want to continue to be made. Stock models may not be issued anymore.
-            
-        Example Prompt by YL:
-            * (photo-realistic, ultra realistic 8k CG:1.2), perfect artwork, delicate pattern, (best quality, intricate detail, extremely intricate:1.2), 70mm telephoto lens, ------------------------------- (ulzzang6500V), (idol),(detailed clothes features), Exquisite Makeup, the pose, (1girl,solo:1.2), woman, girly, bright eyes, (detailed eyes), (wet skin,nsfw:1.1), (very long hair, Floating hair, Flamboyant hair, wind,gale, hair accessories:1.4), ------------------------------- (silk Ribbon in front:1.3), earrings, filigree, detached sleeves, wide sleeves, (see through clothes, translucent clothes, armlet:1.2), (revealing clothes), jewelry, (cleavage, bare shoulder, strapless, Simple Choker, tube dress, no bra:1.1), ------------------------------- (horizon, longView, distant, Leaves and plant in front:1.2), simple background, ------------------------------- (pov legs, Blue Hime Basque, frilled dress:1.3), [full body], <lora:Blue Hime Basque_20230627170534:1:fz1>
-        
--------
-Renders
--------
-
-by YL:
-
-.. image:: https://www.tightbytes.com/art/images/Cvt/yl-blueHime.jpg
-    :width: 400px
-
-My Notes:
-    * 
-    * 
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-========================
-Dress - European Vintage
-========================
-
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/edg-eurVintag.jpg
-            :width: 580px
-            :alt: European Vintage
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **wearing edgEV_vintage dress** - **edgEV**
-        
-        * `European Vintage: Specs <https://www.tightbytes.com/art/images/Csp/lo-euroVint.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `European Vintage <https://civitai.com/models/103597/european-vintage-by-edg>`_ by edg
-
-        Artist's Note:
-            * European Vintage - by EDG
-            * With this model I hope to allow you to design vintage European dresses, classy and not too sexy.
-            * Show me what you can do down there in the review section!
-        
-        Sample Prompt (*note LoRA settings*):
-            * 4K, Masterpiece, highres, absurdres, edgEV, a woman in a park ,wearing edgEV_vintage dress, <lora:edgEuropean_Vintage:0.75>
-            * 
-            * 
-
-More Prompts (*note LoRA settings*):
-    * solo, 1girl, 4K, Masterpiece, highres, absurdres, edgEV, a woman in a blue dress leaning against a wall, wearing edgEV_vintage dress, <lora:edgEuropean_Vintage:0.8>
-    * professional photo of edgEV, 1girl, long hair, blonde hair, twintails, wearing edgEV_vintage dress, BREAK aqua eyes, louvre, pregnant, detailed skin, detailed eyes, finely detailed hair, looking at viewer, abstract background, volumetric light, highrez, masterpiece, best quality,<lora:edgEuropean_Vintage:0.78:MIDD>
-
-My Notes:
-    * All gallery images point to primarily illustration use cases, no realism
-    * Render tests are NOT SFW
-    * edg offers a `LoRA tutorial <https://www.canva.com/design/DAFcn1l_ulE/view>`_
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-=======================
-Dress - Bavarian Dirndl
-=======================
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/edg-bavDirndl.jpg
-            :width: 580px
-            :alt: Bavarian Dirndl
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **dirndl** - **traditional bavarian dress**, **wearing a dirndl**
-        
-        * `Bavarian Dirndl: Specs <https://www.tightbytes.com/art/images/Csp/lo-bavDirndl.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Bavarian Dirndl <https://civitai.com/models/53825/bavarian-dirndl>`_ by edg
-
-        Artist's Note:
-            * Bavarian Dirndl
-            * Die Deutschen sind dafür bekannt, dass sie sehr gut Englisch sprechen, daher würde ich mir normalerweise nicht die Mühe machen, eine Übersetzung anzufertigen.
-            * Aber dies ist etwas Besonderes.
-            * Dirndlkleider sind in der ganzen Welt bekannt und repräsentieren die deutsche, genauer gesagt die bayerische Traditionskultur. Ich wünsche Ihnen, dass Sie diese LoRA nutzen und viel Spaß damit haben!
-            * 
-            * 
-
-Prompt: 
-    * Masterpiece, absurdres, fine detail, HDR, highly detailed face and eyes, photorealistic, <lora:dirndl:0.75>, dirndl, a woman in traditional bavarian dress poses for a picture, german woman, wearing a dirndl
-    * Masterpiece, absurdres, fine detail, DOF, atmosperic lighting, highly detailed face and eyes, photorealistic, <lora:drindl:0.75>, drindl, a woman in traditional bavarian dress standing in pub, german woman, freckels, medium breasts, cleavage, ginger, plaits, wearing drindl, holding beer, smiling
-        
-My Notes:
-    * All gallery images point to primarily illustration use cases, no realism
-    * Render tests are NOT SFW
-    * edg offers a `LoRA tutorial <https://www.canva.com/design/DAFcn1l_ulE/view>`_
-
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
-
-=====================
-Dress - Business Suit
-=====================
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/aix-busiSuit.jpg
-            :width: 580px
-            :alt: Business Suit
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: (*no keywords*) Possible tags: **suit** - **black trousers**
-        
-        * `Business Suit: Specs <https://www.tightbytes.com/art/images/Csp/lo-busiSuit.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Business Suit <https://civitai.com/models/125089/suitol-aix>`_ by AIXXX
-
-        Artist's Note:
-            * *This model was created to facilitate formal suits needed for formal occasions, if you have created any good images using this model that bring you convenience, please consider sharing them by leaving a comment. Thank you very much!*
-            * The main colors of the suit are black and white.
-            * This model is suitable for most business scenarios, I believe that the standard suit can help you.
-            * It can be a separate white/black shirt, or a separate black suit, or it can be a combination of different outfits.
-            * This model is recommended to match the Majic realistic series, and the effect is better with the good film wind lora.
-            * You can use keywords to control some scene changes, such as a solid color background for professional photography, or other scene uses.
-            * Recommended parameter setting: iteration steps 25-35, amplification algorithm: 4x-UltraSharp, redrawing range 0.1-0.3 (more than picture effect decline), it is recommended to open ADetailer, Majic model is not recommended to open face repair.
-            
-Artist's Note (cont):
-
-    * Because the whole network has not yet seen a similar formal professional clothing Lora, so specially produced and shared to everyone, I hope to bring convenience to you, the model still needs to be upgraded, like friends please leave a like, share your work!
-
-Prompt: (realistic:1.5),(masterpiece, Extremely detailed CG unity 8k wallpaper, best quality, highres:1.2), (ultra_detailed, UHD:1.2), (pixiv:1.3), distinct, detailed face, a girl, <lora:suit-AIX:0.6>, black trousers, solid background, suit,
-
-My Notes:
-    * *Left a comment on CivitAI page*: Truly a lovely suit, very elegant. Unfortunately, it affects my roop - changes the face. Other outfits don't appear to have this problem. Is there a CLIP-skip setting to invoke or some other setting I need to use? BTW, I'm in ComfyUI, not A1111.
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
-===============
-Dress - Teacher
-===============
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Md/teachTart1.png
-            :width: 580px
-            :alt: Teacher Dress
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **skirt suit, garter straps, glasses, underwear, panties, lace-trimmed bra**
-        
-        * `Teacher Dress: Specs <https://www.tightbytes.com/art/images/Csp/lo-dressTeach.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Teacher Dress <https://civitai.com/models/55099/teacher-clothes>`_ by romiolast
-
-        Artist's Notes:
-            * Significantly improve the effect, I am personally very satisfied, the applicability is much stronger
-            * Reduce the problem of overfitting, use in combination with other characters lora, weighting 0.6-0.9
-            * Optimize the 2.5D/3D model, recommend using Rev animated
-            * This is a Lora made at the request of a friend. I hope they will be satisfied with it.
-            * Usage: Most anime-style models can be used, while 3D models may need some adjustments. Recommended weight is between 0.6 and 0.9.
-            * **Garter straps** can be replaced with **pantyhose**.
-            * If combining with other character LoRAs, weight may need to be adjusted to 0.4-0.7.
-            * If necessary, you can add "(head out of frame:2)" to the negative prompt.
-            * 
-            * 
-
-My Notes:
-    * 23.09.05 @ 0620: can't say I'm impressed. Distorts my girl's hands (CLIP-Skip has nil effect)
-    * When it works, it's fairly tarty, so not a fan.
-
--------
-Renders
--------
-
-23.09.05 @ 0625 (*It gets worse*)
-
-.. image:: https://www.tightbytes.com/art/images/Md/teachTart2.png
-    :width: 400px
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-
+************
+LoRA - Jeans
+************
 
 ====================
 Jeans - High-waisted 
@@ -1033,11 +1098,21 @@ Renders
 
 .. raw:: html
    
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+   <hr style="height:16px;border-width:0;color:blue;background-color:pink">
 
 
 
 
+
+
+
+
+
+
+
+***********************
+LoRA - Blouses and Tops
+***********************
 
 ================================
 Blouse - Proper Attire-Chic Tops
@@ -1080,49 +1155,6 @@ Prompt: ((Masterpiece, best quality)),edgQuality,smirk,smug, bob cut, edgCT, a w
 .. raw:: html
    
    <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
-
-
-
-============
-Skirt - Dark 
-============
-
-.. container:: two-column-containerlq
-
-    .. container:: image-columnlq
-
-        .. image:: https://www.tightbytes.com/art/images/Cvt/tu-darkSkirt.jpg
-            :width: 580px
-            :alt: Dark Skirt
-
-    .. container:: text-columnlq
-    
-        * **Trigger**: **skirt** - **plaid necktie** - **belt** - **plaid skirt** - **black shirt** - **bowtie**
-        
-        * `Dark Skirt: Specs <https://www.tightbytes.com/art/images/Csp/lo-darkSkirt.png>`_
-        
-        * **CLIP SKIP**: (*not indicated*)
-        
-        * `Dark Skirt <https://civitai.com/models/106336/dark-jk-skirt>`_ by tutuhuatuhua
-
-        Artist's Note: (*nothing of consequence, mostly in Chinese?*)
-        
-        Prompts: 
-             * masterpiece, best quality, (detailed face, perfect face, perfect eyes, realistic eyes, perfect fingers), (clear face), fantasy girl, long hair, jewelry, earrings, looking at viewer, intricate, high detail, sharp focus, dramatic, beautiful girl, knees up, hotel room, standing, <lora:add_detail:0.9>, <lora:Dark jk skirt_20230709163946:0.8>, belt, plaid skirt, (black shirt:1.2), bowtie, school uniform, pantyhose,
-             * a portrait photo of (heliodor20230526_1632-4000:0.60) heliodor20230526 <lora:heliodor20230526_2200-000020:0.60> 14y wearing a wearing a moss green <lora:Dark jk skirt_20230709163946:1> collar shirt, plaid necktie, plaid pleated skirt, in a street in Hallstatt Austria. docks, shore, mountains in background. (off center:1.1), (deep shadow, night, dusk, dimly lit, (beautiful lighting:1.2), (rim light:0.75)), <lora:epi_noiseoffset2:1.2>, (vintage film, 35mm, bokeh, muted colors:0.8), RAW photo, 8k uhd, high quality, highly detailed skin, Portra 400 <lora:add_detail:0.33> <lyco:hallstatt_20230713_0122-000010:0.7>
-             * 
-             * 
-
-My Notes:
-    * All gallery images point to non-realism use cases
-    * Render tests done
-    * tutuhuatuhua has a shop
-
-.. raw:: html
-   
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
-
 
 
 
@@ -1170,8 +1202,66 @@ My Notes:
 
 
 .. raw:: html
+
+   <hr style="height:16px;border-width:0;color:blue;background-color:pink">
+
+
+
+
+
+
+*************
+LoRA - Skirts
+*************
+
+============
+Skirt - Dark 
+============
+
+.. container:: two-column-containerlq
+
+    .. container:: image-columnlq
+
+        .. image:: https://www.tightbytes.com/art/images/Cvt/tu-darkSkirt.jpg
+            :width: 580px
+            :alt: Dark Skirt
+
+    .. container:: text-columnlq
+    
+        * **Trigger**: **skirt** - **plaid necktie** - **belt** - **plaid skirt** - **black shirt** - **bowtie**
+        
+        * `Dark Skirt: Specs <https://www.tightbytes.com/art/images/Csp/lo-darkSkirt.png>`_
+        
+        * **CLIP SKIP**: (*not indicated*)
+        
+        * `Dark Skirt <https://civitai.com/models/106336/dark-jk-skirt>`_ by tutuhuatuhua
+
+        Artist's Note: (*nothing of consequence, mostly in Chinese?*)
+        
+        Prompts: 
+             * masterpiece, best quality, (detailed face, perfect face, perfect eyes, realistic eyes, perfect fingers), (clear face), fantasy girl, long hair, jewelry, earrings, looking at viewer, intricate, high detail, sharp focus, dramatic, beautiful girl, knees up, hotel room, standing, <lora:add_detail:0.9>, <lora:Dark jk skirt_20230709163946:0.8>, belt, plaid skirt, (black shirt:1.2), bowtie, school uniform, pantyhose,
+             * a portrait photo of (heliodor20230526_1632-4000:0.60) heliodor20230526 <lora:heliodor20230526_2200-000020:0.60> 14y wearing a wearing a moss green <lora:Dark jk skirt_20230709163946:1> collar shirt, plaid necktie, plaid pleated skirt, in a street in Hallstatt Austria. docks, shore, mountains in background. (off center:1.1), (deep shadow, night, dusk, dimly lit, (beautiful lighting:1.2), (rim light:0.75)), <lora:epi_noiseoffset2:1.2>, (vintage film, 35mm, bokeh, muted colors:0.8), RAW photo, 8k uhd, high quality, highly detailed skin, Portra 400 <lora:add_detail:0.33> <lyco:hallstatt_20230713_0122-000010:0.7>
+             * 
+             * 
+
+My Notes:
+    * All gallery images point to non-realism use cases
+    * Render tests done
+    * tutuhuatuhua has a shop
+
+.. raw:: html
    
-   <hr style="height:8px;border-width:0;color:blue;background-color:blue">
+   <hr style="height:20px;border-width:0;color:blue;background-color:purple">
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1211,53 +1301,6 @@ Jeans - Mohair Jumper
 .. raw:: html
    
    <hr style="height:16px;border-width:0;color:black;background-color:black">
-
-
-
-
-
-
-
-
-
-
-
-**********************
-Stable Diffusion Links
-**********************
-
-`For Tavern <https://www.chub.ai/characters>`_
-
-`Civit-AI : Poses <https://civitai.com/?tag=poses>`_
-
-`OpenPose <https://github.com/CMU-Perceptual-Computing-Lab/openpose>`_
-
-`GPT4All <https://github.com/nomic-ai/gpt4all>`_
-
-`SD Tute <https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/>`_
-
-`SD Guide <https://stable-diffusion-art.com/prompt-guide/>`_
-
-`SD 1.5 Download - needs 16gig card <https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745>`_
-
-`SD 1.5 Download-HuggingFace <https://huggingface.co/runwayml/stable-diffusion-v1-5>`_
-
-`SD 1.5 Hardware <https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true>`_
-
-`NSFW Gen <https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/>`_
-
-`Downloading from HuggingFace <https://huggingface.co/docs/hub/models-downloading>`_
-
-`More on downloading <https://huggingface.co/docs/huggingface_hub/guides/download>`_
-
-`HuggingFace Hub <https://github.com/huggingface/huggingface_hub>`_
-
-`PlanetSuzy SD Guide <http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html>`_
-
-
-
-
-
 
 
 

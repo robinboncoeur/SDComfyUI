@@ -137,7 +137,7 @@ Nodes affect Objectives
 
 **23.10.08**
 
-I am discovering that, almost as much if not more, prompts - and specifically the injudicious, casual use of keyworks in a prompt, will lead to undesireable outcomes in the final image. For example: I had the phrase "lace-up boots" in a prompt. this resulted in short skirts and lace-topped stockings. Removing this brought the skirt hemline down to more desireable levels and a far better image.
+I am discovering that, almost as much if not more, prompts - and specifically the injudicious, casual use of keywords in a prompt, will lead to undesireable outcomes in the final image. For example: I had the phrase "lace-up boots" in a prompt. this resulted in short skirts and lace-topped stockings. Removing this brought the skirt hemline down to more desireable levels and a far better image.
 
 In a good prompt, less is more. Too many words in the negative prompt does absolutely nothing to improve the image and can adversely affect the outcome.
 
@@ -220,11 +220,17 @@ The video was 4x frame-interpolated.
 The figures seem to have come to life. So far, of course, I've only featured one figure at a time, which may have an impact of figure accuracy. Interestingly, all anatomy issues that were produced in still image 'renders' have magically resolved: no extra - or missing - fingers or limbs or anything of the sort. Again, perhaps that's due to it only being one figure.
 
 
+--------------------
+23.12.09 AnimateDiff
+--------------------
+
+I am getting out-of-memory errors all the time, now. So, AUD$749 for a 4060ti with exactly *twice* the memory I have now. Rendering video *with purposeful movement* **should** finally be within the scope of the possible.
+
 
 
 .. raw:: html
 
-   <hr style="height:8px;border-width:0;color:gray;background-color:black">
+   <hr style="height:16px;border-width:0;color:gray;background-color:black">
 
 
 
@@ -315,7 +321,7 @@ The workflow in both images is identical: it manages two individuals - well, wom
 
 All of these - and heaps more - can all be installed via 'Manager'. You will need that, of course.
 
-For faces, you can always generate and save a face in Comfy, but I've found that thispersondoesnotexist generates high-detail faces that work quite well with roop. Your mileage may vary, of course.
+For faces, you can always generate and save a face in Comfy, but I've found that `thispersondoesnotexist <https://thispersondoesnotexist.com>`_ generates high-detail faces that work quite well with roop. Your mileage may vary, of course.
 
 
 ================

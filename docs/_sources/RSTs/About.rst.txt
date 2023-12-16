@@ -255,4 +255,40 @@ https://docs.astro.build/en/editor-setup/
 
 
 
+**********************
+Stable Diffusion Links
+**********************
+
+`For Tavern <https://www.chub.ai/characters>`_
+
+`Civit-AI : Poses <https://civitai.com/?tag=poses>`_
+
+`OpenPose <https://github.com/CMU-Perceptual-Computing-Lab/openpose>`_
+
+`GPT4All <https://github.com/nomic-ai/gpt4all>`_
+
+`SD Tute <https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/>`_
+
+`SD Guide <https://stable-diffusion-art.com/prompt-guide/>`_
+
+`SD 1.5 Download - needs 16gig card <https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745>`_
+
+`SD 1.5 Download-HuggingFace <https://huggingface.co/runwayml/stable-diffusion-v1-5>`_
+
+`SD 1.5 Hardware <https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true>`_
+
+`NSFW Gen <https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/>`_
+
+`Downloading from HuggingFace <https://huggingface.co/docs/hub/models-downloading>`_
+
+`More on downloading <https://huggingface.co/docs/huggingface_hub/guides/download>`_
+
+`HuggingFace Hub <https://github.com/huggingface/huggingface_hub>`_
+
+`PlanetSuzy SD Guide <http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html>`_
+
+
+
+
+
 
