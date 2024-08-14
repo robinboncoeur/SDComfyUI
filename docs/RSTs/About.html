@@ -148,36 +148,50 @@ deactivate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="
 </section>
 <section id="current-aug2024-approach">
 <h3>Current–Aug2024–Approach<a class="headerlink" href="#current-aug2024-approach" title="Permalink to this heading"></a></h3>
-<p>Make a new folder and ‘cd’ into it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">ComfyNew</span>
-<span class="n">cd</span> <span class="o">./</span><span class="n">ComfyNew</span>
+<ol class="upperalpha">
+<li><p>Install ComfyUI from git, then cd into it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">comfyanonymous</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="o">./</span><span class="n">ComfyUI</span>
 </pre></div>
 </div>
-<p>Create a virtual Python environment for your install and activate it:</p>
+</li>
+<li><p>Create a virtual Python environment for your install and activate it:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">venv</span>
 <span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
 </pre></div>
 </div>
-<p>Do torch stuff:</p>
+</li>
+</ol>
+<ol class="upperalpha" start="5">
+<li><p>Run this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<ol class="upperalpha" start="3">
+<li><p>Do torch stuff:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">torch</span> <span class="n">torchvision</span> <span class="n">torchaudio</span> <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">index</span><span class="o">-</span><span class="n">url</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">pytorch</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">whl</span><span class="o">/</span><span class="n">cu121</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
-<p>Install ComfyUI:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">comfyanonymous</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">.</span><span class="n">git</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
-</pre></div>
-</div>
-<p>Check that this works:</p>
+</li>
+</ol>
+<p>Note: <em>this will take a while.</em></p>
+<ol class="upperalpha" start="5">
+<li><p>Check that this works:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">robyn</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">/</span> <span class="o">&amp;&amp;</span> <span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span> <span class="o">&amp;&amp;</span> <span class="n">python3</span><span class="mf">.10</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>Install Manager:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">robyn</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">/</span> <span class="o">&amp;&amp;</span> <span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
-<span class="n">cd</span> <span class="o">./</span><span class="n">custom_nodes</span>
+</li>
+<li><p>Install Manager:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">./</span><span class="n">custom_nodes</span>
 <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ltdrdata</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">-</span><span class="n">Manager</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="o">./</span><span class="n">ComfyUI</span><span class="o">-</span><span class="n">Manager</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
 </div>
+</li>
+</ol>
 <p>. .</p>
 <hr style="height:8px;border-width:0;color:black;background-color:black"></section>
 </section>

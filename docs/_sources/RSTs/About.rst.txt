@@ -69,35 +69,37 @@ From BASH
 Current--Aug2024--Approach
 ==========================
 
-Make a new folder and 'cd' into it::
+A) Install ComfyUI from git, then cd into it::
 
-    mkdir ComfyNew
-    cd ./ComfyNew
+    git clone https://github.com/comfyanonymous/ComfyUI.git
+    cd ./ComfyUI
 
-Create a virtual Python environment for your install and activate it::
+B) Create a virtual Python environment for your install and activate it::
 
     python3 -m venv venv
     source venv/bin/activate
 
-Do torch stuff::
+E) Run this::
+
+    pip install -r requirements.txt
+
+C) Do torch stuff::
 
     pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
-    pip install -r requirements.txt
 
-Install ComfyUI::
+Note: *this will take a while.*
 
-    git clone https://github.com/comfyanonymous/ComfyUI.git
-    pip install -r requirements.txt
 
-Check that this works::
+E) Check that this works::
 
     cd /home/robyn/ComfyUI/ && source venv/bin/activate && python3.10 main.py
 
-Install Manager::
+F) Install Manager::
 
-    cd /home/robyn/ComfyUI/ && source venv/bin/activate
     cd ./custom_nodes
     git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+    cd ./ComfyUI-Manager
+    pip install -r requirements.txt
 
 . .
 
