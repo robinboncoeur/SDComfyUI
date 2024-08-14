@@ -22,6 +22,94 @@ I've moved all notes on how things are progressing in ComfyUI to its own page.
 
 
 
+
+********************
+ComfyUI Install-2024
+********************
+
+=========
+From BASH
+=========
+
+.. code-block:: bash
+
+    cd ./ComfyUI
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
+    pip install -r requirements.txt
+    git clone https://github.com/comfyanonymous/ComfyUI.git
+    pip install -r requirements.txt
+    deactivate
+    cd ..
+    cd /home/robyn/ComfyUI/ && source venv/bin/activate && python3.10 main.py
+    deactivate && cd ..
+    cd ./ComfyUI/custom_nodes
+    git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+    cd ..
+    cd /home/robyn/ComfyUI/ && source venv/bin/activate && python3.10 main.py
+    deactivate && cd ..
+    cd /home/robyn/ComfyUI/ && source venv/bin/activate && python3.10 main.py
+    deactivate && cd ..
+    git clone https://github.com/comfyanonymous/ComfyUI.git
+    cd ./ComfyUI
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
+    pip install -r requirements.txt
+    cd ./custom_nodes
+    git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+    cd ..
+    deactivate && cd ..
+    cd /home/robyn/ComfyUI/ && source venv/bin/activate && python3.10 main.py
+
+
+
+==========================
+Current--Aug2024--Approach
+==========================
+
+Make a new folder and 'cd' into it::
+
+    mkdir ComfyNew
+    cd ./ComfyNew
+
+Create a virtual Python environment for your install and activate it::
+
+    python3 -m venv venv
+    source venv/bin/activate
+
+Do torch stuff::
+
+    pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
+    pip install -r requirements.txt
+
+Install ComfyUI::
+
+    git clone https://github.com/comfyanonymous/ComfyUI.git
+    pip install -r requirements.txt
+
+Check that this works::
+
+    cd /home/robyn/ComfyUI/ && source venv/bin/activate && python3.10 main.py
+
+Install Manager::
+
+    cd /home/robyn/ComfyUI/ && source venv/bin/activate
+    cd ./custom_nodes
+    git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+
+. .
+
+
+.. raw:: html
+   
+   <hr style="height:8px;border-width:0;color:black;background-color:black">
+
+
+
+
+
 **********************
 Stable Diffusion Links
 **********************
@@ -220,15 +308,15 @@ The code is this (minus the '*')::
 Sphinx Links
 ============
 
-https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html
+`Sphinx <https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html>`_
 
-https://docutils.sourceforge.io/docs/ref/rst/directives.html#images
+`Help Images <https://docutils.sourceforge.io/docs/ref/rst/directives.html#images>`_
 
-https://docutils.sourceforge.io/docs/ref/rst/directives.html#container
+`Directives <https://docutils.sourceforge.io/docs/ref/rst/directives.html#container>`_
 
-https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents
+`Basic RST stuff <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents>`_
 
-https://docutils.sourceforge.io/docs/ref/doctree.html#classes
+`Classes <https://docutils.sourceforge.io/docs/ref/doctree.html#classes>`_
 
 
 
@@ -236,56 +324,25 @@ https://docutils.sourceforge.io/docs/ref/doctree.html#classes
 HTML and CSS
 ************
 
-Grid for two simple layouts
+Grid for two simple layouts:
 
-https://www.youtube.com/watch?v=r1IitKbJRFE
+.. raw:: html
 
-Slide Show
-
-https://www.youtube.com/watch?v=WJERnXiFFug
-
-https://ishadeed.com/article/conditional-css-has-nth-last-child/?utm_source=convertkit&utm_medium=email&utm_campaign=Why+people+use+CSS+frameworks%20-%2010872019
-
-AstroDocs
-
-https://docs.astro.build/en/editor-setup/
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/r1IitKbJRFE" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
+Slide Show:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/WJERnXiFFug" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-**********************
-Stable Diffusion Links
-**********************
+`A CSS ideas Plan <https://ishadeed.com/article/conditional-css-has-nth-last-child/?utm_source=convertkit&utm_medium=email&utm_campaign=Why+people+use+CSS+frameworks%20-%2010872019>`_
 
-`For Tavern <https://www.chub.ai/characters>`_
-
-`Civit-AI : Poses <https://civitai.com/?tag=poses>`_
-
-`OpenPose <https://github.com/CMU-Perceptual-Computing-Lab/openpose>`_
-
-`GPT4All <https://github.com/nomic-ai/gpt4all>`_
-
-`SD Tute <https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/>`_
-
-`SD Guide <https://stable-diffusion-art.com/prompt-guide/>`_
-
-`SD 1.5 Download - needs 16gig card <https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745>`_
-
-`SD 1.5 Download-HuggingFace <https://huggingface.co/runwayml/stable-diffusion-v1-5>`_
-
-`SD 1.5 Hardware <https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true>`_
-
-`NSFW Gen <https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/>`_
-
-`Downloading from HuggingFace <https://huggingface.co/docs/hub/models-downloading>`_
-
-`More on downloading <https://huggingface.co/docs/huggingface_hub/guides/download>`_
-
-`HuggingFace Hub <https://github.com/huggingface/huggingface_hub>`_
-
-`PlanetSuzy SD Guide <http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html>`_
+`AstroDocs <https://docs.astro.build/en/editor-setup/>`_
 
 
 

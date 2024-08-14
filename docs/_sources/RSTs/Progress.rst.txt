@@ -1,6 +1,6 @@
-###################
-Progress in ComfyUI
-###################
+#####################
+Progression over Time
+#####################
 
 
 **********
@@ -341,3 +341,31 @@ https://www.tightbytes.com/art/images/Cui/23/Vid/Patr014.mp4
 BTW, I use https://thispersondoesnotexist.com/ for original, high-quality "real-people" faces... roop likes them better than AI faces made in MidJourney or LeonardoAI. And, in order to get a smoother video, you can use FlowFrames (Windows only) to get that result.
 
 End of the day, I suppose I'll just have to save up for the 3060 card, as it does have 12 gig, in order to do vi2vid, however. All the best with your channel. I have subscribed!
+
+
+====================
+And of course: Links
+====================
+
+https://github.com/FizzleDorf/ComfyUI_FizzNodes
+
+https://openart.ai/workflows/futurebenji/animatediff-controlnet-lcm-flicker-free-animation-video-workflow/A9ZE35kkDazgWGXhnyXh
+
+https://openart.ai/workflows/dev?category=AnimateDiff
+
+https://civitai.com/articles/2967
+
+https://muah.ai/card/
+
+https://www.umart.com.au/product/silicon-power-1tb-p34a60-gen3x4-tlc-r-w-up-to-2-200-1-600-mb-s-pcie-m-2-nvme-ssd-52873
+
+https://lavinialingerie.com/products/transparent-embroidered-full-figure-bra-antinea-a143?utm_source=pushowl&utm_medium=browse_abandonment&utm_campaign=browse_abandonment&utm_term=reminder_1&pn_source=browse_abandonment&pn_source_id=394307360&subscriber_id=279158482
+
+https://lavinialingerie.com/cdn/shop/products/antinea_black_a143_sp_or_2-Recovered_1080x1080.jpg?v=1634226077
+
+https://www.bigw.com.au/product/the-1964-denim-company-women-s-organic-cotton-blend-hanna-hi-rise-jean-bay-wash/p/1528881-baywash
+
+
+
+https://murf.ai/resources/female-voice-changer/#:~:text=convenient%20to%20use.-,Audacity,Windows%2C%20Mac%2C%20and%20Linux.
+

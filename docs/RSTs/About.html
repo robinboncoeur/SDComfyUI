@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Progress in ComfyUI" href="Progress.html" />
+    <link rel="next" title="Progression over Time" href="Progress.html" />
     <link rel="prev" title="SD and ComfyUI" href="../index.html" />
     <link href="../_static/css/custom.css" rel="stylesheet" type="text/css">
 
@@ -52,6 +52,11 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">About SD-ComfyUI</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#foreword">Foreword</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comfyui-install-2024">ComfyUI Install-2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#from-bash">From BASH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#current-aug2024-approach">Current–Aug2024–Approach</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#stable-diffusion-links">Stable Diffusion Links</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reminders-to-myself-of-sphinx-stuff">Reminders [to Myself] of Sphinx Stuff</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#inline-images">Inline images</a></li>
@@ -65,10 +70,9 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#html-and-css">HTML and CSS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Stable Diffusion Links</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Progress.html">Progress in ComfyUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Progress.html">Progression over Time</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SampleImages.html">Sample Images</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SDCivitLoRAs.html">SD Civit LoRA</a></li>
 </ul>
@@ -106,6 +110,77 @@
 <p>I have rather gravitated towards ComfyUI as my Stable Diffusion interface because of its flexibility through the use of nodes. These pages reflect my current uderstanding and use of this interface. I still have much to learn and explore in this rapidly expanding world of AI-based graphics. Hope my meanderings prove useful to someone.</p>
 <p>I’ve moved all notes on how things are progressing in ComfyUI to its own page.</p>
 <hr style="height:8px;border-width:0;color:black;background-color:black"></section>
+<section id="comfyui-install-2024">
+<h2>ComfyUI Install-2024<a class="headerlink" href="#comfyui-install-2024" title="Permalink to this heading"></a></h2>
+<section id="from-bash">
+<h3>From BASH<a class="headerlink" href="#from-bash" title="Permalink to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>./ComfyUI
+python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>torch<span class="w"> </span>torchvision<span class="w"> </span>torchaudio<span class="w"> </span>--extra-index-url<span class="w"> </span>https://download.pytorch.org/whl/cu121
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/comfyanonymous/ComfyUI.git
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+deactivate
+<span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">cd</span><span class="w"> </span>/home/robyn/ComfyUI/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python3.10<span class="w"> </span>main.py
+deactivate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">cd</span><span class="w"> </span>./ComfyUI/custom_nodes
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ltdrdata/ComfyUI-Manager.git
+<span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">cd</span><span class="w"> </span>/home/robyn/ComfyUI/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python3.10<span class="w"> </span>main.py
+deactivate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">cd</span><span class="w"> </span>/home/robyn/ComfyUI/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python3.10<span class="w"> </span>main.py
+deactivate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/comfyanonymous/ComfyUI.git
+<span class="nb">cd</span><span class="w"> </span>./ComfyUI
+python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>torch<span class="w"> </span>torchvision<span class="w"> </span>torchaudio<span class="w"> </span>--extra-index-url<span class="w"> </span>https://download.pytorch.org/whl/cu121
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<span class="nb">cd</span><span class="w"> </span>./custom_nodes
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ltdrdata/ComfyUI-Manager.git
+<span class="nb">cd</span><span class="w"> </span>..
+deactivate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+<span class="nb">cd</span><span class="w"> </span>/home/robyn/ComfyUI/<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>python3.10<span class="w"> </span>main.py
+</pre></div>
+</div>
+</section>
+<section id="current-aug2024-approach">
+<h3>Current–Aug2024–Approach<a class="headerlink" href="#current-aug2024-approach" title="Permalink to this heading"></a></h3>
+<p>Make a new folder and ‘cd’ into it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">ComfyNew</span>
+<span class="n">cd</span> <span class="o">./</span><span class="n">ComfyNew</span>
+</pre></div>
+</div>
+<p>Create a virtual Python environment for your install and activate it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">venv</span>
+<span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+<p>Do torch stuff:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">torch</span> <span class="n">torchvision</span> <span class="n">torchaudio</span> <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">index</span><span class="o">-</span><span class="n">url</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">download</span><span class="o">.</span><span class="n">pytorch</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">whl</span><span class="o">/</span><span class="n">cu121</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Install ComfyUI:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">comfyanonymous</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">.</span><span class="n">git</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>Check that this works:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">robyn</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">/</span> <span class="o">&amp;&amp;</span> <span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span> <span class="o">&amp;&amp;</span> <span class="n">python3</span><span class="mf">.10</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Install Manager:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">robyn</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">/</span> <span class="o">&amp;&amp;</span> <span class="n">source</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+<span class="n">cd</span> <span class="o">./</span><span class="n">custom_nodes</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ltdrdata</span><span class="o">/</span><span class="n">ComfyUI</span><span class="o">-</span><span class="n">Manager</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>. .</p>
+<hr style="height:8px;border-width:0;color:black;background-color:black"></section>
+</section>
 <section id="stable-diffusion-links">
 <h2>Stable Diffusion Links<a class="headerlink" href="#stable-diffusion-links" title="Permalink to this heading"></a></h2>
 <p><a class="reference external" href="https://www.chub.ai/characters">For Tavern</a></p>
@@ -218,39 +293,19 @@ https://www.youtube.com/watch?v=9USTddwNoXU
 <hr style="height:4px;border-width:0;color:gray;background-color:gray"></section>
 <section id="sphinx-links">
 <h3>Sphinx Links<a class="headerlink" href="#sphinx-links" title="Permalink to this heading"></a></h3>
-<p><a class="reference external" href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html">https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html</a></p>
-<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#images">https://docutils.sourceforge.io/docs/ref/rst/directives.html#images</a></p>
-<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#container">https://docutils.sourceforge.io/docs/ref/rst/directives.html#container</a></p>
-<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents">https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents</a></p>
-<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/doctree.html#classes">https://docutils.sourceforge.io/docs/ref/doctree.html#classes</a></p>
+<p><a class="reference external" href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html">Sphinx</a></p>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#images">Help Images</a></p>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#container">Directives</a></p>
+<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents">Basic RST stuff</a></p>
+<p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/doctree.html#classes">Classes</a></p>
 </section>
 </section>
 <section id="html-and-css">
 <h2>HTML and CSS<a class="headerlink" href="#html-and-css" title="Permalink to this heading"></a></h2>
-<p>Grid for two simple layouts</p>
-<p><a class="reference external" href="https://www.youtube.com/watch?v=r1IitKbJRFE">https://www.youtube.com/watch?v=r1IitKbJRFE</a></p>
-<p>Slide Show</p>
-<p><a class="reference external" href="https://www.youtube.com/watch?v=WJERnXiFFug">https://www.youtube.com/watch?v=WJERnXiFFug</a></p>
-<p><a class="reference external" href="https://ishadeed.com/article/conditional-css-has-nth-last-child/?utm_source=convertkit&amp;utm_medium=email&amp;utm_campaign=Why+people+use+CSS+frameworks%20-%2010872019">https://ishadeed.com/article/conditional-css-has-nth-last-child/?utm_source=convertkit&amp;utm_medium=email&amp;utm_campaign=Why+people+use+CSS+frameworks%20-%2010872019</a></p>
-<p>AstroDocs</p>
-<p><a class="reference external" href="https://docs.astro.build/en/editor-setup/">https://docs.astro.build/en/editor-setup/</a></p>
-</section>
-<section id="id1">
-<h2>Stable Diffusion Links<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
-<p><a class="reference external" href="https://www.chub.ai/characters">For Tavern</a></p>
-<p><a class="reference external" href="https://civitai.com/?tag=poses">Civit-AI : Poses</a></p>
-<p><a class="reference external" href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">OpenPose</a></p>
-<p><a class="reference external" href="https://github.com/nomic-ai/gpt4all">GPT4All</a></p>
-<p><a class="reference external" href="https://unimatrixz.com/blog/latent-space-camera-positions-developing-prompts/">SD Tute</a></p>
-<p><a class="reference external" href="https://stable-diffusion-art.com/prompt-guide/">SD Guide</a></p>
-<p><a class="reference external" href="https://rentry.org/sdmodels#stable-diffusion-v15-81761151-a9263745">SD 1.5 Download - needs 16gig card</a></p>
-<p><a class="reference external" href="https://huggingface.co/runwayml/stable-diffusion-v1-5">SD 1.5 Download-HuggingFace</a></p>
-<p><a class="reference external" href="https://decentralizedcreator.com/stable-diffusion-pc-hardware-requirement-detailed-guide/?utm_content=cmp-true">SD 1.5 Hardware</a></p>
-<p><a class="reference external" href="https://metaroids.com/lists/adult-ai-art-tools-that-can-generate-nsfw-ai-images/">NSFW Gen</a></p>
-<p><a class="reference external" href="https://huggingface.co/docs/hub/models-downloading">Downloading from HuggingFace</a></p>
-<p><a class="reference external" href="https://huggingface.co/docs/huggingface_hub/guides/download">More on downloading</a></p>
-<p><a class="reference external" href="https://github.com/huggingface/huggingface_hub">HuggingFace Hub</a></p>
-<p><a class="reference external" href="http://www.planetsuzy.org/t1098045-p8-stablediffusion-ai-part-two.html">PlanetSuzy SD Guide</a></p>
+<p>Grid for two simple layouts:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r1IitKbJRFE" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>Slide Show:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WJERnXiFFug" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p><a class="reference external" href="https://ishadeed.com/article/conditional-css-has-nth-last-child/?utm_source=convertkit&amp;utm_medium=email&amp;utm_campaign=Why+people+use+CSS+frameworks%20-%2010872019">A CSS ideas Plan</a></p>
+<p><a class="reference external" href="https://docs.astro.build/en/editor-setup/">AstroDocs</a></p>
 </section>
 </section>
 
@@ -259,7 +314,7 @@ https://www.youtube.com/watch?v=9USTddwNoXU
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../index.html" class="btn btn-neutral float-left" title="SD and ComfyUI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Progress.html" class="btn btn-neutral float-right" title="Progress in ComfyUI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Progress.html" class="btn btn-neutral float-right" title="Progression over Time" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
